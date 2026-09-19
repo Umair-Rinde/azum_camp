@@ -4,7 +4,6 @@ import type {
   CurrentConference,
   FaqItem,
   Highlight,
-  ImageAsset,
   ImportantDate,
   NavItem,
   NavNode,
@@ -170,11 +169,9 @@ export const whyAttend: Highlight[] = [
  * Present as historical context, not as commitments of the next edition.
  */
 export const historicalObjectives = [
-  "Review the current status and future potential of herbal and synthetic drugs.",
-  "Discuss advances in preparation, characterization and analytical/biochemical methodologies.",
-  "Bring researchers, scientists and academicians together for interdisciplinary exchange.",
-  "Explore drug formulations, applications, molecular targets and translational approaches.",
-  "Encourage academic collaboration and knowledge sharing.",
+  "Present an overview of the current status in the field of herbal and synthetic drugs and highlight future potential with reference to development and diverse applications.",
+  "Bring the scientific community together to discuss advances in the preparation of herbal and synthetic drugs, and new experimental methodologies for their characterization using analytical and biochemical techniques.",
+  "Provide researchers, scientists and academicians from India and abroad an opportunity to discuss and share views on the development and future scope of the subject.",
 ];
 
 /**
@@ -182,57 +179,74 @@ export const historicalObjectives = [
  * Adapt as research-area examples, not as the confirmed current track list.
  */
 export const historicalTopics = [
-  "Novel herbal and synthetic drugs: synthesis, characterization and applications",
-  "Metal-based drugs / bioinorganic drugs",
+  "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
+  "Metal based drugs (Bioinorganic Drugs)",
   "New trends in pharmaceutical sciences",
-  "New methods of drug formulation and applications",
-  "Complementary and Unani medicines",
+  "New methods of drug formulations and applications",
+  "Insights into complementary Unani Medicines",
   "Molecular targets and translational therapy",
-  "Drug preparation and characterization",
-  "Analytical and biochemical techniques",
+  "Advanced techniques in drug preparations and characterization",
+  "Integrated medicinal approach and health care",
+  "Taxonomic evaluation of plant drugs and standardization",
 ];
 
 export const whoShouldAttend = [
-  "Faculty and academic researchers",
-  "Doctoral and postgraduate students",
-  "Pharmaceutical and natural-product scientists",
-  "Clinicians and translational researchers",
+  "Teachers, researchers and academicians",
+  "Botanists and chemists",
+  "Unani doctors and pharmacists",
+  "Students interested in drug studies",
   "Industry professionals in drug discovery and formulation",
 ];
 
 export const conferenceFormat = [
   {
-    title: "Plenary and keynote lectures",
-    description: "Invited overviews will be published when the speaker list is confirmed.",
+    title: "Registration and inauguration",
+    description: "Earlier editions opened with registration followed by an inauguration function.",
   },
   {
-    title: "Oral presentations",
-    description: "Contributed talks selected from submitted abstracts.",
+    title: "Keynote and plenary sessions",
+    description: "Brochures listed a keynote address and invited talks on sub-themes before technical sessions.",
   },
   {
-    title: "Poster presentations",
-    description: "Poster sessions for work-in-progress and completed studies.",
+    title: "Oral and poster presentations",
+    description: "Contributed papers were presented orally and as posters. Historical poster boards were 1 × 1 m.",
   },
   {
-    title: "Networking intervals",
-    description: "Breaks and informal discussion periods, once the program is released.",
+    title: "Interactive and cultural programme",
+    description: "Earlier meetings included an interactive session, cultural programme, valedictory function, and a sightseeing programme.",
   },
 ];
 
+/** Host and partner bodies named on 2010, 2014, and 2016 brochures. Not a confirmed list for the next edition. */
 export const organizers: Organizer[] = [
   {
-    name: "[Organizing Institution]",
-    role: "Host institution",
+    name: "M.C.E. Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune",
+    role: "Host college (2010, 2014, 2016)",
     logo: PLACEHOLDER_IMAGE,
   },
   {
-    name: "[Collaborating Institution]",
-    role: "Academic partner",
+    name: "Interdisciplinary Science and Technology Research Academy (ISTRA, Pune)",
+    role: "Organizing academy (2014, 2016)",
     logo: PLACEHOLDER_IMAGE,
   },
   {
-    name: "[Supporting Body]",
-    role: "Supporting organization",
+    name: "Allana College of Pharmacy, Pune",
+    role: "Partner institute",
+    logo: PLACEHOLDER_IMAGE,
+  },
+  {
+    name: "Z. V. M. Unani Medical College and Hospital, Pune",
+    role: "Partner institute (2010, 2014)",
+    logo: PLACEHOLDER_IMAGE,
+  },
+  {
+    name: "The University of Kansas Cancer Center, Kansas City, USA",
+    role: "In association (2014, 2016)",
+    logo: PLACEHOLDER_IMAGE,
+  },
+  {
+    name: "University Grants Commission, New Delhi",
+    role: "Historical sponsor",
     logo: PLACEHOLDER_IMAGE,
   },
 ];
@@ -253,7 +267,7 @@ export const abstractGuidelines = {
   language: "English",
   wordLimit: "[Word limit to be confirmed]",
   fileTypes: "PDF or DOCX, once the template is released",
-  note: "Earlier brochures mentioned abstracts of approximately 300 words. That figure is historical and is not the current limit unless organizers confirm it.",
+  note: "HSDS-2010, 2014, and 2016 brochures asked for abstracts of not more than 300 words. The 2010 circular specified MS Word, Times New Roman, 12 pt, 1.5 line spacing. That format is archival and is not the current limit unless organizers confirm it.",
   templateHref: "",
 };
 
@@ -330,13 +344,16 @@ export const faqs: FaqItem[] = [
 ];
 
 export const historicalVenue = {
-  name: "Dr. A. R. Shaikh Assembly Hall / Azam Campus",
+  name: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
   address: "Camp, Pune – 411001, Maharashtra, India",
-  note: "This address is documented for earlier editions. Confirm the venue for the current edition before treating it as the meeting site.",
+  note: "HSDS-2010 met in the Assembly Hall, Azam Campus. HSDS-2014 and HSDS-2016 named Dr. A. R. Shaikh Assembly Hall at the same campus. Confirm the venue for the current edition before treating it as the meeting site.",
 };
 
+export const historicalPosterNote =
+  "The 2010, 2014, and 2016 brochures provided 1 × 1 m poster space at the venue. Selected papers were reviewed before presentation. Three best posters were awarded in 2010 and 2014; five in 2016. Current poster size is not confirmed.";
+
 export const aboutPune =
-  "Pune is a major academic city in Maharashtra, India, and was the documented host city for the 2010, 2014, and 2016 editions. Travel notes for the next meeting will follow venue confirmation.";
+  "Earlier HSDS brochures described Pune as the Queen of the Deccan, cultural capital of Maharashtra, and Oxford of the East: a historical city with a growing scientific and industrial base, pleasant winter weather, and a dense academic campus network. Travel notes for the next meeting will follow venue confirmation.";
 
 export const howToReach = [
   {
@@ -366,27 +383,7 @@ export const contact: ContactDetails = {
   ],
 };
 
-const pamphlet = (file: string, caption: string): ImageAsset => ({
-  src: `/conference-assets/pamphlets/${file}`,
-  alt: caption,
-  caption,
-});
-
-/**
- * Drop the original WhatsApp pamphlet JPEGs into /public/conference-assets/pamphlets/
- * using these exact filenames. The gallery falls back to the placeholder until they exist.
- */
-export const pamphletFiles = [
-  "WhatsApp Image 2026-09-12 at 00.58.00.jpeg",
-  "WhatsApp Image 2026-09-12 at 00.58.17.jpeg",
-  "WhatsApp Image 2026-09-12 at 00.58.31.jpeg",
-  "WhatsApp Image 2026-09-12 at 00.59.00.jpeg",
-  "WhatsApp Image 2026-09-12 at 00.59.20.jpeg",
-  "WhatsApp Image 2026-09-12 at 00.59.35.jpeg",
-  "WhatsApp Image 2026-09-12 at 01.00.00.jpeg",
-  "WhatsApp Image 2026-09-12 at 01.00.20.jpeg",
-  "WhatsApp Image 2026-09-12 at 01.00.38.jpeg",
-] as const;
+const feeNote = "Printed on that edition’s brochure. Not valid for the current conference.";
 
 export const pastConferences: PastConference[] = [
   {
@@ -397,19 +394,124 @@ export const pastConferences: PastConference[] = [
     dates: "14–16 January 2010",
     venue: "Assembly Hall, Azam Campus, Camp, Pune – 411001",
     type: "National Conference",
+    quote:
+      "We can't avoid death but we can reduce the pain and misery due to disease by designing and delivering novel drugs derived synthetically or from plant origin",
+    about:
+      "A National Conference on New Frontiers in Herbal and Synthetic Drug Studies (HSDS-2010) was jointly organized by the Department of Chemistry, Abeda Inamdar Senior College, M.C.E. Society's Allana College of Pharmacy and M.M.E.R.C.'s Z.V.M. Unani Medical College, Pune, from 14 to 16 January 2010 at Azam Campus, Pune. The conference was sponsored by the University of Pune and the University Grants Commission, New Delhi.",
+    organizers: [
+      "M.C.E. Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune (Department of Chemistry)",
+      "Allana College of Pharmacy, Pune",
+      "M.M.E.R.C.'s Z. V. M. Unani Medical College and Hospital, Pune",
+    ],
+    inAssociationWith: [],
+    sponsors: ["University of Pune", "University Grants Commission, New Delhi"],
+    objectives: [
+      "Present an overview of the current status in the field of herbal and synthetic drugs and enlighten the future potential with reference to development and diverse applications.",
+      "Bring the scientist community together to discuss advances in the preparation of herbal and synthetic drugs, finding new experimental methodologies for their characterization using various analytical techniques and their applications.",
+      "Provide researchers, scientists and academicians from all over the country an opportunity to discuss and share their views on the development of the subject.",
+    ],
     themes: [
-      "Herbal and synthetic drugs",
-      "Drug preparation and characterization",
-      "Pharmaceutical sciences",
-      "Drug formulation",
-      "Complementary medicine",
-      "Oral and poster presentations",
+      "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
+      "Metal based drugs (Bioinorganic)",
+      "New trends in pharmaceutical sciences",
+      "Advanced techniques in drug preparations and characterization",
+      "Integrated medicinal approach and health care",
+      "Taxonomic evaluation of plant drugs and standardization",
     ],
-    gallery: [
-      pamphlet(pamphletFiles[0], "HSDS-2010 brochure scan"),
-      pamphlet(pamphletFiles[1], "HSDS-2010 historical document"),
-      pamphlet(pamphletFiles[2], "HSDS-2010 conference material"),
+    format: [
+      "Paper and poster presentations",
+      "Registration",
+      "Inauguration function",
+      "Plenary session (keynote address)",
+      "Technical sessions",
+      "Invited talks on sub-themes before each technical session",
+      "Oral presentations",
+      "Interactive session",
+      "Cultural evening programme",
+      "Valedictory function",
+      "Sightseeing programme",
     ],
+    resourcePersons: [
+      { name: "Prof. (Dr.) R. Pushpangadan", affiliation: "Director General, Amity, Thiruvananthapuram" },
+      { name: "Prof. C. Manoharachary", affiliation: "Professor Emeritus CSIR, Osmania University, Hyderabad" },
+      { name: "Prof. Ghufran Ahmad", affiliation: "National Institute of Unani Medicine, Bangalore" },
+      { name: "Prof. S. M. Hadi", affiliation: "AMU, Aligarh" },
+      { name: "Dr. A. A. Natu", affiliation: "Indian Institute of Science Education & Research (IISER), Pune" },
+      { name: "Dr. T. Narender", affiliation: "Central Drug Research Institute, Lucknow" },
+      { name: "Dr. B. K. Kulkarni", affiliation: "Director R & D, Innovassynth Technologies, Khopoli, Pune" },
+      { name: "Dr. Arun Nanda", affiliation: "Maharishi Dayanand University, Rohtak" },
+      { name: "Dr. Jayant Ramgiri", affiliation: "Finey Care Ltd., Navi Mumbai" },
+      { name: "Prof. A. R. Chakravarthy", affiliation: "IISc, Bangalore" },
+      { name: "Dr. Afrasulabi Zahra", affiliation: "Lincoln University, USA" },
+      { name: "Dr. Ruby John Anto", affiliation: "Rajiv Gandhi Centre for Biotechnology, Thiruvananthapuram" },
+      { name: "Dr. Dulal Panda", affiliation: "IIT Bombay, Mumbai" },
+      { name: "Dr. Sanjay M. Jachak", affiliation: "NIPER, Mohali" },
+      { name: "Prof. M. Tajuddin", affiliation: "Dean, Faculty of Unani Medicine, AMU, Aligarh" },
+      { name: "Dr. Vidya S. Gupta", affiliation: "Biochemistry Division, NCL, Pune" },
+      { name: "Prof. S. Y. Rane", affiliation: "University of Pune, Pune" },
+      { name: "Prof. S. B. Padhye", affiliation: "Research Co-ordinator, Abeda Inamdar Senior College, Pune" },
+    ],
+    receptionCommittee: [],
+    advisoryCommittee: [
+      { name: "Mr. P. A. Inamdar", role: "President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mrs. Abeda Inamdar", role: "Vice President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mr. Latif Magdum", role: "Hon. Secretary", affiliation: "M.C.E. Society" },
+      { name: "Mr. Munawar Peerbhoy", role: "Chairman", affiliation: "HGM Azam Education Trust, Pune" },
+      { name: "Mr. Zuber Ahmed", role: "Hon. Secretary", affiliation: "MMERC, Pune" },
+      { name: "Dr. S. N. Pathan", role: "Vice Chancellor", affiliation: "Nagpur University" },
+      { name: "Prof. S. B. Padhye", role: "Ex. Professor and Head, Dept. of Chemistry", affiliation: "Pune University" },
+      { name: "Prof. Sandhya Y. Rane", role: "Ex. Professor, Dept. of Chemistry", affiliation: "Pune University" },
+      { name: "Prof. C. Manoharachary", role: "Professor Emeritus (CSIR)", affiliation: "Osmania University, Hyderabad" },
+      { name: "Dr. B. K. Kulkarni", role: "Director R & D", affiliation: "Innovassynth Technologies, Khopoli, Pune" },
+      { name: "Dr. (Mrs.) Vidya Gupta", role: "Biochemistry Division", affiliation: "NCL, Pune" },
+    ],
+    organizingCommittee: [
+      { name: "Dr. E. M. Khan", role: "Program Director", affiliation: "Principal, Abeda Inamdar Senior College" },
+      { name: "Dr. Ansari Abdullah", role: "Asst. Program Director", affiliation: "Principal, ZVM Medical College" },
+      { name: "Dr. Kiran Bhise", role: "Asst. Program Director", affiliation: "Principal, Allana Pharmacy College" },
+      { name: "Dr. Khursheed Ahmed", role: "Convener", affiliation: "Abeda Inamdar Senior College" },
+    ],
+    members: [
+      { name: "Dr. D. N. Mishra", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. R. D. Joseph", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Priya Joshi", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Vidya Iyer", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Bindu Arora", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Ishrat Jehan", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mr. Doke Kailas", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mr. Yusuf Mujahid", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Mushtaque Mukadam", affiliation: "ZVM Medical College" },
+      { name: "Dr. Jalis Ahmed", affiliation: "ZVM Medical College" },
+      { name: "Dr. Farah R. Shikalgar", affiliation: "ZVM Medical College" },
+      { name: "Dr. Ghazala Mulla", affiliation: "ZVM Medical College" },
+      { name: "Mrs. Rukhsana A. Rub", affiliation: "Allana College of Pharmacy" },
+      { name: "Mrs. Nazma Inamdar", affiliation: "Allana College of Pharmacy" },
+      { name: "Mr. Rahul T. Thube", affiliation: "Allana College of Pharmacy" },
+    ],
+    historicalFees: [
+      { category: "Outstation delegates", amount: "Rs. 1000/-", note: "Inclusive of meals and accommodation" },
+      { category: "Accompanying persons", amount: "Rs. 750/-", note: feeNote },
+      { category: "Local delegates", amount: "Rs. 500/-", note: feeNote },
+      { category: "Industry persons", amount: "Rs. 2000/-", note: feeNote },
+      { category: "Students", amount: "Rs. 500/-", note: feeNote },
+    ],
+    historicalDates: [
+      { label: "Registration and abstract deadline", date: "31 December 2009" },
+      { label: "Full papers", date: "14 January 2010" },
+    ],
+    posterNote:
+      "1 × 1 m space at the conference venue. Papers were reviewed; three best posters were selected for poster awards.",
+    abstractNote:
+      "Abstracts not exceeding one page (or 300 words), MS Word, Times New Roman, 12 pt, 1.5 line spacing. Hard copy and CD were requested with registration.",
+    accommodationNote:
+      "Arranged on the college campus or nearby residential facilities. Booking through guest houses, hotels, and hostels; first-come, first-served.",
+    website: "www.abedainamdarseniorcollege.org.in",
+    contact: {
+      convener: "Dr. Khursheed Ahmed, Convener, HSDS-2010",
+      emails: ["chemistry@aisc.org.in", "khursheed92@rediffmail.com"],
+      phones: ["020-26446970", "26457577", "9922073720"],
+      address: "Abeda Inamdar Senior College of Arts, Science & Commerce, Azam Campus, Camp, Pune – 411001",
+    },
   },
   {
     year: 2014,
@@ -419,19 +521,133 @@ export const pastConferences: PastConference[] = [
     dates: "10–12 February 2014",
     venue: "Dr. A. R. Shaikh Assembly Hall, Azam Campus, Camp, Pune – 411001",
     type: "International Conference",
+    quote:
+      "The art of healing comes from nature and not from the physician. Therefore, the physician must start from nature with an open mind. (Paracelsus)",
+    about:
+      "Following the national meeting in 2010, the 2nd International Conference on Herbal and Synthetic Drug Studies (HSDS-2014) was held at Dr. A. R. Shaikh Assembly Hall, Azam Campus, Camp, Pune, from 10 to 12 February 2014. It was organized by M.C.E. Society's Interdisciplinary Science and Technology Research Academy (ISTRA) with Abeda Inamdar Senior College (Department of Chemistry & Post Graduate Research Centre), Allana College of Pharmacy, and Z. V. M. Unani Medical College and Hospital, in association with The University of Kansas Cancer Center, Kansas City, USA, and sponsored by the University Grants Commission, New Delhi.",
+    organizers: [
+      "M.C.E. Society's Interdisciplinary Science and Technology Research Academy (ISTRA, Pune)",
+      "M.C.E. Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune (Department of Chemistry & Post Graduate Research Centre)",
+      "M.C.E. Society's Allana College of Pharmacy, Pune",
+      "M.M.E.R.C.'s Z. V. M. Unani Medical College and Hospital, Pune",
+    ],
+    inAssociationWith: ["The University of Kansas Cancer Center, Kansas City, USA"],
+    sponsors: ["University Grants Commission, New Delhi"],
+    objectives: [
+      "Present an overview of the current status in the field of herbal and synthetic drugs and highlight future potential with reference to development and diverse applications.",
+      "Bring the scientific community together to discuss advances in the preparation of herbal and synthetic drugs, finding new experimental methodologies for their characterization using various analytical/biochemical techniques and their applications.",
+      "Provide researchers, scientists and academicians from all over India and abroad an opportunity to discuss and share their views on the development and future scope of the subject.",
+    ],
     themes: [
-      "Novel herbal and synthetic drugs",
-      "Metal-based / bioinorganic drugs",
+      "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
+      "Metal based drugs (Bioinorganic Drugs)",
       "New trends in pharmaceutical sciences",
-      "Drug formulation and applications",
-      "Complementary and Unani medicines",
+      "New methods of drug formulations and applications",
+      "Insights into complementary Unani Medicines",
       "Molecular targets and translational therapy",
     ],
-    gallery: [
-      pamphlet(pamphletFiles[3], "HSDS-2014 brochure scan"),
-      pamphlet(pamphletFiles[4], "HSDS-2014 historical document"),
-      pamphlet(pamphletFiles[5], "HSDS-2014 conference material"),
+    format: [
+      "Registration",
+      "Inauguration function",
+      "Keynote address",
+      "Technical sessions",
+      "Invited talks on sub-themes",
+      "Paper and poster presentations",
+      "Oral presentations",
+      "Interactive session",
+      "Cultural programme",
+      "Valedictory function",
+      "Sightseeing programme",
     ],
+    resourcePersons: [
+      { name: "Dr. Shrikant Anant", role: "Dean of Research", affiliation: "University of Kansas Medical Center, USA" },
+      { name: "Dr. Roy Jensen", role: "Director", affiliation: "The University of Kansas Cancer Center, USA" },
+      { name: "Dr. Danny Welch", role: "Director, Basic Science", affiliation: "University of Kansas Cancer Center, USA" },
+      { name: "Dr. Dan Dixon", affiliation: "Cancer Biology, University of Kansas Cancer Center, USA" },
+      { name: "Dr. Animesh Dhar", affiliation: "Cancer Biology, University of Kansas Cancer Center, USA" },
+      { name: "Dr. Med. U. Pachmann", affiliation: "Transfusion Medicine Center, Bayreuth, Germany" },
+      { name: "Prof. Kensee S. Mossanda", affiliation: "Walter Sisulu University, South Africa" },
+      { name: "Dr. Annie Bligh", affiliation: "University of Westminster, London, UK" },
+      { name: "Dr. Hari Koul", affiliation: "Biochemistry and Molecular Biology, Louisiana Health Sciences Center, USA" },
+      { name: "Dr. Julie Whitehouse", affiliation: "Complementary Medicine, University of Westminster, London, UK" },
+      { name: "Dr. Shahid Umar", affiliation: "Molecular and Integrative Physiology, University of Kansas Cancer Center, USA" },
+      { name: "Dr. Kamal Ahmed", affiliation: "Institute of Chemical Technology, Hyderabad" },
+      { name: "Prof. D. Karunagaran", affiliation: "Indian Institute of Technology Madras, Chennai" },
+      { name: "Dr. Anamik Shah", affiliation: "National Institute of Drug Design, Rajkot" },
+      { name: "Dr. Venkat Palle", affiliation: "Lupin Research Park, Pune" },
+      { name: "Dr. Evans Coutinho", affiliation: "Bombay College of Pharmacy, Mumbai" },
+      { name: "Dr. Manjinder Singh Gill", affiliation: "NIPER, Mohali, Punjab" },
+      { name: "Dr. Pallu Reddanna", affiliation: "University of Hyderabad" },
+      { name: "Dr. Soumitra Kumar Choudhuri", affiliation: "Chittaranjan National Cancer Institute, Kolkata" },
+      { name: "Dr. Ghufran Ahmed", affiliation: "Aligarh Muslim University, Aligarh" },
+      { name: "Dr. Dhalendra Saraf", affiliation: "Pandit Ravishankar University, Raipur" },
+    ],
+    receptionCommittee: [
+      { name: "Mr. P. A. Inamdar", role: "President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mrs. Abeda Inamdar", role: "Chairperson, ISTRA & Vice President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mr. M. A. Peerbhoy", role: "Chairman", affiliation: "HSMAE Trust, Pune" },
+      { name: "Dr. N. Y. Kazi", role: "Chairman", affiliation: "MMERC, Pune" },
+      { name: "Dr. Shrikant Anant", affiliation: "The University of Kansas Cancer Center, USA" },
+      { name: "Prof. S. B. Padhye", role: "Director", affiliation: "ISTRA, Pune" },
+      { name: "Dr. V. B. Gaikwad", role: "Director, BCUD", affiliation: "University of Pune" },
+      { name: "Prof. Sandhya Y. Rane", role: "Ex. Professor, Dept. of Chemistry", affiliation: "Pune University" },
+    ],
+    advisoryCommittee: [],
+    organizingCommittee: [
+      { name: "Dr. E. M. Khan", role: "Program Director", affiliation: "Principal, Abeda Inamdar Senior College" },
+      { name: "Dr. Jalis Ahmad", role: "Asstt. Program Director", affiliation: "Principal, ZVM Medical College" },
+      { name: "Dr. Kiran Bhise", role: "Asstt. Program Director", affiliation: "Principal, Allana Pharmacy College" },
+      { name: "Dr. Khursheed Ahmed", role: "Convener", affiliation: "Abeda Inamdar Senior College" },
+    ],
+    members: [
+      { name: "Dr. Alim Sayed", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Shaukatali Inamdar", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Razia Kutty", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Abrar Kumthe", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Abeda Jamadar", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Zahid Imtiyaz", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Pratap Mukhopadhaya", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. D. Majumdar", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mr. Doke Kailas", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mr. Yusufi Mujahid", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mr. Shaukat Khan", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Mrs. Deepa Shetty", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Mushtaque Mukadam", affiliation: "ZVM Medical College" },
+      { name: "Dr. Ghazala Mulla", affiliation: "ZVM Medical College" },
+      { name: "Dr. Khursheed Alam", affiliation: "ZVM Medical College" },
+      { name: "Dr. Khan Mohd. Qaisar", affiliation: "ZVM Medical College" },
+      { name: "Mrs. Rukhsana A. Rub", affiliation: "Allana College of Pharmacy" },
+      { name: "Mrs. Nazma Inamdar", affiliation: "Allana College of Pharmacy" },
+      { name: "Mr. Rahul T. Thube", affiliation: "Allana College of Pharmacy" },
+      { name: "Mr. Rajat R. Sayyed", affiliation: "Allana College of Pharmacy" },
+    ],
+    historicalFees: [
+      { category: "Delegates", amount: "Rs. 2000/-", note: "Conference kit and meals" },
+      { category: "Industry persons", amount: "Rs. 3000/-", note: feeNote },
+      { category: "Late fee", amount: "Rs. 500/- extra", note: feeNote },
+    ],
+    historicalDates: [
+      { label: "Early registration and abstract submission", date: "15 December 2013 to 15 January 2014" },
+      { label: "Late registration", date: "16 January 2014 to 20 January 2014" },
+      { label: "Notification of acceptance", date: "25 January 2014" },
+    ],
+    posterNote:
+      "1 × 1 m space at the conference venue. Abstracts of not more than 300 words by 15 January 2014. Three best posters selected for poster awards.",
+    abstractNote: "Abstracts of not more than 300 words, submitted to the organizers by 15 January 2014.",
+    accommodationNote:
+      "Delegates on a paid basis on the college campus or nearby hotels, first-come, first-served.",
+    website: "www.hsds2014.com",
+    contact: {
+      convener: "Dr. Khursheed Ahmed, Convener, HSDS-2014, ISTRA, Pune",
+      emails: [
+        "khursheedahmed@azamcampus.org",
+        "inamdarshaukatali@azamcampus.org",
+        "hsds2014@azamcampus.org",
+        "aiscchemistry@azamcampus.org",
+      ],
+      phones: ["+91 99220 73720", "+91 80074 46050", "020-26446970", "26457577"],
+      address: "Interdisciplinary Science and Technology Research Academy (ISTRA), Azam Campus, Camp, Pune – 411001",
+    },
   },
   {
     year: 2016,
@@ -441,21 +657,116 @@ export const pastConferences: PastConference[] = [
     dates: "07–09 January 2016",
     venue: "Dr. A. R. Shaikh Assembly Hall, Azam Campus, Camp, Pune – 411001",
     type: "International Conference",
+    about:
+      "After HSDS-2010 and HSDS-2014, the 3rd International Conference on Herbal and Synthetic Drug Studies (HSDS-2016) was held at Dr. A. R. Shaikh Assembly Hall, Azam Campus, Camp, Pune, from 7 to 9 January 2016. It was organized by Maharashtra Cosmopolitan Education Society's ISTRA with Abeda Inamdar Senior College (Department of Chemistry & Post Graduate Research Centre) and Allana College of Pharmacy, in association with The University of Kansas Cancer Center, Kansas City, USA, and sponsored by the University Grants Commission, New Delhi.",
+    organizers: [
+      "Maharashtra Cosmopolitan Education Society's Interdisciplinary Science and Technology Research Academy (ISTRA, Pune)",
+      "Maharashtra Cosmopolitan Education Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune (Department of Chemistry & Post Graduate Research Centre)",
+      "Allana College of Pharmacy, Pune",
+    ],
+    inAssociationWith: ["The University of Kansas Cancer Center, Kansas City, USA"],
+    sponsors: ["University Grants Commission, New Delhi"],
+    objectives: [
+      "Present an overview of the current status in the field of herbal and synthetic drugs and highlight the future potential with reference to the development and diverse applications.",
+      "Bring the scientific community together to discuss advances in the preparation of herbal and synthetic drugs, finding new experimental methodologies for their characterization using various analytical/biochemical techniques and their applications.",
+      "Provide an opportunity to researchers, scientists and academicians from all over India and abroad to discuss and share their views on the development and future scope of the subject.",
+    ],
     themes: [
-      "Herbal and synthetic drugs",
-      "Drug discovery and development",
-      "Drug formulation",
-      "Analytical and biochemical techniques",
-      "Complementary medicine",
-      "Molecular targets and translational research",
+      "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
+      "Metal based drugs (Bioinorganic Drugs)",
+      "New trends in pharmaceutical sciences",
+      "New methods of drug formulations and applications",
+      "Insights into complementary Unani Medicines",
+      "Molecular targets and translational therapy",
     ],
-    gallery: [
-      pamphlet(pamphletFiles[6], "HSDS-2016 brochure scan"),
-      pamphlet(pamphletFiles[7], "HSDS-2016 historical document"),
-      pamphlet(pamphletFiles[8], "HSDS-2016 conference material"),
+    format: [
+      "Registration",
+      "Inauguration",
+      "Keynote and invited lectures",
+      "Technical sessions",
+      "Oral presentations",
+      "Poster presentations",
+      "Valedictory function",
     ],
+    resourcePersons: [
+      { name: "Dr. Shrikant Anant", role: "Dean of Research", affiliation: "University of Kansas Medical Center, USA" },
+      { name: "Dr. Victoria L. Seewaldt", affiliation: "Duke University School of Medicine, Durham, North Carolina, USA" },
+      { name: "Dr. Roy Jensen", role: "Director", affiliation: "The University of Kansas Cancer Center, USA" },
+      { name: "Dr. George Weiner", role: "Director, Holden Comprehensive Cancer Center", affiliation: "University of Iowa, USA" },
+      { name: "Dr. Arun K. Iyer", affiliation: "Institute of Pharmaceutical Sciences, Wayne State University, Detroit, USA" },
+      { name: "Prof. Timothy Stemmler", affiliation: "Institute of Pharmaceutical Sciences, Wayne State University, Detroit, USA" },
+      { name: "Dr. James F. Collins", affiliation: "University of Florida, Gainesville, USA" },
+      { name: "Dr. Prasad Dandawte", affiliation: "Kansas University Medical Center, Kansas City, USA" },
+      { name: "Prof. Iztok Turel", affiliation: "University of Ljubljana, Slovenia" },
+      { name: "Prof. John Greenman", affiliation: "University of Hull, UK" },
+      { name: "Prof. Theeshan Bahorun", role: "Chair, Mauritius Research Council", affiliation: "University of Mauritius, Mauritius" },
+      { name: "Dr. Vidushi Neergheen-Bhujun", affiliation: "University of Mauritius, Mauritius" },
+      { name: "Prof. Tahvilian", affiliation: "Kermanshah University of Medical Sciences, Iran" },
+      { name: "Dr. Animesh Dhar", affiliation: "Cancer Biology, University of Kansas Cancer Center, USA" },
+      { name: "Dr. Rajendra A. Badwe", role: "Director", affiliation: "Tata Cancer Hospital, Mumbai" },
+      { name: "Dr. Shubhada Chiplunkar", role: "Acting Director", affiliation: "ACTREC, Kharghar, Mumbai" },
+      { name: "Dr. Vibha Tandon", affiliation: "Jawaharlal Nehru University, New Delhi" },
+      { name: "Dr. K. Murugan", affiliation: "Bharathiar University, Coimbatore" },
+      { name: "Dr. R. Ilangovan", affiliation: "University of Madras, Taramani Campus, Chennai" },
+      { name: "Dr. Radhakrishna Pillai", role: "Director", affiliation: "Rajiv Gandhi Centre for Biotechnology, Thiruvananthapuram" },
+    ],
+    receptionCommittee: [
+      { name: "Mr. P. A. Inamdar", role: "President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mrs. Abeda Inamdar", role: "Chairperson, ISTRA & Vice President", affiliation: "M.C.E. Society, Pune" },
+      { name: "Mr. M. A. Peerbhoy", role: "Chairman", affiliation: "H.G.M.A.E. Trust, Pune" },
+      { name: "Mr. Latif Magdum", role: "Secretary", affiliation: "M.C.E. Society, Pune" },
+      { name: "Prof. Irfan Shaikh", role: "Jt. Secretary", affiliation: "M.C.E. Society, Pune" },
+      { name: "Dr. Shrikant Anant", role: "Associate Director", affiliation: "The Kansas Cancer Center, USA" },
+      { name: "Prof. S. B. Padhye", role: "Director", affiliation: "ISTRA, Pune" },
+    ],
+    advisoryCommittee: [],
+    organizingCommittee: [
+      { name: "Dr. E. M. Khan", role: "Program Director", affiliation: "Principal, Abeda Inamdar Senior College" },
+      { name: "Dr. Kiran Bhise", role: "Asst. Program Director", affiliation: "Principal, Allana College of Pharmacy" },
+      { name: "Dr. Khursheed Ahmed", role: "Convener, HSDS-2016", affiliation: "Abeda Inamdar Senior College" },
+    ],
+    members: [
+      { name: "Dr. Shaila Bootwala", role: "Vice Principal", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Alim Sayed", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Doke Kailas", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Yusufi Mujahid", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Shaukatali Inamdar", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Abeda Jamadar", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Snehal Kulkarni", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Zahid Imtiyaz", affiliation: "Abeda Inamdar Senior College" },
+      { name: "Dr. Rukhsana A. Rub", affiliation: "Allana College of Pharmacy" },
+      { name: "Dr. Nazma Inamdar", affiliation: "Allana College of Pharmacy" },
+      { name: "Dr. Ziya-ur-Raheman", affiliation: "Allana College of Pharmacy" },
+      { name: "Ms. Areej Siddiqui", affiliation: "Allana College of Pharmacy" },
+      { name: "Mr. Shakeel Memon", affiliation: "Allana College of Pharmacy" },
+      { name: "Mr. Rajat R. Sayyed", affiliation: "Allana College of Pharmacy" },
+    ],
+    historicalFees: [
+      { category: "Delegates (teachers and researchers)", amount: "Rs. 3000/-", note: "Conference kit and meals; accommodation extra" },
+      { category: "Students", amount: "Rs. 1500/-", note: feeNote },
+      { category: "Late fee", amount: "Rs. 500/- extra", note: feeNote },
+    ],
+    historicalDates: [
+      { label: "Early registration and abstract submission", date: "Up to 15 December 2015" },
+      { label: "Late registration", date: "15 to 20 December 2015" },
+      { label: "Notification and abstract acceptance", date: "20 December 2015" },
+    ],
+    posterNote:
+      "1 × 1 m space at the conference venue. Abstracts of not more than 300 words by 20 December 2015. Five best posters selected for poster awards.",
+    abstractNote: "Abstracts of not more than 300 words, submitted by 20 December 2015.",
+    accommodationNote:
+      "Delegates on a paid basis on the college campus or nearby hotels, first-come, first-served.",
+    website: "www.hsds2016.com",
+    contact: {
+      convener: "Dr. Khursheed Ahmed, Convener, HSDS-2016",
+      emails: ["khursheedahmed@azamcampus.org", "chemistryaisc@hsds2016.com", "hsds2016@azamcampus.org"],
+      phones: ["+91 99220 73720", "020-26446970", "09922073720"],
+      address:
+        "Interdisciplinary Science and Technology Research Academy (ISTRA), 2390-B, K.B. Hidayatulla Road, New Modikhana, Azam Campus, Camp, Pune – 411001",
+    },
   },
 ];
+
 
 export const footerLinks: NavItem[] = [
   { label: "About Conference", href: "/about" },

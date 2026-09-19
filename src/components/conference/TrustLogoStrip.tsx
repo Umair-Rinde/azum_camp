@@ -3,7 +3,7 @@ import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 
 export function TrustLogoStrip() {
   return (
-    <div className="grid gap-4 sm:grid-cols-3">
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {organizers.map((org) => (
         <div
           key={org.name}

@@ -41,7 +41,7 @@ export function VenuePage() {
               className="aspect-[16/10] rounded-lg border border-border"
             />
             <p className="text-sm leading-7 text-muted">
-              Earlier editions used Dr. A. R. Shaikh Assembly Hall / Azam Campus, Camp, Pune – 411001. Photographs and access notes for the next edition should replace this placeholder only after confirmation.
+              Earlier editions used the Assembly Hall (2010) and Dr. A. R. Shaikh Assembly Hall (2014, 2016) at Azam Campus, Camp, Pune – 411001. Photographs and access notes for the next edition should replace this placeholder only after confirmation.
             </p>
           </div>
         </div>

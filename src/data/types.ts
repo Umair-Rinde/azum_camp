@@ -82,6 +82,18 @@ export type RegistrationPlan = {
   includes: string[];
 };
 
+export type NamedPerson = {
+  name: string;
+  role?: string;
+  affiliation?: string;
+};
+
+export type HistoricalFee = {
+  category: string;
+  amount: string;
+  note?: string;
+};
+
 export type PastConference = {
   year: number;
   edition: string;
@@ -90,8 +102,31 @@ export type PastConference = {
   dates: string;
   venue: string;
   type: string;
+  quote?: string;
+  about: string;
+  organizers: string[];
+  inAssociationWith: string[];
+  sponsors: string[];
+  objectives: string[];
   themes: string[];
-  gallery: ImageAsset[];
+  format: string[];
+  resourcePersons: NamedPerson[];
+  receptionCommittee: NamedPerson[];
+  advisoryCommittee: NamedPerson[];
+  organizingCommittee: NamedPerson[];
+  members: NamedPerson[];
+  historicalFees: HistoricalFee[];
+  historicalDates: ImportantDate[];
+  posterNote: string;
+  abstractNote: string;
+  accommodationNote: string;
+  website?: string;
+  contact: {
+    convener: string;
+    emails: string[];
+    phones: string[];
+    address: string;
+  };
 };
 
 export type Highlight = {

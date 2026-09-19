@@ -26,7 +26,7 @@ export function AboutPage() {
         <div>
           <SectionHeading title="About the Conference" />
           <p className="mt-6 max-w-3xl leading-7 text-muted">
-            The series has hosted a national conference in 2010 and international conferences in 2014 and 2016 at Azam Campus, Pune. This website is the public record for those editions and the working site for the next meeting.
+            The series has hosted a national conference in 2010 and international conferences in 2014 and 2016 at Azam Campus, Pune, organized by M.C.E. Society colleges and, from 2014, ISTRA, with UGC support and later association with The University of Kansas Cancer Center. This website is the public record for those editions and the working site for the next meeting.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export function AboutPage() {
         <div>
           <SectionHeading
             title="Organizing Institutions"
-            description="Names and marks will replace these placeholders when the current host list is supplied."
+            description="Bodies named on the 2010, 2014, and 2016 brochures. They are the documented hosts of those editions, not a confirmed list for the next meeting."
           />
           <div className="mt-8">
             <TrustLogoStrip />

@@ -25,6 +25,7 @@ export function ImageGallery({ images, title }: { images: ImageAsset[]; title?: 
                 src={image.src}
                 alt={image.alt}
                 className="aspect-[4/3] rounded-lg border border-border"
+                imgClassName="object-contain"
               />
               {image.caption ? (
                 <p className="mt-2 text-sm text-muted group-hover:text-deep-forest">{image.caption}</p>
