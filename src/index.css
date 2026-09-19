@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-deep-forest: #14532d;
+  --color-forest: #166534;
+  --color-emerald: #15803d;
+  --color-botanical: #65a30d;
+  --color-cream: #f7f8ee;
+  --color-warm-white: #fcfcf8;
+  --color-charcoal: #17211b;
+  --color-muted: #647067;
+  --color-gold: #b08d3c;
+  --color-gold-soft: #d4bc7a;
+
+  --color-background: var(--color-warm-white);
+  --color-foreground: var(--color-charcoal);
+  --color-card: #ffffff;
+  --color-card-foreground: var(--color-charcoal);
+  --color-popover: #ffffff;
+  --color-popover-foreground: var(--color-charcoal);
+  --color-primary: var(--color-deep-forest);
+  --color-primary-foreground: var(--color-warm-white);
+  --color-secondary: var(--color-cream);
+  --color-secondary-foreground: var(--color-deep-forest);
+  --color-muted-foreground: var(--color-muted);
+  --color-accent: var(--color-cream);
+  --color-accent-foreground: var(--color-deep-forest);
+  --color-destructive: #9f1239;
+  --color-border: #d7ddd4;
+  --color-input: #d7ddd4;
+  --color-ring: var(--color-forest);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.4rem;
+  --radius-lg: 0.7rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-white text-charcoal font-sans antialiased;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(20, 83, 45, 0.035) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading text-deep-forest tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility paper-texture {
+  background-color: var(--color-cream);
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(247, 248, 238, 0.9)),
+    radial-gradient(circle at 12% 18%, rgba(176, 141, 60, 0.05), transparent 28%),
+    radial-gradient(circle at 88% 80%, rgba(20, 83, 45, 0.05), transparent 32%);
+}
+
+@utility academic-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(176, 141, 60, 0.65),
+    rgba(20, 83, 45, 0.45),
+    rgba(176, 141, 60, 0.65),
+    transparent
+  );
+}
+
+@utility molecular-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120' fill='none'%3E%3Ccircle cx='18' cy='22' r='1.4' fill='%2314532D' fill-opacity='0.14'/%3E%3Ccircle cx='62' cy='48' r='1.4' fill='%2314532D' fill-opacity='0.14'/%3E%3Ccircle cx='98' cy='28' r='1.4' fill='%2314532D' fill-opacity='0.14'/%3E%3Cpath d='M18 22L62 48L98 28' stroke='%2314532D' stroke-opacity='0.08'/%3E%3C/svg%3E");
+}
