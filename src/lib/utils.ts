@@ -10,6 +10,7 @@ export function isPlaceholder(value: string | undefined | null) {
   return value.trim() === "" || /^\[[^\]]+\]$/.test(value.trim());
 }
 
-export function displayValue(value: string | undefined | null, fallback = "To be announced") {
-  return isPlaceholder(value) ? fallback : value;
+export function displayValue(value: string | undefined | null, fallback = "To be announced"): string {
+  if (isPlaceholder(value) || !value) return fallback;
+  return value;
 }
