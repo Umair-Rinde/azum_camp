@@ -1,8 +1,10 @@
 import { committee, speakers } from "@/data/constants";
+import { COMMITTEE_GROUP_IMAGES } from "@/data/images";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { SpeakerCard } from "@/components/conference/SpeakerCard";
+import { ImageGallery } from "@/components/conference/ImageGallery";
 import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Speaker } from "@/data/types";
@@ -34,30 +36,41 @@ export function SpeakersPage() {
         <SpeakerGroup title="Keynote Speakers" people={speakers.filter((s) => s.role === "keynote")} />
         <SpeakerGroup title="Invited Speakers" people={speakers.filter((s) => s.role === "invited")} />
 
-        <div id="committee" className="scroll-mt-28">
-          <SectionHeading title="Scientific Committee" />
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {committee.length > 0
-              ? committee.map((member) => (
-                  <Card key={member.name} className="overflow-hidden">
-                    <PlaceholderImage src={member.photo} alt={member.name} className="aspect-[4/5]" />
-                    <CardContent className="pt-5">
-                      <p className="font-heading text-xl">{member.name}</p>
-                      <p className="text-sm text-gold">{member.role}</p>
-                      <p className="text-sm text-muted">{member.institution}</p>
-                    </CardContent>
-                  </Card>
-                ))
-              : Array.from({ length: 3 }).map((_, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    <PlaceholderImage alt="Committee member to be announced" className="aspect-[4/5]" />
-                    <CardContent className="pt-5">
-                      <p className="font-heading text-xl">Member to be announced</p>
-                      <p className="text-sm text-gold">Role to be confirmed</p>
-                      <p className="text-sm text-muted">Institution to be confirmed</p>
-                    </CardContent>
-                  </Card>
-                ))}
+        <div id="committee" className="scroll-mt-28 space-y-10">
+          <div>
+            <SectionHeading title="Scientific Committee" />
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {committee.length > 0
+                ? committee.map((member) => (
+                    <Card key={member.name} className="overflow-hidden">
+                      <PlaceholderImage src={member.photo} alt={member.name} className="aspect-[4/5]" />
+                      <CardContent className="pt-5">
+                        <p className="font-heading text-xl">{member.name}</p>
+                        <p className="text-sm text-gold">{member.role}</p>
+                        <p className="text-sm text-muted">{member.institution}</p>
+                      </CardContent>
+                    </Card>
+                  ))
+                : Array.from({ length: 3 }).map((_, index) => (
+                    <Card key={index} className="overflow-hidden">
+                      <PlaceholderImage alt="Committee member to be announced" className="aspect-[4/5]" />
+                      <CardContent className="pt-5">
+                        <p className="font-heading text-xl">Member to be announced</p>
+                        <p className="text-sm text-gold">Role to be confirmed</p>
+                        <p className="text-sm text-muted">Institution to be confirmed</p>
+                      </CardContent>
+                    </Card>
+                  ))}
+            </div>
+          </div>
+          <div>
+            <SectionHeading
+              title="Committee groups"
+              description="Group photographs of organizing and scientific committee members."
+            />
+            <div className="mt-6">
+              <ImageGallery images={COMMITTEE_GROUP_IMAGES} />
+            </div>
           </div>
         </div>
       </section>

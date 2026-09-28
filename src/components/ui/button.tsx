@@ -9,7 +9,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-deep-forest text-warm-white hover:bg-forest",
-        gold: "bg-gold text-warm-white hover:bg-gold/90",
+        gold: "bg-gold font-cta text-[#0f2e22] hover:bg-gold/90",
         outline:
           "border border-deep-forest/25 bg-transparent text-deep-forest hover:bg-cream",
         ghost: "text-deep-forest hover:bg-cream",

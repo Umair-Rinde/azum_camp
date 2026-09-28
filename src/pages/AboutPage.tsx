@@ -5,12 +5,20 @@ import {
   pastConferences,
   whyAttend,
 } from "@/data/constants";
+import {
+  CERTIFICATE_IMAGES,
+  COMMITTEE_GROUP_IMAGES,
+  PARTNERSHIP_IMAGES,
+  SITE_IMAGES,
+} from "@/data/images";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { HighlightCard } from "@/components/conference/HighlightCard";
 import { ThemeCard } from "@/components/conference/ThemeCard";
 import { TrustLogoStrip } from "@/components/conference/TrustLogoStrip";
+import { ImageGallery } from "@/components/conference/ImageGallery";
+import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 
 export function AboutPage() {
   return (
@@ -25,9 +33,16 @@ export function AboutPage() {
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
         <div>
           <SectionHeading title="About the Conference" />
-          <p className="mt-6 max-w-3xl leading-7 text-muted">
-            The series has hosted a national conference in 2010 and international conferences in 2014 and 2016 at Azam Campus, Pune, organized by M.C.E. Society colleges and, from 2014, ISTRA, with UGC support and later association with The University of Kansas Cancer Center. This website is the public record for those editions and the working site for the next meeting.
-          </p>
+          <div className="mt-6 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+            <p className="max-w-3xl leading-7 text-muted">
+              The series has hosted a national conference in 2010 and international conferences in 2014 and 2016 at Azam Campus, Pune, organized by M.C.E. Society colleges and, from 2014, ISTRA, with UGC support and later association with The University of Kansas Cancer Center. This website is the public record for those editions and the working site for the next meeting.
+            </p>
+            <PlaceholderImage
+              src={SITE_IMAGES.GEMINI_GENERATED.src}
+              alt={SITE_IMAGES.GEMINI_GENERATED.alt}
+              className="aspect-[4/3] rounded-lg border border-border"
+            />
+          </div>
         </div>
 
         <div>
@@ -69,6 +84,36 @@ export function AboutPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div>
+          <SectionHeading
+            title="Partnerships and MoU"
+            description="Documented collaboration moments from the conference series."
+          />
+          <div className="mt-6">
+            <ImageGallery images={PARTNERSHIP_IMAGES} />
+          </div>
+        </div>
+
+        <div>
+          <SectionHeading
+            title="Committee"
+            description="Group photographs of organizing and scientific committee members."
+          />
+          <div className="mt-6">
+            <ImageGallery images={COMMITTEE_GROUP_IMAGES} />
+          </div>
+        </div>
+
+        <div>
+          <SectionHeading
+            title="Certificates"
+            description="Sample certificates from earlier editions."
+          />
+          <div className="mt-6">
+            <ImageGallery images={CERTIFICATE_IMAGES} />
+          </div>
         </div>
 
         <div>

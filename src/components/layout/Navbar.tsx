@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { ArrowRight, ChevronDown, ChevronRight, Menu } from "lucide-react";
 import { currentConference, navigationMenu, primaryCta } from "@/data/constants";
+import { SITE_IMAGES } from "@/data/images";
 import type { NavNode } from "@/data/types";
 import { cn, displayValue } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -139,21 +140,28 @@ function MobileBranch({
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const locationLine = [
-    displayValue(currentConference.edition, "Edition TBA"),
-    displayValue(currentConference.city, "City TBA"),
-    displayValue(currentConference.country, "Country TBA"),
+    `${displayValue(currentConference.edition, "4th")} Edition`,
+    displayValue(currentConference.city, "PUNE").toUpperCase(),
+    displayValue(currentConference.country, "INDIA").toUpperCase(),
   ].join(" · ");
 
   return (
     <header className="sticky top-0 z-40 bg-deep-forest text-warm-white">
       <div className="mx-auto flex max-w-[1380px] items-center justify-between gap-6 px-4 py-3 lg:px-8">
-        <Link to="/" className="min-w-0 shrink-0">
-          <p className="font-heading text-2xl leading-none tracking-wide text-warm-white uppercase">
-            {currentConference.shortName}
-          </p>
-          <p className="mt-1 truncate text-[11px] tracking-[0.18em] text-gold-soft uppercase">
-            {locationLine}
-          </p>
+        <Link to="/" className="flex min-w-0 shrink-0 items-center gap-3">
+          <img
+            src={SITE_IMAGES.LOGO_AISC.src}
+            alt={SITE_IMAGES.LOGO_AISC.alt}
+            className="size-11 rounded-full border border-white/20 bg-warm-white object-contain p-0.5"
+          />
+          <span className="min-w-0">
+            <p className="font-heading text-2xl leading-none tracking-wide text-warm-white uppercase">
+              {currentConference.shortName}
+            </p>
+            <p className="mt-1 truncate text-[11px] tracking-[0.18em] text-gold-soft uppercase">
+              {locationLine}
+            </p>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
@@ -178,7 +186,7 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button variant="gold" className="hidden rounded-full px-5 uppercase sm:inline-flex" asChild>
+          <Button variant="gold" className="hidden rounded-[10px] px-5 text-xs font-bold tracking-[0.14em] uppercase sm:inline-flex" asChild>
             <Link to={primaryCta.href}>
               {primaryCta.label}
               <ArrowRight className="size-4" />
@@ -203,7 +211,7 @@ export function Navbar() {
                   <MobileBranch key={item.label} item={item} onNavigate={() => setOpen(false)} />
                 ))}
               </nav>
-              <Button variant="gold" className="mt-8 w-full rounded-full uppercase" asChild>
+              <Button variant="gold" className="mt-8 w-full rounded-[10px] text-xs font-bold tracking-[0.14em] uppercase" asChild>
                 <Link to={primaryCta.href} onClick={() => setOpen(false)}>
                   {primaryCta.label}
                   <ArrowRight className="size-4" />

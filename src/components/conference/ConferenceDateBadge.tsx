@@ -1,24 +1,21 @@
-import { CalendarDays, MapPin } from "lucide-react";
 import { currentConference } from "@/data/constants";
 import { displayValue } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 
+/** Compact date · location line for banners outside the PhytoTMed-style hero. */
 export function ConferenceDateBadge() {
-  const location = [currentConference.venue, currentConference.city, currentConference.country]
-    .map((part) => displayValue(part, "TBA"))
-    .join(", ");
+  const dateLine = [
+    displayValue(currentConference.dates, "JANUARY 28-30, 2027"),
+    [displayValue(currentConference.city, "PUNE"), displayValue(currentConference.country, "INDIA")]
+      .filter(Boolean)
+      .join(", "),
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
-    <div className="flex flex-wrap items-center gap-3">
-      <Badge variant="gold">{displayValue(currentConference.edition, "Edition TBA")}</Badge>
-      <span className="inline-flex items-center gap-2 text-sm text-cream/90">
-        <CalendarDays className="size-4" />
-        {displayValue(currentConference.dates)}
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-cream/90">
-        <MapPin className="size-4" />
-        {location}
-      </span>
-    </div>
+    <p className="flex items-center gap-2.5 text-[11px] font-semibold tracking-[0.22em] text-warm-white/90 uppercase sm:text-xs">
+      <span className="size-1.5 shrink-0 rounded-full bg-warm-white" aria-hidden />
+      {dateLine}
+    </p>
   );
 }

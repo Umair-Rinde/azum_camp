@@ -15,6 +15,7 @@ import type {
   Speaker,
   Theme,
 } from "./types";
+import { SITE_IMAGES } from "./images";
 
 /** Single reusable image until organizers supply edition-specific assets. */
 export const PLACEHOLDER_IMAGE = "/conference-assets/placeholder.svg";
@@ -82,12 +83,12 @@ export const navigationMenu: NavNode[] = [
 export const announcementLinks = [
   {
     label: "Abstract Submission Closes on:",
-    date: "[Date TBA]",
+    date: "NOVEMBER 30, 2026",
     href: "/abstracts",
   },
   {
     label: "Early Bird Registration Closes on:",
-    date: "[Date TBA]",
+    date: "OCTOBER 31, 2026",
     href: "/register",
   },
 ];
@@ -101,14 +102,15 @@ export const secondaryCta = { label: "Submit Abstract", href: "/abstracts" };
  */
 export const currentConference: CurrentConference = {
   shortName: "HSDS",
-  title: "[Current Conference Title]",
-  edition: "[Edition]",
+  title: "International Conference on Herbal & Synthetic Drug Studies",
+  edition: "4th",
   dates: "[Current Conference Dates]",
   startDateISO: "",
   venue: "[Venue]",
-  city: "[City]",
-  country: "[Country]",
-  description: "[Current Conference Description]",
+  city: "Pune",
+  country: "India",
+  description:
+    "Connecting researchers in herbal medicines, synthetic chemistry, and translational pharmacology for scientific exchange, collaboration, and the advancement of drug studies.",
   announcement: "Details for the next edition will be announced soon.",
   themes: [],
   importantDates: [],
@@ -120,24 +122,19 @@ export const currentImportantDates: ImportantDate[] = [];
 
 export const highlights: Highlight[] = [
   {
-    title: "Interdisciplinary science",
+    title: "Global networking",
     description:
-      "A meeting point for researchers working across herbal medicines, synthetic chemistry, and translational pharmacology.",
+      "Connect with researchers, clinicians, and academicians across herbal medicine, synthetic chemistry, and translational pharmacology.",
   },
   {
-    title: "Oral and poster exchange",
+    title: "Cutting-edge research",
     description:
-      "Previous editions combined invited talks with contributed oral and poster sessions. The next format will be published with the program.",
+      "Gain insight into advances in preparation, characterization, and analytical methods for herbal and synthetic drugs.",
   },
   {
-    title: "Academic collaboration",
+    title: "Multidisciplinary approach",
     description:
-      "The series has historically brought scientists, clinicians, and academicians together to share methods and open new collaborations.",
-  },
-  {
-    title: "Documented legacy",
-    description:
-      "National and international editions in 2010, 2014, and 2016 form the documented archive of this conference series.",
+      "Explore oral and poster exchange across pharmacognosy, formulation science, Unani medicine, and molecular targets.",
   },
 ];
 
@@ -190,6 +187,37 @@ export const historicalTopics = [
   "Taxonomic evaluation of plant drugs and standardization",
 ];
 
+/** Homepage tracks patterned after PhytoTMed; sessions drawn from historical HSDS topics. */
+export const researchTracksHome = [
+  {
+    title: "Foundations in herbal and synthetic drug studies",
+    focus: "Theoretical frameworks, regional systems, and interdisciplinary foundations of the series.",
+    sessions: [
+      "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
+      "Insights into complementary Unani Medicines",
+      "Integrated medicinal approach and health care",
+    ],
+  },
+  {
+    title: "Scientific validation and pharmacology",
+    focus: "Characterization, targets, and translational approaches recorded on earlier editions.",
+    sessions: [
+      "Metal based drugs (Bioinorganic Drugs)",
+      "Molecular targets and translational therapy",
+      "Advanced techniques in drug preparations and characterization",
+    ],
+  },
+  {
+    title: "Formulation, pharmacy, and standardization",
+    focus: "Pharmaceutical sciences, formulation methods, and plant-drug evaluation.",
+    sessions: [
+      "New trends in pharmaceutical sciences",
+      "New methods of drug formulations and applications",
+      "Taxonomic evaluation of plant drugs and standardization",
+    ],
+  },
+];
+
 export const whoShouldAttend = [
   "Teachers, researchers and academicians",
   "Botanists and chemists",
@@ -222,7 +250,7 @@ export const organizers: Organizer[] = [
   {
     name: "M.C.E. Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune",
     role: "Host college (2010, 2014, 2016)",
-    logo: PLACEHOLDER_IMAGE,
+    logo: SITE_IMAGES.LOGO_AISC.src,
   },
   {
     name: "Interdisciplinary Science and Technology Research Academy (ISTRA, Pune)",
@@ -249,13 +277,26 @@ export const organizers: Organizer[] = [
     role: "Historical sponsor",
     logo: PLACEHOLDER_IMAGE,
   },
+  {
+    name: "Savitribai Phule Pune University",
+    role: "Regional university mark",
+    logo: SITE_IMAGES.LOGO_PUNE_UNIVERSITY.src,
+  },
 ];
 
 export const speakers: Speaker[] = [];
 
 export const featuredSpeakerSlots = 4;
 
-export const committee: CommitteeMember[] = [];
+export const committee: CommitteeMember[] = [
+  {
+    name: "Dr. P. A. Inamdar",
+    role: "Patron",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.DR_PA_INAMDAR.src,
+    bio: "Named from the supplied conference photograph. Full designation to be confirmed by organizers.",
+  },
+];
 
 export const programDays: ProgramDay[] = [];
 
@@ -273,34 +314,37 @@ export const abstractGuidelines = {
 
 export const registrationPlans: RegistrationPlan[] = [
   {
-    category: "Delegates / Faculty / Researchers",
+    category: "Academic",
     price: "Fee to be announced",
     currency: "",
-    includes: [],
+    includes: [
+      "Access to scientific sessions, once published",
+      "Conference materials, as confirmed",
+      "Certificate of participation, subject to confirmation",
+      "Refreshments during scheduled breaks, if included",
+    ],
   },
   {
-    category: "Students",
+    category: "Industry & Practitioners",
     price: "Fee to be announced",
     currency: "",
-    includes: [],
+    includes: [
+      "Access to scientific sessions, once published",
+      "Conference materials, as confirmed",
+      "Certificate of participation, subject to confirmation",
+      "Refreshments during scheduled breaks, if included",
+    ],
   },
   {
-    category: "Industry Professionals",
+    category: "Student",
     price: "Fee to be announced",
     currency: "",
-    includes: [],
-  },
-  {
-    category: "International Participants",
-    price: "Fee to be announced",
-    currency: "",
-    includes: [],
-  },
-  {
-    category: "Accompanying Person",
-    price: "Fee to be announced",
-    currency: "",
-    includes: [],
+    includes: [
+      "Access to scientific sessions, once published",
+      "Conference materials, as confirmed",
+      "Certificate of participation, subject to confirmation",
+      "Refreshments during scheduled breaks, if included",
+    ],
   },
 ];
 

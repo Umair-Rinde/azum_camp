@@ -1,11 +1,12 @@
 import { aboutPune, accommodationNote, currentConference, historicalVenue, howToReach } from "@/data/constants";
+import { CAMPUS_GALLERY, LAB_GALLERY, PUNE_LANDMARKS } from "@/data/images";
 import { displayValue } from "@/lib/utils";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { VenueMap } from "@/components/conference/VenueMap";
 import { ThemeCard } from "@/components/conference/ThemeCard";
-import { PlaceholderImage } from "@/components/media/PlaceholderImage";
+import { ImageGallery } from "@/components/conference/ImageGallery";
 
 export function VenuePage() {
   return (
@@ -33,16 +34,25 @@ export function VenuePage() {
         </div>
 
         <div>
-          <SectionHeading title="Campus" />
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            <PlaceholderImage
-              src="/conference-assets/venue/campus.jpg"
-              alt="Campus photograph placeholder"
-              className="aspect-[16/10] rounded-lg border border-border"
-            />
-            <p className="text-sm leading-7 text-muted">
-              Earlier editions used the Assembly Hall (2010) and Dr. A. R. Shaikh Assembly Hall (2014, 2016) at Azam Campus, Camp, Pune – 411001. Photographs and access notes for the next edition should replace this placeholder only after confirmation.
-            </p>
+          <SectionHeading
+            title="Campus"
+            description="Photographs of Azam Campus buildings and pathways from earlier editions."
+          />
+          <div className="mt-6">
+            <ImageGallery images={CAMPUS_GALLERY} />
+          </div>
+          <p className="mt-4 text-sm leading-7 text-muted">
+            Earlier editions used the Assembly Hall (2010) and Dr. A. R. Shaikh Assembly Hall (2014, 2016) at Azam Campus, Camp, Pune – 411001. Access notes for the next edition should be updated only after confirmation.
+          </p>
+        </div>
+
+        <div>
+          <SectionHeading
+            title="Laboratories and facilities"
+            description="Campus laboratory spaces associated with the host institutions."
+          />
+          <div className="mt-6">
+            <ImageGallery images={LAB_GALLERY} />
           </div>
         </div>
 
@@ -61,8 +71,14 @@ export function VenuePage() {
         </div>
 
         <div>
-          <SectionHeading title="About Pune" />
+          <SectionHeading
+            title="About Pune"
+            description="Landmarks often noted in earlier HSDS sightseeing notes."
+          />
           <p className="mt-4 max-w-3xl leading-7 text-muted">{aboutPune}</p>
+          <div className="mt-8">
+            <ImageGallery images={PUNE_LANDMARKS} />
+          </div>
         </div>
       </section>
     </>

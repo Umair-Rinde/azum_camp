@@ -3,6 +3,7 @@
 @theme inline {
   --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-cta: "Montserrat", "Inter", ui-sans-serif, system-ui, sans-serif;
 
   --color-deep-forest: #14532d;
   --color-forest: #166534;
@@ -12,7 +13,7 @@
   --color-warm-white: #fcfcf8;
   --color-charcoal: #17211b;
   --color-muted: #647067;
-  --color-gold: #b08d3c;
+  --color-gold: #c59a5e;
   --color-gold-soft: #d4bc7a;
 
   --color-background: var(--color-warm-white);
