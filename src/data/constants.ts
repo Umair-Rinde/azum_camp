@@ -104,9 +104,9 @@ export const currentConference: CurrentConference = {
   shortName: "HSDS",
   title: "International Conference on Herbal & Synthetic Drug Studies",
   edition: "4th",
-  dates: "[Current Conference Dates]",
+  dates: "JANUARY 28-30, 2027",
   startDateISO: "",
-  venue: "[Venue]",
+  venue: "Assembly Hall, Azam Campus",
   city: "Pune",
   country: "India",
   description:
@@ -315,8 +315,8 @@ export const abstractGuidelines = {
 export const registrationPlans: RegistrationPlan[] = [
   {
     category: "Academic",
-    price: "Fee to be announced",
-    currency: "",
+    price: "1800",
+    currency: "INR",
     includes: [
       "Access to scientific sessions, once published",
       "Conference materials, as confirmed",
@@ -326,8 +326,8 @@ export const registrationPlans: RegistrationPlan[] = [
   },
   {
     category: "Industry & Practitioners",
-    price: "Fee to be announced",
-    currency: "",
+    price: "2000",
+    currency: "INR",
     includes: [
       "Access to scientific sessions, once published",
       "Conference materials, as confirmed",
@@ -337,8 +337,8 @@ export const registrationPlans: RegistrationPlan[] = [
   },
   {
     category: "Student",
-    price: "Fee to be announced",
-    currency: "",
+    price: "1500",
+    currency: "INR",
     includes: [
       "Access to scientific sessions, once published",
       "Conference materials, as confirmed",
@@ -390,7 +390,7 @@ export const faqs: FaqItem[] = [
 export const historicalVenue = {
   name: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
   address: "Camp, Pune – 411001, Maharashtra, India",
-  note: "HSDS-2010 met in the Assembly Hall, Azam Campus. HSDS-2014 and HSDS-2016 named Dr. A. R. Shaikh Assembly Hall at the same campus. Confirm the venue for the current edition before treating it as the meeting site.",
+  note: "Assembly Hall, Azam Campus, Pune, welcomes delegates from around the world to an international conference fostering knowledge exchange, academic dialogue, and global collaboration. With its spacious setting, central campus location, and accessibility, the venue provides an ideal environment for researchers, academicians, professionals, and distinguished guests to connect, share ideas, and build meaningful collaborations. We warmly invite you to join us at Assembly Hall for this international gathering of minds.",
 };
 
 export const historicalPosterNote =

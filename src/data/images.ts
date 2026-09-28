@@ -1,7 +1,7 @@
 import type { ImageAsset } from "./types";
 
 /**
- * Stable image IDs (img-01 … img-34). Swap a file or change `src` here —
+ * Stable image IDs (img-01 … img-37). Swap a file or change `src` here —
  * components should only import from this module.
  */
 export const SITE_IMAGES = {
@@ -39,6 +39,21 @@ export const SITE_IMAGES = {
     id: "img-07",
     src: "/conference-assets/venue/campus/img-07-building1.jpg",
     alt: "Azam Campus building",
+  },
+  ASSEMBLY_HALL: {
+    id: "img-37",
+    src: "/conference-assets/venue/campus/img-37-assembly-hall.jpg",
+    alt: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
+  },
+  ASSEMBLY_HALL_2: {
+    id: "img-35",
+    src: "/conference-assets/venue/campus/img-35-assembly-hall.webp",
+    alt: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
+  },
+  ASSEMBLY_HALL_3: {
+    id: "img-36",
+    src: "/conference-assets/venue/campus/img-36-assembly-hall.jpg",
+    alt: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
   },
   BUILDING_3: {
     id: "img-08",

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { contact, currentConference, footerLinks, siteMeta } from "@/data/constants";
+import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { currentConference, footerLinks, primaryCta, secondaryCta, siteMeta } from "@/data/constants";
 import { SITE_IMAGES } from "@/data/images";
-import { displayValue } from "@/lib/utils";
 
 export function Footer() {
   return (
     <footer className="mt-0 border-t border-border bg-deep-forest text-warm-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
-        <div>
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-14 md:flex-row md:items-start md:justify-between md:gap-12">
+        <div className="md:max-w-xs md:shrink-0 lg:max-w-sm">
           <div className="flex items-center gap-3">
             <img
               src={SITE_IMAGES.LOGO_AISC.src}
@@ -20,10 +21,10 @@ export function Footer() {
           <p className="mt-1 text-sm leading-6 text-warm-white/80">
             M.C.E. Society&apos;s Abeda Inamdar Senior College and partner institutions named on earlier editions.
           </p>
-          <p className="mt-4 max-w-sm text-sm leading-6 text-warm-white/65">{siteMeta.description}</p>
+          <p className="mt-4 text-sm leading-6 text-warm-white/65">{siteMeta.description}</p>
         </div>
 
-        <div>
+        <div className="md:w-44 md:shrink-0">
           <p className="text-xs tracking-[0.2em] text-gold-soft uppercase">Quick Links</p>
           <ul className="mt-4 space-y-2 text-sm">
             {footerLinks.map((item) => (
@@ -36,21 +37,29 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
-          <p className="text-xs tracking-[0.2em] text-gold-soft uppercase">Stay Connected</p>
-          <ul className="mt-4 space-y-2 text-sm text-warm-white/80">
-            <li>{displayValue(contact.secretariat)}</li>
-            <li>
-              <a className="hover:text-gold-soft" href={`mailto:${displayValue(contact.email, "conference@email")}`}>
-                {displayValue(contact.email)}
-              </a>
-            </li>
-            <li>{displayValue(contact.phone)}</li>
-            <li>{displayValue(contact.address)}</li>
-          </ul>
-          <p className="mt-6 text-xs leading-5 text-warm-white/55">
-            Historical editions: 2010, 2014, 2016. Current details remain placeholders until confirmed.
+        <div className="md:max-w-[15rem] md:shrink-0">
+          <p className="text-xs tracking-[0.2em] text-gold-soft uppercase">Take Action</p>
+          <p className="mt-4 text-sm leading-6 text-warm-white/70">
+            Secure your place or share your research for the upcoming edition.
           </p>
+          <div className="mt-5 flex flex-col items-start gap-3">
+            <Button
+              variant="gold"
+              className="rounded-[10px] px-5 text-[13px] font-bold tracking-[0.14em] uppercase [&_svg]:size-2.5"
+              asChild
+            >
+              <Link to={primaryCta.href}>
+                {primaryCta.label}
+                <ArrowUpRight className="size-2.5" strokeWidth={2.5} />
+              </Link>
+            </Button>
+            <Link
+              to={secondaryCta.href}
+              className="text-sm text-warm-white/75 underline-offset-4 transition-colors hover:text-gold-soft hover:underline"
+            >
+              {secondaryCta.label}
+            </Link>
+          </div>
         </div>
       </div>
 

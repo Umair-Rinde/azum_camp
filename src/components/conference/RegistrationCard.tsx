@@ -9,9 +9,13 @@ export function RegistrationCard({ category, price, currency, includes }: Regist
     <Card className="flex h-full flex-col border-border shadow-sm transition hover:border-gold/40 hover:shadow-md">
       <CardHeader className="space-y-3 pb-2 text-center">
         <CardTitle className="text-xl">{category}</CardTitle>
-        <p className="font-heading text-3xl text-deep-forest">
+        <p className="font-cta text-3xl font-semibold tracking-tight text-gold">
           {price}
-          {currency ? <span className="ml-1 text-base text-muted">{currency}</span> : null}
+          {currency ? (
+            <span className="ml-1.5 align-middle text-sm font-medium tracking-[0.18em] text-gold-soft uppercase">
+              {currency}
+            </span>
+          ) : null}
         </p>
       </CardHeader>
       <CardContent className="flex flex-1 flex-col space-y-6">

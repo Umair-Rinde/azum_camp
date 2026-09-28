@@ -265,8 +265,8 @@ export function HomePage() {
           </motion.div>
           <motion.div variants={fadeUp}>
             <PlaceholderImage
-              src={SITE_IMAGES.BUILDING_1.src}
-              alt={SITE_IMAGES.BUILDING_1.alt}
+              src={SITE_IMAGES.ASSEMBLY_HALL.src}
+              alt={SITE_IMAGES.ASSEMBLY_HALL.alt}
               className="aspect-[16/11] rounded-xl border border-border"
               imgClassName="object-cover"
             />

@@ -16,8 +16,10 @@ export function FeeTable() {
           {registrationPlans.map((plan) => (
             <TableRow key={plan.category}>
               <TableCell className="font-medium">{plan.category}</TableCell>
-              <TableCell>{plan.price}</TableCell>
-              <TableCell>{plan.currency || "—"}</TableCell>
+              <TableCell className="font-cta font-semibold text-gold">{plan.price}</TableCell>
+              <TableCell className="font-cta text-sm font-medium tracking-[0.14em] text-gold-soft uppercase">
+                {plan.currency || "—"}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
