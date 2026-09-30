@@ -1,7 +1,7 @@
 import type { ImageAsset } from "./types";
 
 /**
- * Stable image IDs (img-01 … img-37). Swap a file or change `src` here —
+ * Stable image IDs (img-01 … img-38). Swap a file or change `src` here —
  * components should only import from this module.
  */
 export const SITE_IMAGES = {
@@ -14,6 +14,11 @@ export const SITE_IMAGES = {
     id: "img-02",
     src: "/conference-assets/hero/img-02-main2.png",
     alt: "Conference secondary visual",
+  },
+  HERO_MAIN_3: {
+    id: "img-38",
+    src: "/conference-assets/hero/img-38-main3.jpg",
+    alt: "Azam Campus sports field and buildings",
   },
   COVER_1: {
     id: "img-03",
@@ -213,6 +218,7 @@ export const CAMPUS_GALLERY: ImageAsset[] = [
   toAsset(SITE_IMAGES.BUILDING_6, "Campus building"),
   toAsset(SITE_IMAGES.BUILDING_12, "Campus building"),
   toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
+  toAsset(SITE_IMAGES.HERO_MAIN_3, "Campus sports field"),
 ];
 
 export const LAB_GALLERY: ImageAsset[] = [

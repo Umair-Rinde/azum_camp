@@ -29,7 +29,7 @@ export function SpeakersPage() {
       <PageBanner
         eyebrow="People"
         title="Speakers and scientific committee"
-        description="Only confirmed names should be added to the constants file. Until then, these sections remain placeholders."
+        // description="Only confirmed names should be added to the constants file. Until then, these sections remain placeholders."
       />
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
         <SpeakerGroup title="Plenary Speakers" people={speakers.filter((s) => s.role === "plenary")} />

@@ -75,7 +75,7 @@ export function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
           <motion.h2
             variants={fadeUp}
-            className="text-2xl leading-snug text-deep-forest md:text-3xl"
+            className="font-sans text-2xl leading-snug text-deep-forest md:text-3xl"
           >
             {displayValue(currentConference.edition, "4th")}{" "}
             {displayValue(
@@ -83,11 +83,11 @@ export function HomePage() {
               "International Conference on Herbal & Synthetic Drug Studies",
             )}{" "}
             will take place from{" "}
-            <strong className="font-heading font-normal text-deep-forest">
+            <strong className="font-sans font-normal text-deep-forest">
               {displayValue(currentConference.dates, "dates to be announced")}
             </strong>
             , at the{" "}
-            <strong className="font-heading font-normal text-deep-forest">
+            <strong className="font-sans font-normal text-deep-forest">
               {displayValue(currentConference.city, "Pune")},{" "}
               {displayValue(currentConference.country, "India")}
             </strong>

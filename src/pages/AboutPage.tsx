@@ -48,7 +48,7 @@ export function AboutPage() {
         <div>
           <SectionHeading
             title="Objectives"
-            description="The following objectives are adapted from earlier brochures. They describe the historical purpose of the series, not a newly issued mandate."
+            // description="The following objectives are adapted from earlier brochures. They describe the historical purpose of the series, not a newly issued mandate."
           />
           <ol className="mt-6 space-y-3">
             {historicalObjectives.map((item, index) => (
