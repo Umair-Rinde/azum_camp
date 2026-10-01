@@ -152,7 +152,7 @@ export const SITE_IMAGES = {
   },
   LOGO_AISC: {
     id: "img-26",
-    src: "/conference-assets/logos/img-26-logo-aisc.jpg",
+    src: "/logo2.png",
     alt: "Abeda Inamdar Senior College logo",
   },
   LOGO_PUNE_UNIVERSITY: {
@@ -164,6 +164,51 @@ export const SITE_IMAGES = {
     id: "img-28",
     src: "/conference-assets/people/img-28-dr-pa-inamdar.jpg",
     alt: "Dr. P. A. Inamdar",
+  },
+  SPEAKER_DASTAGER: {
+    id: "spk-01",
+    src: "/Speaker/dastager.svg",
+    alt: "Dastager",
+  },
+  SPEAKER_ISHTIAQ_JEELANI: {
+    id: "spk-02",
+    src: "/Speaker/IJ.jpeg",
+    alt: "Ishtiaq Jeelani",
+  },
+  SPEAKER_LUBNA: {
+    id: "spk-03",
+    src: "/Speaker/lubna.svg",
+    alt: "Lubna",
+  },
+  SPEAKER_MANAS: {
+    id: "spk-04",
+    src: "/Speaker/Manas.jpeg",
+    alt: "Manas",
+  },
+  SPEAKER_NIYAZ: {
+    id: "spk-05",
+    src: "/Speaker/niyaz1.svg",
+    alt: "Niyaz",
+  },
+  SPEAKER_PRASAD: {
+    id: "spk-06",
+    src: "/Speaker/prasad.svg",
+    alt: "Prasad",
+  },
+  SPEAKER_SAGAR: {
+    id: "spk-07",
+    src: "/Speaker/sagar.svg",
+    alt: "Sagar",
+  },
+  SPEAKER_SAIDUR: {
+    id: "spk-08",
+    src: "/Speaker/saidur1.svg",
+    alt: "Saidur",
+  },
+  SPEAKER_SUHEL: {
+    id: "spk-09",
+    src: "/Speaker/suhel1.svg",
+    alt: "Suhel",
   },
   MEMBERS: {
     id: "img-29",

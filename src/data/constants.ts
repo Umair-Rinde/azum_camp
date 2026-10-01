@@ -284,7 +284,93 @@ export const organizers: Organizer[] = [
   },
 ];
 
-export const speakers: Speaker[] = [];
+/**
+ * Speaker photos from /public/Speaker. Names are provisional from filenames —
+ * update designation, institution, country, bio, and roles when confirmed.
+ */
+export const speakers: Speaker[] = [
+  {
+    name: "Ishtiaq Jeelani",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_ISHTIAQ_JEELANI.src,
+    shortBio: "",
+    role: "plenary",
+  },
+  {
+    name: "Dastager",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_DASTAGER.src,
+    shortBio: "",
+    role: "plenary",
+  },
+  {
+    name: "Manas",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_MANAS.src,
+    shortBio: "",
+    role: "keynote",
+  },
+  {
+    name: "Lubna",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_LUBNA.src,
+    shortBio: "",
+    role: "keynote",
+  },
+  {
+    name: "Niyaz",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_NIYAZ.src,
+    shortBio: "",
+    role: "invited",
+  },
+  {
+    name: "Prasad",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_PRASAD.src,
+    shortBio: "",
+    role: "invited",
+  },
+  {
+    name: "Sagar",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_SAGAR.src,
+    shortBio: "",
+    role: "invited",
+  },
+  {
+    name: "Saidur",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_SAIDUR.src,
+    shortBio: "",
+    role: "invited",
+  },
+  {
+    name: "Suhel",
+    designation: "Designation to be confirmed",
+    institution: "Institution to be confirmed",
+    country: "Country TBA",
+    photo: SITE_IMAGES.SPEAKER_SUHEL.src,
+    shortBio: "",
+    role: "invited",
+  },
+];
 
 export const featuredSpeakerSlots = 4;
 
