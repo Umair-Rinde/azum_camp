@@ -172,13 +172,13 @@ export const SITE_IMAGES = {
   },
   SPEAKER_ISHTIAQ_JEELANI: {
     id: "spk-02",
-    src: "/Speaker/IJ.jpeg",
+    src: "/Speaker/IJ2.svg",
     alt: "Ishtiaq Jeelani",
   },
   SPEAKER_LUBNA: {
     id: "spk-03",
-    src: "/Speaker/lubna.svg",
-    alt: "Lubna",
+    src: "/Speaker/Lubna.jpeg",
+    alt: "Lubna Tahtamouni",
   },
   SPEAKER_MANAS: {
     id: "spk-04",
