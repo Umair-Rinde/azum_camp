@@ -67,9 +67,9 @@ export function HeroSection() {
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.p
             variants={item}
-            className="flex items-center gap-2.5 text-[11px] font-semibold tracking-[0.22em] text-warm-white/90 uppercase sm:text-xs"
+            className="flex items-center gap-2.5 text-sm font-semibold tracking-[0.16em] text-warm-white/90 uppercase sm:text-base lg:text-lg"
           >
-            <span className="size-1.5 shrink-0 rounded-full bg-warm-white" aria-hidden />
+            <span className="size-2 shrink-0 rounded-full bg-warm-white" aria-hidden />
             {dateLine}
           </motion.p>
 
@@ -85,11 +85,14 @@ export function HeroSection() {
               INTERNATIONAL CONFERENCE ON
             </span>
             <span className="mt-1 block text-[clamp(2rem,4.5vw,3.375rem)] leading-[1.05]">
-              <span className="block">
-                HERBAL <span className="text-gold">&amp;</span>
+              <span className="block text-[0.85em] font-bold">
+                HERBAL & SYNTHETIC
+                {/* <span className="text-gold">&amp;</span>  */}
               </span>
-              <span className="block">SYNTHETIC DRUG</span>
-              <span className="block">STUDIES</span>
+              <span className="block text-[0.85em] font-bold"> DRUG STUDIES  </span>
+                <span className="align-baseline text-[0.85em] font-bold">
+                  (HSDS-2027)
+              </span>
             </span>
           </motion.h1>
 

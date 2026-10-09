@@ -101,7 +101,7 @@ export const secondaryCta = { label: "Submit Abstract", href: "/abstracts" };
  * Do not invent a year, city, venue, fee, or speaker list.
  */
 export const currentConference: CurrentConference = {
-  shortName: "HSDS",
+  shortName: "HSDS-2027",
   title: "International Conference on Herbal & Synthetic Drug Studies",
   edition: "4th",
   dates: "JANUARY 28-30, 2027",
@@ -122,17 +122,17 @@ export const currentImportantDates: ImportantDate[] = [];
 
 export const highlights: Highlight[] = [
   {
-    title: "Global networking",
+    title: "Global Networking",
     description:
       "Connect with researchers, clinicians, and academicians across herbal medicine, synthetic chemistry, and translational pharmacology.",
   },
   {
-    title: "Cutting-edge research",
+    title: "Cutting-edge Research",
     description:
       "Gain insight into advances in preparation, characterization, and analytical methods for herbal and synthetic drugs.",
   },
   {
-    title: "Multidisciplinary approach",
+    title: "Multidisciplinary Approach",
     description:
       "Explore oral and poster exchange across pharmacognosy, formulation science, Unani medicine, and molecular targets.",
   },
@@ -290,29 +290,29 @@ export const organizers: Organizer[] = [
  */
 export const speakers: Speaker[] = [
   {
-    name: "Dr. Ishtiaq Jeelani",
-    designation: "Postdoctoral Researcher at the University of California",
-    institution: "San Diego, California, United States",
+    name: "Prof. Niyaz Ahmed",
+    designation: "Senior Professor",
+    institution: "Dept. of  Biotechnology & Bioinformatics (DoBB), University of Hyderabad, India",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_ISHTIAQ_JEELANI.src,
+    photo: SITE_IMAGES.SPEAKER_NIYAZ.src,
     shortBio: "",
     role: "plenary",
   },
   {
-    name: "Dr. Syed G. Dastager",
-    designation: "Microbiologist and Scientist",
-    institution: "CSIR–National Chemical Laboratory (NCL), Pune, Maharashtra, India",
+    name: "Dr. Sagar Arya",
+    designation: "Ph.D. MSCA Fellow",
+    institution: "Czech Advanced Technology & Research Institute, Palacký University, Czech Republic",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_DASTAGER.src,
+    photo: SITE_IMAGES.SPEAKER_SAGAR.src,
     shortBio: "",
     role: "plenary",
   },
   {
-    name: "Dr. Manas K. Santra",
-    designation: "Scientist",
-    institution: "BRIC-National Centre for Cell Science Pune, Maharashtra, India",
+    name: "Dr. Prasad Dandawate",
+    designation: "Assistant Professor",
+    institution: "Department of Cancer Biology  University of Kansas Medical Center, Kansas City, USA",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_MANAS.src,
+    photo: SITE_IMAGES.SPEAKER_PRASAD.src,
     shortBio: "",
     role: "keynote",
   },
@@ -326,29 +326,29 @@ export const speakers: Speaker[] = [
     role: "keynote",
   },
   {
-    name: "Prof. Niyaz Ahmed",
-    designation: "Senior Professor",
-    institution: "Dept. of  Biotechnology & Bioinformatics (DoBB), University of Hyderabad, India",
+    name: "Dr. Ishtiaq Jeelani",
+    designation: "Postdoctoral Researcher at the University of California",
+    institution: "San Diego, California, United States",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_NIYAZ.src,
+    photo: SITE_IMAGES.SPEAKER_ISHTIAQ_JEELANI.src,
     shortBio: "",
     role: "invited",
   },
   {
-    name: "Dr. Prasad Dandawate",
-    designation: "Assistant Professor",
-    institution: "Department of Cancer Biology  University of Kansas Medical Center, Kansas City, USA",
+    name: "Dr. Manas K. Santra",
+    designation: "Scientist",
+    institution: "BRIC-National Centre for Cell Science Pune, Maharashtra, India",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_PRASAD.src,
+    photo: SITE_IMAGES.SPEAKER_MANAS.src,
     shortBio: "",
     role: "invited",
   },
   {
-    name: "Dr. Sagar Arya",
-    designation: "Ph.D. MSCA Fellow",
-    institution: "Czech Advanced Technology and Research Institute (CATRIN), Palacký University, Czech Republic",
+    name: "Dr. Syed G. Dastager",
+    designation: "Microbiologist and Scientist",
+    institution: "CSIR–National Chemical Laboratory (NCL), Pune, Maharashtra, India",
     country: "",
-    photo: SITE_IMAGES.SPEAKER_SAGAR.src,
+    photo: SITE_IMAGES.SPEAKER_DASTAGER.src,
     shortBio: "",
     role: "invited",
   },
@@ -374,12 +374,28 @@ export const speakers: Speaker[] = [
 
 export const featuredSpeakerSlots = 4;
 
+/** Host-society patrons shown on the home page. Roles follow earlier HSDS brochures. */
+export const patrons = [
+  {
+    name: "Dr. P. A. Inamdar",
+    role: "President",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.DR_PA_INAMDAR_PORTRAIT.src,
+  },
+  {
+    name: "Mrs. Abeda Inamdar",
+    role: "Vice President",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.MRS_ABEDA_INAMDAR.src,
+  },
+];
+
 export const committee: CommitteeMember[] = [
   {
     name: "Dr. P. A. Inamdar",
     role: "Patron",
     institution: "M.C.E. Society",
-    photo: SITE_IMAGES.DR_PA_INAMDAR.src,
+    photo: SITE_IMAGES.DR_PA_INAMDAR_PORTRAIT.src,
     bio: "Named from the supplied conference photograph. Full designation to be confirmed by organizers.",
   },
 ];

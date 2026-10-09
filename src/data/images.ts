@@ -40,6 +40,11 @@ export const SITE_IMAGES = {
     src: "/conference-assets/hero/img-06-gemini-generated.png",
     alt: "Conference decorative graphic",
   },
+  CAMPUS_PANORAMA: {
+    id: "img-39",
+    src: "/conference-assets/venue/campus/img-39-campus-panorama.jpg",
+    alt: "Aerial view of Azam Campus, Pune",
+  },
   BUILDING_1: {
     id: "img-07",
     src: "/conference-assets/venue/campus/img-07-building1.jpg",
@@ -165,6 +170,16 @@ export const SITE_IMAGES = {
     src: "/conference-assets/people/img-28-dr-pa-inamdar.jpg",
     alt: "Dr. P. A. Inamdar",
   },
+  MRS_ABEDA_INAMDAR: {
+    id: "img-40",
+    src: "/conference-assets/people/img-40-mrs-abeda-inamdar-face.jpg",
+    alt: "Mrs. Abeda Inamdar",
+  },
+  DR_PA_INAMDAR_PORTRAIT: {
+    id: "img-41",
+    src: "/conference-assets/people/img-41-dr-pa-inamdar-face.jpg",
+    alt: "Dr. P. A. Inamdar",
+  },
   SPEAKER_DASTAGER: {
     id: "spk-01",
     src: "/Speaker/dastager.svg",
@@ -192,12 +207,12 @@ export const SITE_IMAGES = {
   },
   SPEAKER_PRASAD: {
     id: "spk-06",
-    src: "/Speaker/prasad.svg",
-    alt: "Prasad",
+    src: "/Speaker/Prasad.jpeg",
+    alt: "Prasad Dandawate",
   },
   SPEAKER_SAGAR: {
     id: "spk-07",
-    src: "/Speaker/sagar.svg",
+    src: "/Speaker/Sagar.jpeg",
     alt: "Sagar",
   },
   SPEAKER_SAIDUR: {

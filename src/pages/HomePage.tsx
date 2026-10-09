@@ -6,6 +6,7 @@ import {
   highlights,
   historicalVenue,
   pastConferences,
+  patrons,
   primaryCta,
   registrationPlans,
   researchTracksHome,
@@ -114,6 +115,38 @@ export function HomePage() {
       </motion.section>
 
       <motion.section
+        aria-label="Patrons"
+        className="border-y border-border bg-warm-white"
+        initial="hidden"
+        whileInView="show"
+        viewport={viewport}
+        variants={stagger}
+      >
+        <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <motion.div variants={fadeUp}>
+            <SectionHeading align="center" eyebrow="Our Inspiration" title="Patrons" />
+          </motion.div>
+          <motion.ul
+            variants={stagger}
+            className="mt-12 flex flex-wrap items-start justify-center gap-14 sm:gap-24"
+          >
+            {patrons.map((patron) => (
+              <motion.li key={patron.name} variants={fadeUp} className="w-52 text-center">
+                <img
+                  src={patron.photo}
+                  alt={patron.name}
+                  className="mx-auto size-40 rounded-full object-cover object-center shadow-[0_8px_24px_rgba(20,83,45,0.12)] ring-4 ring-gold/35 md:size-48"
+                />
+                <p className="mt-5 font-heading text-xl leading-tight text-deep-forest">{patron.name}</p>
+                <p className="mt-1 text-sm text-gold">{patron.role}</p>
+                <p className="mt-1 text-sm text-muted">{patron.institution}</p>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </div>
+      </motion.section>
+
+      <motion.section
         className="border-y border-border bg-cream/60"
         initial="hidden"
         whileInView="show"
@@ -123,6 +156,22 @@ export function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
           <FeaturePillars items={highlights} />
         </div>
+      </motion.section>
+
+      <motion.section
+        className="w-full bg-cream"
+        initial="hidden"
+        whileInView="show"
+        viewport={viewport}
+        variants={fadeUp}
+        aria-label={SITE_IMAGES.CAMPUS_PANORAMA.alt}
+      >
+        <PlaceholderImage
+          src={SITE_IMAGES.CAMPUS_PANORAMA.src}
+          alt={SITE_IMAGES.CAMPUS_PANORAMA.alt}
+          className="aspect-[2.8/1] w-full bg-cream md:aspect-[3.2/1]"
+          imgClassName="object-cover object-center"
+        />
       </motion.section>
 
       <motion.section

@@ -152,10 +152,10 @@ export function Navbar() {
           <img
             src={SITE_IMAGES.LOGO_AISC.src}
             alt={SITE_IMAGES.LOGO_AISC.alt}
-            className="size-11 rounded-full border border-white/20 bg-warm-white object-contain p-0.5"
+            className="size-11 rounded-full border border-white/20 bg-warm-white object-contain p-0.5 lg:size-16"
           />
           <span className="min-w-0">
-            <p className="font-heading text-2xl leading-none tracking-wide text-warm-white uppercase">
+            <p className="font-sans text-2xl font-medium leading-none tracking-wide text-warm-white uppercase lg:text-2xl">
               {currentConference.shortName}
             </p>
             <p className="mt-1 truncate text-[11px] tracking-[0.18em] text-gold-soft uppercase">
