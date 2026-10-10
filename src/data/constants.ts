@@ -104,9 +104,9 @@ export const currentConference: CurrentConference = {
   shortName: "HSDS-2027",
   title: "International Conference on Herbal & Synthetic Drug Studies",
   edition: "4th",
-  dates: "JANUARY 28-30, 2027",
+  dates: "January 28-30, 2027",
   startDateISO: "",
-  venue: "Assembly Hall, Azam Campus",
+  venue: "Dr. A. R. Shaikh Assembly Hall, Azam Campus, Camp, Pune, India – 411001",
   city: "Pune",
   country: "India",
   description:
@@ -296,7 +296,7 @@ export const speakers: Speaker[] = [
     country: "",
     photo: SITE_IMAGES.SPEAKER_NIYAZ.src,
     shortBio: "",
-    role: "plenary",
+    role: "keynote",
   },
   {
     name: "Dr. Sagar Arya",
@@ -305,7 +305,7 @@ export const speakers: Speaker[] = [
     country: "",
     photo: SITE_IMAGES.SPEAKER_SAGAR.src,
     shortBio: "",
-    role: "plenary",
+    role: "invited",
   },
   {
     name: "Dr. Prasad Dandawate",
@@ -314,7 +314,7 @@ export const speakers: Speaker[] = [
     country: "",
     photo: SITE_IMAGES.SPEAKER_PRASAD.src,
     shortBio: "",
-    role: "keynote",
+    role: "invited",
   },
   {
     name: "Dr. Lubna Tahtamouni",
@@ -323,7 +323,7 @@ export const speakers: Speaker[] = [
     country: "",
     photo: SITE_IMAGES.SPEAKER_LUBNA.src,
     shortBio: "",
-    role: "keynote",
+    role: "invited",
   },
   {
     name: "Dr. Ishtiaq Jeelani",
@@ -378,13 +378,13 @@ export const featuredSpeakerSlots = 4;
 export const patrons = [
   {
     name: "Dr. P. A. Inamdar",
-    role: "President",
+    role: "Past President (1982-2025)",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.DR_PA_INAMDAR_PORTRAIT.src,
   },
   {
     name: "Mrs. Abeda Inamdar",
-    role: "Vice President",
+    role: "President",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.MRS_ABEDA_INAMDAR.src,
   },
@@ -393,10 +393,24 @@ export const patrons = [
 export const committee: CommitteeMember[] = [
   {
     name: "Dr. P. A. Inamdar",
-    role: "Patron",
+    role: " Past President (1982-2025)",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.DR_PA_INAMDAR_PORTRAIT.src,
-    bio: "Named from the supplied conference photograph. Full designation to be confirmed by organizers.",
+    bio: "",
+  },
+  {
+    name: "Mrs. Abeda Inamdar",
+    role: "President",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.MRS_ABEDA_INAMDAR.src,
+    bio: "",
+  },
+  {
+    name: "Prof. Shaila Bootwala",
+    role: "Principal",
+    institution: "Abeda Inamdar Senior College, Pune",
+    photo: SITE_IMAGES.PROF_SHAILA_BOOTWALA.src,
+    bio: "",
   },
 ];
 

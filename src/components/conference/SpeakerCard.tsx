@@ -16,17 +16,21 @@ export function SpeakerCard({
   placeholder = false,
 }: SpeakerCardProps) {
   return (
-    <Card className="overflow-hidden border-border shadow-sm transition hover:shadow-md">
+    <Card className="flex h-full flex-col overflow-hidden border-border shadow-sm transition hover:shadow-md">
       <PlaceholderImage
         src={photo}
         alt={name}
-        className="aspect-[4/5] bg-cream"
+        className="aspect-[3/4] shrink-0 bg-cream"
         imgClassName="object-cover"
       />
-      <CardContent className="space-y-1 pt-5 text-center">
-        <p className="font-heading text-xl leading-tight">{name}</p>
-        <p className="text-sm text-gold">{designation}</p>
-        <p className="text-sm text-muted">
+      <CardContent className="flex min-h-[7.5rem] flex-1 flex-col gap-1 px-3.5 pt-3.5 pb-4 text-center">
+        <p className="min-h-[2.5rem] font-heading text-[0.95rem] leading-snug line-clamp-2">
+          {name}
+        </p>
+        <p className="min-h-[2rem] text-xs leading-snug text-gold line-clamp-2">
+          {designation}
+        </p>
+        <p className="min-h-[2.75rem] text-xs leading-snug text-muted line-clamp-3">
           {institution}
           {country ? (
             <>
@@ -36,7 +40,7 @@ export function SpeakerCard({
           ) : null}
         </p>
         {shortBio && !placeholder ? (
-          <p className="pt-2 text-left text-sm leading-6 text-muted">{shortBio}</p>
+          <p className="pt-1 text-left text-xs leading-5 text-muted line-clamp-3">{shortBio}</p>
         ) : null}
       </CardContent>
     </Card>

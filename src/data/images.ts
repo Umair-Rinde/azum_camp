@@ -180,6 +180,11 @@ export const SITE_IMAGES = {
     src: "/conference-assets/people/img-41-dr-pa-inamdar-face.jpg",
     alt: "Dr. P. A. Inamdar",
   },
+  PROF_SHAILA_BOOTWALA: {
+    id: "img-42",
+    src: "/conference-assets/people/img-42-prof-shaila-bootwala-face.jpg",
+    alt: "Prof. Shaila Bootwala",
+  },
   SPEAKER_DASTAGER: {
     id: "spk-01",
     src: "/Speaker/dastager.svg",

@@ -1,22 +1,39 @@
 import { committee, speakers } from "@/data/constants";
-import { COMMITTEE_GROUP_IMAGES } from "@/data/images";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { SpeakerCard } from "@/components/conference/SpeakerCard";
-import { ImageGallery } from "@/components/conference/ImageGallery";
 import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Speaker } from "@/data/types";
 
-function SpeakerGroup({ title, people }: { title: string; people: Speaker[] }) {
+/** Fixed width keeps every card the same size and proportion. */
+const cardShell = "w-[13.5rem] shrink-0";
+
+function SpeakerGroup({
+  title,
+  people,
+  centered = false,
+}: {
+  title: string;
+  people: Speaker[];
+  centered?: boolean;
+}) {
   return (
     <div>
-      <SectionHeading title={title} />
-      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <SectionHeading title={title} align={centered ? "center" : "left"} />
+      <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-10">
         {people.length > 0
-          ? people.map((speaker) => <SpeakerCard key={speaker.name} {...speaker} />)
-          : Array.from({ length: 3 }).map((_, index) => <SpeakerCard key={index} placeholder />)}
+          ? people.map((speaker) => (
+              <div key={speaker.name} className={cardShell}>
+                <SpeakerCard {...speaker} />
+              </div>
+            ))
+          : Array.from({ length: centered ? 1 : 3 }).map((_, index) => (
+              <div key={index} className={cardShell}>
+                <SpeakerCard placeholder />
+              </div>
+            ))}
       </div>
     </div>
   );
@@ -28,51 +45,73 @@ export function SpeakersPage() {
       <PageMeta title="Speakers | Herbal & Synthetic Drug Studies" />
       <PageBanner
         eyebrow="People"
-        title="Speakers and scientific committee"
+        title="Speakers & Advisory Committee"
         // description="Only confirmed names should be added to the constants file. Until then, these sections remain placeholders."
       />
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
-        <SpeakerGroup title="Plenary Speakers" people={speakers.filter((s) => s.role === "plenary")} />
-        <SpeakerGroup title="Keynote Speakers" people={speakers.filter((s) => s.role === "keynote")} />
-        <SpeakerGroup title="Invited Speakers" people={speakers.filter((s) => s.role === "invited")} />
+        <SpeakerGroup
+          title="Keynote Speaker (Chief Guest)"
+          people={speakers.filter((s) => s.role === "keynote")}
+          centered
+        />
 
-        <div id="committee" className="scroll-mt-28 space-y-10">
-          <div>
-            <SectionHeading title="Scientific Committee" />
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {committee.length > 0
-                ? committee.map((member) => (
-                    <Card key={member.name} className="overflow-hidden">
-                      <PlaceholderImage src={member.photo} alt={member.name} className="aspect-[4/5]" />
-                      <CardContent className="pt-5">
-                        <p className="font-heading text-xl">{member.name}</p>
-                        <p className="text-sm text-gold">{member.role}</p>
-                        <p className="text-sm text-muted">{member.institution}</p>
-                      </CardContent>
-                    </Card>
-                  ))
-                : Array.from({ length: 3 }).map((_, index) => (
-                    <Card key={index} className="overflow-hidden">
-                      <PlaceholderImage alt="Committee member to be announced" className="aspect-[4/5]" />
-                      <CardContent className="pt-5">
-                        <p className="font-heading text-xl">Member to be announced</p>
-                        <p className="text-sm text-gold">Role to be confirmed</p>
-                        <p className="text-sm text-muted">Institution to be confirmed</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-            </div>
-          </div>
-          <div>
-            <SectionHeading
-              title="Committee groups"
-              description="Group photographs of organizing and scientific committee members."
-            />
-            <div className="mt-6">
-              <ImageGallery images={COMMITTEE_GROUP_IMAGES} />
-            </div>
+        <div id="committee" className="scroll-mt-28">
+          <SectionHeading title="Advisory Committee" align="center" />
+          <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-10">
+            {committee.length > 0
+              ? committee.map((member) => (
+                  <Card
+                    key={member.name}
+                    className={`${cardShell} flex flex-col overflow-hidden`}
+                  >
+                    <PlaceholderImage
+                      src={member.photo}
+                      alt={member.name}
+                      className="aspect-[3/4] shrink-0"
+                    />
+                    <CardContent className="flex min-h-[7.5rem] flex-1 flex-col gap-1 px-3.5 pt-3.5 pb-4 text-center">
+                      <p className="min-h-[2.5rem] font-heading text-[0.95rem] leading-snug line-clamp-2">
+                        {member.name}
+                      </p>
+                      <p className="min-h-[2rem] text-xs leading-snug text-gold line-clamp-2">
+                        {member.role}
+                      </p>
+                      <p className="min-h-[2.75rem] text-xs leading-snug text-muted line-clamp-3">
+                        {member.institution}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))
+              : Array.from({ length: 3 }).map((_, index) => (
+                  <Card
+                    key={index}
+                    className={`${cardShell} flex flex-col overflow-hidden`}
+                  >
+                    <PlaceholderImage
+                      alt="Committee member to be announced"
+                      className="aspect-[3/4] shrink-0"
+                    />
+                    <CardContent className="flex min-h-[7.5rem] flex-1 flex-col gap-1 px-3.5 pt-3.5 pb-4 text-center">
+                      <p className="min-h-[2.5rem] font-heading text-[0.95rem] leading-snug line-clamp-2">
+                        Member to be announced
+                      </p>
+                      <p className="min-h-[2rem] text-xs leading-snug text-gold line-clamp-2">
+                        Role to be confirmed
+                      </p>
+                      <p className="min-h-[2.75rem] text-xs leading-snug text-muted line-clamp-3">
+                        Institution to be confirmed
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
           </div>
         </div>
+
+        <SpeakerGroup
+          title="Invited Speakers"
+          people={speakers.filter((s) => s.role === "invited")}
+          centered
+        />
       </section>
     </>
   );
