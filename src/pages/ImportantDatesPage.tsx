@@ -10,7 +10,7 @@ export function ImportantDatesPage() {
       <PageBanner
         eyebrow="Overview"
         title="Important dates"
-        description="Deadlines will appear here after they are confirmed in the constants file. Do not use dates from earlier pamphlets."
+        description="Key deadlines for abstract submission, early-bird registration, and the conference dates."
       />
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="rounded-lg border border-border bg-warm-white">

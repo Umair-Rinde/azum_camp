@@ -15,14 +15,32 @@ export function SectionHeading({
   align = "left",
   className,
 }: SectionHeadingProps) {
+  const centered = align === "center";
+
   return (
-    <div className={cn(align === "center" && "mx-auto max-w-2xl text-center", className)}>
+    <div className={cn(centered && "mx-auto max-w-2xl text-center", className)}>
       {eyebrow ? (
-        <p className="text-xs tracking-[0.22em] text-gold uppercase">{eyebrow}</p>
+        <p
+          className={cn(
+            "text-xs tracking-[0.22em] text-gold uppercase",
+            centered ? "text-center" : "text-left",
+          )}
+        >
+          {eyebrow}
+        </p>
       ) : null}
-      <h2 className="mt-2 text-3xl md:text-4xl">{title}</h2>
-      {description ? <p className="mt-3 max-w-2xl text-muted">{description}</p> : null}
-      <div className={cn("academic-divider mt-6", align === "center" ? "mx-auto max-w-xs" : "max-w-xs")} />
+      <h2 className={cn("mt-2 text-3xl md:text-4xl", centered && "text-center")}>{title}</h2>
+      {description ? (
+        <p
+          className={cn(
+            "mt-3 max-w-2xl text-muted",
+            centered ? "mx-auto text-center" : "text-left",
+          )}
+        >
+          {description}
+        </p>
+      ) : null}
+      <div className={cn("academic-divider mt-6", centered ? "mx-auto max-w-xs" : "max-w-xs")} />
     </div>
   );
 }

@@ -192,7 +192,7 @@ export const SITE_IMAGES = {
   },
   PROF_SHAILA_BOOTWALA: {
     id: "img-42",
-    src: "/conference-assets/people/img-42-prof-shaila-bootwala-face.jpg",
+    src: "/conference-assets/people/img-42-prof-shaila-bootwala-face.webp",
     alt: "Prof. Shaila Bootwala",
   },
   SPEAKER_DASTAGER: {

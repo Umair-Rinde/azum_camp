@@ -190,8 +190,18 @@
     background-size: 22px 22px;
   }
 
+  /*
+   * Justify default body copy, but let ancestor alignment utilities win.
+   * Without this, parent `text-center` is overridden on every <p> (eyebrows,
+   * card copy, etc.) — often visible in production CSS order even when local
+   * looks fine.
+   */
   p {
     @apply text-justify;
+  }
+
+  :is(.text-center, .text-left, .text-right, .text-start, .text-end) p {
+    text-align: inherit;
   }
 
   h1,

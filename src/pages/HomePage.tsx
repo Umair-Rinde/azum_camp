@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import {
   currentConference,
+  currentImportantDates,
   featuredSpeakerSlots,
   highlights,
   historicalVenue,
   homeOrganizers,
   hostInstitution,
-  majorThemes,
   patrons,
   primaryCta,
   registrationPlans,
@@ -156,7 +156,7 @@ export function HomePage() {
             healthcare professionals and students on a common platform to deliberate on the current status,
             emerging trends, future prospects and diverse applications of herbal and synthetic drugs.
           </motion.p>
-          <motion.div variants={fadeUp} className="mt-8">
+          {/* <motion.div variants={fadeUp} className="mt-8">
             <p className="text-base font-medium leading-8 text-deep-forest md:text-[17px]">
               The major themes of the conference include:
             </p>
@@ -167,7 +167,7 @@ export function HomePage() {
                 </li>
               ))}
             </ol>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.section>
 
@@ -322,6 +322,39 @@ export function HomePage() {
           {registrationPlans.map((plan) => (
             <motion.div key={plan.category} variants={fadeUp}>
               <RegistrationCard {...plan} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.section>
+
+      <motion.section
+        className="mx-auto max-w-6xl px-4 py-16 md:py-20"
+        initial="hidden"
+        whileInView="show"
+        viewport={viewport}
+        variants={stagger}
+      >
+        <motion.div variants={fadeUp}>
+          <SectionHeading
+            align="center"
+            eyebrow="Important Dates"
+            title="Mark your calendar"
+          />
+        </motion.div>
+        <motion.div
+          variants={stagger}
+          className="mt-10 grid gap-6 sm:grid-cols-3"
+        >
+          {currentImportantDates.map((item) => (
+            <motion.div
+              key={item.label}
+              variants={fadeUp}
+              className="border-t border-deep-forest/20 pt-5 text-center"
+            >
+              <p className="text-xs tracking-[0.2em] text-muted uppercase">{item.label}</p>
+              <p className="mt-2 text-lg font-semibold tracking-wide text-deep-forest">
+                {item.date}
+              </p>
             </motion.div>
           ))}
         </motion.div>
