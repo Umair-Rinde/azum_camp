@@ -40,7 +40,7 @@ export function SpeakerCard({
           ) : null}
         </p>
         {shortBio && !placeholder ? (
-          <p className="pt-1 text-left text-xs leading-5 text-muted line-clamp-3">{shortBio}</p>
+          <p className="pt-2 text-sm leading-6 text-muted">{shortBio}</p>
         ) : null}
       </CardContent>
     </Card>

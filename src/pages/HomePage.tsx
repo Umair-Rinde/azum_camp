@@ -5,11 +5,12 @@ import {
   featuredSpeakerSlots,
   highlights,
   historicalVenue,
-  pastConferences,
+  homeOrganizers,
+  hostInstitution,
+  majorThemes,
   patrons,
   primaryCta,
   registrationPlans,
-  researchTracksHome,
   speakers,
 } from "@/data/constants";
 import { PAST_HIGHLIGHTS, SITE_IMAGES } from "@/data/images";
@@ -19,7 +20,6 @@ import { HeroSection } from "@/components/conference/HeroSection";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { FeaturePillars } from "@/components/conference/FeaturePillars";
 import { SpeakerCard } from "@/components/conference/SpeakerCard";
-import { TracksAccordion } from "@/components/conference/TracksAccordion";
 import { RegistrationCard } from "@/components/conference/RegistrationCard";
 import { PastHighlightsCarousel } from "@/components/conference/PastHighlightsCarousel";
 import { ContactForm } from "@/components/conference/ContactForm";
@@ -94,23 +94,80 @@ export function HomePage() {
             </strong>
             .
           </motion.h2>
+          <motion.div variants={fadeUp} className="mt-12">
+            <p className="text-xs tracking-[0.22em] text-gold uppercase">Joint Organizers</p>
+            <div className="academic-divider mt-3 max-w-[7rem]" />
+            <motion.ul
+              variants={stagger}
+              className="mt-8 flex max-w-5xl flex-col gap-5"
+            >
+              {homeOrganizers.map((org) => (
+                <motion.li
+                  key={org.name}
+                  variants={fadeUp}
+                  className="group flex items-center gap-4 border-l-2 border-gold/55 bg-[linear-gradient(135deg,rgba(245,240,230,0.9)_0%,transparent_72%)] py-4 pl-4 pr-3 transition-[border-color] duration-300 hover:border-gold sm:gap-5 sm:py-5 sm:pl-5"
+                >
+                  <PlaceholderImage
+                    src={org.logo.src}
+                    alt={org.logo.alt}
+                    className="size-[4.25rem] shrink-0 bg-transparent sm:size-[5.25rem]"
+                    imgClassName="object-contain p-0.5 mix-blend-multiply"
+                    sizes="84px"
+                  />
+                  <div className="min-w-0">
+                    <p className="font-sans text-lg font-semibold leading-snug tracking-wide text-deep-forest md:text-xl">
+                      {org.name}
+                    </p>
+                    {"detail" in org && org.detail ? (
+                      <p className="mt-2 font-sans text-sm font-semibold tracking-wide text-gold md:text-base">
+                        {org.detail}
+                      </p>
+                    ) : null}
+                  </div>
+                </motion.li>
+              ))}
+            </motion.ul>
+          </motion.div>
           <motion.p variants={fadeUp} className="mt-6 text-base leading-8 text-muted md:text-[17px]">
-            Building on the success of previous editions in {pastConferences.map((c) => c.year).join(", ")},
-            HSDS aims to serve as a dynamic interdisciplinary platform for scientific exchange, innovation,
-            and collaboration in herbal medicines, synthetic and metal-based drugs, formulation science, and
-            translational approaches.
+            Building on the success of its previous editions held in 2010, 2014, and 2016, the Fourth
+            International Conference on Herbal and Synthetic Drug Studies (HSDS-2027) aims to provide a
+            dynamic interdisciplinary platform for scientific exchange, innovation, and collaboration in the
+            fields of herbal medicines, synthetic and metal-based drugs, pharmaceutical formulations, and
+            translational drug research.
           </motion.p>
           <motion.p variants={fadeUp} className="mt-5 text-base leading-8 text-muted md:text-[17px]">
-            With continuing interest in natural therapeutics and contemporary drug discovery, the conference
-            will foster discussions on preparation and characterization methods, analytical techniques,
-            regulatory challenges, and the integration of traditional medicinal knowledge with modern
-            healthcare research.
+            In view of the growing global interest in natural therapeutics and advances in contemporary drug
+            discovery, HSDS-2027 will bring together researchers, academicians, healthcare professionals, and
+            industry experts to deliberate on emerging developments in drug synthesis, preparation and
+            characterization, advanced analytical techniques, formulation science, and regulatory
+            perspectives. The conference will also emphasize the integration of traditional medicinal
+            knowledge with modern scientific approaches to healthcare and therapeutic development.
           </motion.p>
           <motion.p variants={fadeUp} className="mt-5 text-base leading-8 text-muted md:text-[17px]">
-            The scientific program will feature keynote lectures, invited talks, oral and poster presentations,
-            and networking opportunities designed to encourage collaborations between academia, healthcare,
-            and industry once organizers confirm the current circular.
+            The scientific programme will feature keynote lectures, invited talks, oral and poster
+            presentations, and dedicated networking opportunities, fostering interdisciplinary dialogue,
+            knowledge sharing, and meaningful collaborations among academia, healthcare, and industry.
+            HSDS-2027 aspires to advance scientific understanding, encourage innovative research, and
+            strengthen collaborative efforts towards the development of safe, effective, and scientifically
+            validated therapeutic agents.
           </motion.p>
+          <motion.p variants={fadeUp} className="mt-5 text-base leading-8 text-muted md:text-[17px]">
+            The forthcoming conference aims to bring together academicians, researchers, scientists,
+            healthcare professionals and students on a common platform to deliberate on the current status,
+            emerging trends, future prospects and diverse applications of herbal and synthetic drugs.
+          </motion.p>
+          <motion.div variants={fadeUp} className="mt-8">
+            <p className="text-base font-medium leading-8 text-deep-forest md:text-[17px]">
+              The major themes of the conference include:
+            </p>
+            <ol className="mt-4 list-decimal space-y-2.5 pl-6 text-base leading-8 text-muted md:text-[17px]">
+              {majorThemes.map((theme) => (
+                <li key={theme} className="pl-1">
+                  {theme}
+                </li>
+              ))}
+            </ol>
+          </motion.div>
         </div>
       </motion.section>
 
@@ -132,10 +189,14 @@ export function HomePage() {
           >
             {patrons.map((patron) => (
               <motion.li key={patron.name} variants={fadeUp} className="w-52 text-center">
-                <img
+                <PlaceholderImage
                   src={patron.photo}
                   alt={patron.name}
-                  className="mx-auto size-40 rounded-full object-cover object-center shadow-[0_8px_24px_rgba(20,83,45,0.12)] ring-4 ring-gold/35 md:size-48"
+                  width={192}
+                  height={192}
+                  sizes="192px"
+                  className="mx-auto size-40 rounded-full shadow-[0_8px_24px_rgba(20,83,45,0.12)] ring-4 ring-gold/35 md:size-48"
+                  imgClassName="object-cover object-center"
                 />
                 <p className="mt-5 font-heading text-xl leading-tight text-deep-forest">{patron.name}</p>
                 <p className="mt-1 text-sm text-gold">{patron.role}</p>
@@ -159,12 +220,12 @@ export function HomePage() {
       </motion.section>
 
       <motion.section
-        className="w-full bg-cream"
+        className="border-y border-border bg-warm-white"
         initial="hidden"
         whileInView="show"
         viewport={viewport}
-        variants={fadeUp}
-        aria-label={SITE_IMAGES.CAMPUS_PANORAMA.alt}
+        variants={stagger}
+        aria-label={hostInstitution.title}
       >
         <PlaceholderImage
           src={SITE_IMAGES.CAMPUS_PANORAMA.src}
@@ -172,6 +233,37 @@ export function HomePage() {
           className="aspect-[2.8/1] w-full bg-cream md:aspect-[3.2/1]"
           imgClassName="object-cover object-center"
         />
+        <div className="mx-auto max-w-6xl px-4 py-14 md:py-16">
+          <motion.div variants={fadeUp}>
+            <SectionHeading
+              align="center"
+              eyebrow={hostInstitution.eyebrow}
+              title={hostInstitution.title}
+            />
+          </motion.div>
+          <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-14">
+            <motion.div variants={fadeUp}>
+              <p className="text-xs tracking-[0.22em] text-gold uppercase">
+                {hostInstitution.college.label}
+              </p>
+              <div className="academic-divider mt-3 max-w-[5rem]" />
+              <p className="mt-5 text-base leading-8 text-muted md:text-[17px]">
+                {hostInstitution.college.body}
+              </p>
+            </motion.div>
+            <motion.div variants={fadeUp}>
+              <p className="text-xs tracking-[0.22em] text-gold uppercase">
+                {hostInstitution.department.label}
+              </p>
+              <div className="academic-divider mt-3 max-w-[5rem]" />
+              <div className="mt-5 space-y-4 text-base leading-8 text-muted md:text-[17px]">
+                {hostInstitution.department.body.map((paragraph) => (
+                  <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
       </motion.section>
 
       <motion.section
@@ -209,33 +301,6 @@ export function HomePage() {
                 </motion.div>
               ))}
         </motion.div>
-      </motion.section>
-
-      <motion.section
-        className="paper-texture"
-        initial="hidden"
-        whileInView="show"
-        viewport={viewport}
-        variants={stagger}
-      >
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <motion.div variants={fadeUp}>
-            <SectionHeading
-              align="center"
-              eyebrow="Tracks & Sessions"
-              title="Research areas from earlier editions"
-              // description="Grouped from topics listed on previous HSDS materials. Confirmed tracks for the next edition will replace this list when published."
-            />
-          </motion.div>
-          <motion.div variants={fadeUp} className="mt-10 rounded-xl border border-border bg-warm-white px-4 md:px-6">
-            <TracksAccordion tracks={researchTracksHome} />
-          </motion.div>
-          <motion.div variants={fadeUp} className="mt-8 text-center">
-            <Button variant="gold" className="rounded-full uppercase" asChild>
-              <Link to="/abstracts">Call for Abstracts</Link>
-            </Button>
-          </motion.div>
-        </div>
       </motion.section>
 
       <motion.section

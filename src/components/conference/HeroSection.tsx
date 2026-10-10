@@ -59,6 +59,8 @@ export function HeroSection() {
           className="size-full"
           imgClassName="object-cover object-center"
           loading="eager"
+          fetchPriority="high"
+          sizes="100vw"
         />
       </motion.div>
       <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(11,35,24,0.97)_0%,rgba(14,48,32,0.92)_42%,rgba(16,55,36,0.72)_68%,rgba(20,60,40,0.55)_100%)]" />

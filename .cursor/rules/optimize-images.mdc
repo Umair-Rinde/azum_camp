@@ -1,0 +1,16 @@
+---
+description: Keep public/ photos as WebP and render via PlaceholderImage
+globs: public/**/*.{jpg,jpeg,png,webp},src/data/images.ts,src/components/media/**/*,src/**/*Image*.tsx
+alwaysApply: false
+---
+
+# Image optimization
+
+When adding or changing images in this repo, follow the project skill:
+
+Read and apply `.cursor/skills/optimize-images/SKILL.md`.
+
+Mandatory:
+1. Run `npm run optimize:images` after dropping jpg/jpeg/png under `public/`.
+2. Register assets in `src/data/images.ts` with `.webp` paths.
+3. Render with `PlaceholderImage` (not bare `<img>` for content photos).

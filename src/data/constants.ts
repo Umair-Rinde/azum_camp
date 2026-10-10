@@ -68,14 +68,7 @@ export const navigationMenu: NavNode[] = [
       { label: "Presenters Instructions", href: "/presenters" },
     ],
   },
-  {
-    label: "Sponsor",
-    children: [
-      { label: "Exhibition (Tabletop) Opportunities", href: "/sponsors#exhibition" },
-      { label: "Sponsor Opportunity", href: "/sponsors#opportunity" },
-      { label: "Become A Sponsor", href: "/sponsors#become" },
-    ],
-  },
+  // {ad
   { label: "Venue", href: "/venue" },
   { label: "Contact", href: "/contact" },
 ];
@@ -117,6 +110,18 @@ export const currentConference: CurrentConference = {
 };
 
 export const currentThemes: Theme[] = [];
+
+/** Major themes announced for HSDS-2027. */
+export const majorThemes = [
+  "Novel Herbal and Synthetic Drugs: Synthesis, Characterization and Applications",
+  "Analytical and Biotechnological Advances in Drug Development and Discovery",
+  "Metal-Based Drugs",
+  "New Trends in Pharmaceutical Sciences",
+  "New Methods of Drug Formulation and Applications",
+  "Nano Materials in Drug Discovery and Development",
+  "Insights into Complementary Unani Medicines",
+  "Developments and Future Challenges in the Unani System of Medicine",
+];
 
 export const currentImportantDates: ImportantDate[] = [];
 
@@ -187,37 +192,6 @@ export const historicalTopics = [
   "Taxonomic evaluation of plant drugs and standardization",
 ];
 
-/** Homepage tracks patterned after PhytoTMed; sessions drawn from historical HSDS topics. */
-export const researchTracksHome = [
-  {
-    title: "Foundations in herbal and synthetic drug studies",
-    focus: "Theoretical frameworks, regional systems, and interdisciplinary foundations of the series.",
-    sessions: [
-      "Novel herbal and synthetic drugs (synthesis, characterization and applications)",
-      "Insights into complementary Unani Medicines",
-      "Integrated medicinal approach and health care",
-    ],
-  },
-  {
-    title: "Scientific validation and pharmacology",
-    focus: "Characterization, targets, and translational approaches recorded on earlier editions.",
-    sessions: [
-      "Metal based drugs (Bioinorganic Drugs)",
-      "Molecular targets and translational therapy",
-      "Advanced techniques in drug preparations and characterization",
-    ],
-  },
-  {
-    title: "Formulation, pharmacy, and standardization",
-    focus: "Pharmaceutical sciences, formulation methods, and plant-drug evaluation.",
-    sessions: [
-      "New trends in pharmaceutical sciences",
-      "New methods of drug formulations and applications",
-      "Taxonomic evaluation of plant drugs and standardization",
-    ],
-  },
-];
-
 export const whoShouldAttend = [
   "Teachers, researchers and academicians",
   "Botanists and chemists",
@@ -245,6 +219,40 @@ export const conferenceFormat = [
   },
 ];
 
+/** Host college profile shown with the campus panorama on the homepage. */
+export const hostInstitution = {
+  eyebrow: "Host Institution",
+  title: "Abeda Inamdar Senior College",
+  college: {
+    label: "The College",
+    body: "M. C. E. Society’s Abeda Inamdar Senior College is a reputed institution of higher education in Pune, Maharashtra, managed by the M. C. E. Society, one of the prominent educational organizations at Azam Campus. The institution functions under the visionary leadership of Dr. P. A. Inamdar and Mrs. Abeda Inamdar. The college is affiliated with Savitribai Phule Pune University (formerly University of Pune) and has recently been granted the prestigious status of an “Empowered Autonomous College” by the University.",
+  },
+  department: {
+    label: "Department of Chemistry",
+    body: [
+      "The Department of Chemistry offers B.Sc., M.Sc. and Ph.D. programmes and serves as a recognized Research Centre in Chemistry affiliated with Savitribai Phule Pune University since 2004. The faculty members are committed educators and active researchers working in diverse and emerging areas of chemistry, particularly drug discovery and development.",
+      "Over the years, the department has published more than 100 research papers in reputed national and international journals. Its academic and research activities have been further strengthened through national and international collaborations and research grants received from reputed funding agencies, including DST and BCUD, Savitribai Phule Pune University. These initiatives have contributed significantly to fostering a vibrant and collaborative research environment.",
+    ],
+  },
+} as const;
+
+/**
+ * Placeholder joint organizers for the homepage overview.
+ * Names from the HSDS-2014 pamphlet (Allana College of Pharmacy excluded); replace when the current edition confirms hosts.
+ */
+export const homeOrganizers = [
+  {
+    name: "M. C. E. Society's Abeda Inamdar Senior College of Arts, Science & Commerce, Pune",
+    detail: "Department of Chemistry & Post Graduate Research Centre",
+    logo: SITE_IMAGES.LOGO_AISC,
+  },
+  {
+    name: "M. M. E. R. C.'s Z. V. M. Unani Medical College and Hospital, Pune",
+    detail: "Maharashtra University of Health Sciences (Nashik)",
+    logo: SITE_IMAGES.LOGO_UNANI,
+  },
+] as const;
+
 /** Host and partner bodies named on 2010, 2014, and 2016 brochures. Not a confirmed list for the next edition. */
 export const organizers: Organizer[] = [
   {
@@ -265,7 +273,7 @@ export const organizers: Organizer[] = [
   {
     name: "Z. V. M. Unani Medical College and Hospital, Pune",
     role: "Partner institute (2010, 2014)",
-    logo: PLACEHOLDER_IMAGE,
+    logo: SITE_IMAGES.LOGO_UNANI.src,
   },
   {
     name: "The University of Kansas Cancer Center, Kansas City, USA",

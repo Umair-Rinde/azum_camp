@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { currentConference, footerLinks, primaryCta, secondaryCta, siteMeta } from "@/data/constants";
 import { SITE_IMAGES } from "@/data/images";
+import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 
 export function Footer() {
   return (
@@ -10,10 +11,14 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-14 md:flex-row md:items-start md:justify-between md:gap-12">
         <div className="md:max-w-xs md:shrink-0 lg:max-w-sm">
           <div className="flex items-center gap-3">
-            <img
-              src={SITE_IMAGES.LOGO_AISC.src}
-              alt={SITE_IMAGES.LOGO_AISC.alt}
-              className="size-12 rounded-full border border-white/15 bg-warm-white object-contain p-0.5"
+            <PlaceholderImage
+              src={SITE_IMAGES.LOGO_SITE.src}
+              alt={SITE_IMAGES.LOGO_SITE.alt}
+              width={48}
+              height={48}
+              sizes="48px"
+              className="size-12 shrink-0 rounded-full border border-white/15 bg-warm-white"
+              imgClassName="object-contain p-0.5"
             />
             <p className="font-heading text-2xl">{currentConference.shortName}</p>
           </div>

@@ -5,6 +5,7 @@ import { currentConference, navigationMenu, primaryCta } from "@/data/constants"
 import { SITE_IMAGES } from "@/data/images";
 import type { NavNode } from "@/data/types";
 import { cn, displayValue } from "@/lib/utils";
+import { PlaceholderImage } from "@/components/media/PlaceholderImage";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
@@ -149,10 +150,16 @@ export function Navbar() {
     <header className="sticky top-0 z-40 bg-deep-forest text-warm-white">
       <div className="mx-auto flex max-w-[1380px] items-center justify-between gap-6 px-4 py-3 lg:px-8">
         <Link to="/" className="flex min-w-0 shrink-0 items-center gap-3">
-          <img
-            src={SITE_IMAGES.LOGO_AISC.src}
-            alt={SITE_IMAGES.LOGO_AISC.alt}
-            className="size-11 rounded-full border border-white/20 bg-warm-white object-contain p-0.5 lg:size-16"
+          <PlaceholderImage
+            src={SITE_IMAGES.LOGO_SITE.src}
+            alt={SITE_IMAGES.LOGO_SITE.alt}
+            width={64}
+            height={64}
+            loading="eager"
+            fetchPriority="high"
+            sizes="64px"
+            className="size-11 shrink-0 rounded-full border border-white/20 bg-warm-white lg:size-16"
+            imgClassName="object-contain p-0.5"
           />
           <span className="min-w-0">
             <p className="font-sans text-2xl font-medium leading-none tracking-wide text-warm-white uppercase lg:text-2xl">
