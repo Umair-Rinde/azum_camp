@@ -241,7 +241,7 @@ export function HomePage() {
               title={hostInstitution.title}
             />
           </motion.div>
-          <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-14">
+          <div className="mt-10 grid gap-10 md:gap-12">
             <motion.div variants={fadeUp}>
               <p className="text-xs tracking-[0.22em] text-gold uppercase">
                 {hostInstitution.college.label}
