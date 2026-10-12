@@ -1,17 +1,17 @@
 import {
-  accommodationNote,
-  cancellationPolicy,
-  paymentNote,
-  registrationIncludes,
+  // accommodationNote,
+  // cancellationPolicy,
+  // paymentNote,
+  // registrationIncludes,
   registrationPlans,
 } from "@/data/constants";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { RegistrationCard } from "@/components/conference/RegistrationCard";
-import { FeeTable } from "@/components/conference/FeeTable";
-import { RegistrationForm } from "@/components/conference/RegistrationForm";
-import { FAQAccordion } from "@/components/conference/FAQAccordion";
+// import { FeeTable } from "@/components/conference/FeeTable";
+// import { RegistrationForm } from "@/components/conference/RegistrationForm";
+// import { FAQAccordion } from "@/components/conference/FAQAccordion";
 
 export function RegistrationPage() {
   return (
@@ -33,14 +33,14 @@ export function RegistrationPage() {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <SectionHeading title="Fee Table" />
           <div className="mt-6">
             <FeeTable />
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <SectionHeading title="What's Included" />
           <ul className="mt-6 space-y-2">
             {registrationIncludes.map((item) => (
@@ -61,24 +61,24 @@ export function RegistrationPage() {
           <div className="mt-8">
             <RegistrationForm />
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <SectionHeading title="Payment" />
           <p className="mt-4 max-w-3xl text-sm text-muted">{paymentNote}</p>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <SectionHeading title="Cancellation Policy" />
           <p className="mt-4 max-w-3xl text-sm text-muted">{cancellationPolicy}</p>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <SectionHeading title="FAQ" />
           <div className="mt-6">
             <FAQAccordion />
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

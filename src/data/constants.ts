@@ -106,7 +106,11 @@ export const currentConference: CurrentConference = {
     "Connecting researchers in herbal medicines, synthetic chemistry, and translational pharmacology for scientific exchange, collaboration, and the advancement of drug studies.",
   announcement: "Details for the next edition will be announced soon.",
   themes: [],
-  importantDates: [],
+  importantDates: [
+    { label: "Early Bird Registration Closes on", date: "OCTOBER 31, 2026" },
+    { label: "Abstract Submission Closes on", date: "NOVEMBER 30, 2026" },
+    { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
+  ],
 };
 
 export const currentThemes: Theme[] = [];
@@ -123,7 +127,11 @@ export const majorThemes = [
   "Developments and Future Challenges in the Unani System of Medicine",
 ];
 
-export const currentImportantDates: ImportantDate[] = [];
+export const currentImportantDates: ImportantDate[] = [
+  { label: "Early Bird Registration Closes on", date: "OCTOBER 31, 2026" },
+  { label: "Abstract Submission Closes on", date: "NOVEMBER 30, 2026" },
+  { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
+];
 
 export const highlights: Highlight[] = [
   {

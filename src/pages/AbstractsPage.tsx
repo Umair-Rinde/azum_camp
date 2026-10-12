@@ -2,7 +2,6 @@ import { abstractGuidelines, currentImportantDates, historicalTopics } from "@/d
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
-import { AbstractSubmissionForm } from "@/components/conference/AbstractSubmissionForm";
 import { ThemeCard } from "@/components/conference/ThemeCard";
 import { Button } from "@/components/ui/button";
 
@@ -73,12 +72,12 @@ export function AbstractsPage() {
           </Button>
         </div>
 
-        <div className="rounded-lg border border-border bg-warm-white p-6">
+        {/* <div className="rounded-lg border border-border bg-warm-white p-6">
           <SectionHeading title="Submission Form" />
           <div className="mt-8">
             <AbstractSubmissionForm />
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
