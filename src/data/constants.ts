@@ -418,7 +418,7 @@ export const conveners = [
     name: "Dr. Khursheed Ahmed",
     role: "H.O.D. Convener",
     institution: "Abeda Inamdar Senior College, Pune",
-    photo: SITE_IMAGES.DR_KHURi66SHEED_AHMED.src,
+    photo: SITE_IMAGES.DR_KHURSHEED_AHMED.src,
   },
 ];
 
