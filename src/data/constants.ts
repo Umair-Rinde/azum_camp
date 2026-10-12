@@ -352,7 +352,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: "Dr. Manas K. Santra",
-    designation: "Scientist",
+    designation: "Scientist (G)",
     institution: "BRIC-National Centre for Cell Science Pune, Maharashtra, India",
     country: "",
     photo: SITE_IMAGES.SPEAKER_MANAS.src,
@@ -361,7 +361,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: "Dr. Syed G. Dastager",
-    designation: "Microbiologist and Scientist",
+    designation: "Microbiologist and Scientist (F)",
     institution: "CSIR–National Chemical Laboratory (NCL), Pune, Maharashtra, India",
     country: "",
     photo: SITE_IMAGES.SPEAKER_DASTAGER.src,
@@ -403,6 +403,22 @@ export const patrons = [
     role: "President",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.MRS_ABEDA_INAMDAR.src,
+  },
+];
+
+/** Shown on the home page directly under Patrons. */
+export const conveners = [
+  {
+    name: "Prof. Shaila Bootwala",
+    role: "Principal",
+    institution: "Abeda Inamdar Senior College, Pune",
+    photo: SITE_IMAGES.PROF_SHAILA_BOOTWALA.src,
+  },
+  {
+    name: "Dr. Khursheed Ahmed",
+    role: "H.O.D. Convener",
+    institution: "Abeda Inamdar Senior College, Pune",
+    photo: SITE_IMAGES.DR_KHURi66SHEED_AHMED.src,
   },
 ];
 

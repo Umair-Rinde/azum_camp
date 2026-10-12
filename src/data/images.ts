@@ -191,14 +191,19 @@ export const SITE_IMAGES = {
     alt: "Dr. P. A. Inamdar",
   },
   PROF_SHAILA_BOOTWALA: {
-    id: "img-42",
+    id: "img-45",
     src: "/conference-assets/people/img-42-prof-shaila-bootwala-face.webp",
     alt: "Prof. Shaila Bootwala",
   },
+  DR_KHURSHEED_AHMED: {
+    id: "img-44",
+    src: "/conference-assets/people/img-44-dr-khursheed-ahmed-face.webp",
+    alt: "Dr. Khursheed Ahmed",
+  },
   SPEAKER_DASTAGER: {
     id: "spk-01",
-    src: "/Speaker/dastager.svg",
-    alt: "Dastager",
+    src: "/Speaker/Dastagir.webp",
+    alt: "Dastagir",
   },
   SPEAKER_ISHTIAQ_JEELANI: {
     id: "spk-02",
@@ -217,7 +222,7 @@ export const SITE_IMAGES = {
   },
   SPEAKER_NIYAZ: {
     id: "spk-05",
-    src: "/Speaker/niyaz1.svg",
+    src: "/Speaker/Niyaz.webp",
     alt: "Niyaz",
   },
   SPEAKER_PRASAD: {
@@ -239,6 +244,11 @@ export const SITE_IMAGES = {
     id: "spk-09",
     src: "/Speaker/suhel1.svg",
     alt: "Suhel",
+  },
+  DR_KHURSHEED: {
+    id: "spk-10",
+    src: "/Speaker/Dr-Khursheed.webp",
+    alt: "Dr. Khursheed",
   },
   MEMBERS: {
     id: "img-29",
