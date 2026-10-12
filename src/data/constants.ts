@@ -438,18 +438,7 @@ export const abstractGuidelines = {
 
 export const registrationPlans: RegistrationPlan[] = [
   {
-    category: "Academic",
-    price: "1800",
-    currency: "INR",
-    includes: [
-      "Access to scientific sessions, once published",
-      "Conference materials, as confirmed",
-      "Certificate of participation, subject to confirmation",
-      "Refreshments during scheduled breaks, if included",
-    ],
-  },
-  {
-    category: "Industry & Practitioners",
+    category: "Academician/Professional",
     price: "2000",
     currency: "INR",
     includes: [
@@ -460,8 +449,19 @@ export const registrationPlans: RegistrationPlan[] = [
     ],
   },
   {
-    category: "Student",
-    price: "1500",
+    category: "Ph.D. Research Scholars",
+    price: "750",
+    currency: "INR",
+    includes: [
+      "Access to scientific sessions, once published",
+      "Conference materials, as confirmed",
+      "Certificate of participation, subject to confirmation",
+      "Refreshments during scheduled breaks, if included",
+    ],
+  },
+  {
+    category: "Post Graduate Students",
+    price: "400",
     currency: "INR",
     includes: [
       "Access to scientific sessions, once published",
