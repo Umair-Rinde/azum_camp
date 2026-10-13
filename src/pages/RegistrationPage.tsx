@@ -26,7 +26,7 @@ export function RegistrationPage() {
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
         <div>
           <SectionHeading title="Registration Categories" />
-          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {registrationPlans.map((plan) => (
               <RegistrationCard key={plan.category} {...plan} />
             ))}

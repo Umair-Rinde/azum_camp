@@ -1,6 +1,9 @@
-import { programDays } from "@/data/constants";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
+import { primaryCta, programDays } from "@/data/constants";
 import type { ProgramDay } from "@/data/types";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function DayTimeline({ day }: { day: ProgramDay }) {
@@ -31,10 +34,17 @@ export function ScheduleTimeline() {
   if (programDays.length === 0) {
     return (
       <div className="rounded-lg border border-dashed border-border bg-cream px-6 py-16 text-center">
-        <p className="font-heading text-3xl">Program Coming Soon</p>
-        <p className="mx-auto mt-3 max-w-lg text-sm text-muted">
-          Day tabs, session times, rooms, and speaker assignments will appear here once the scientific program is confirmed in the constants file.
-        </p>
+        <p className="font-heading text-3xl">Register Now for the Complete Schedule</p>
+        <Button
+          variant="gold"
+          className="mt-6 rounded-[10px] px-5 text-[13px] font-bold tracking-[0.14em] uppercase [&_svg]:size-2.5"
+          asChild
+        >
+          <Link to={primaryCta.href}>
+            {primaryCta.label}
+            <ArrowUpRight className="size-2.5" strokeWidth={2.5} />
+          </Link>
+        </Button>
       </div>
     );
   }

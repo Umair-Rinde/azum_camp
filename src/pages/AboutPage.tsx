@@ -27,7 +27,7 @@ export function AboutPage() {
       <PageBanner
         eyebrow="About"
         title="About the conference"
-        description="HSDS is a documented academic series on herbal and synthetic drug studies. The next edition’s commitments will be published when organizers confirm them."
+        description="HSDS is a documented academic series on herbal and synthetic drug studies."
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
@@ -135,7 +135,7 @@ export function AboutPage() {
         <div>
           <SectionHeading
             title="Conference Themes"
-            description="Research areas recorded on previous editions. Current tracks will be edited in the constants file when confirmed."
+            description="Research areas recorded on previous editions."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {historicalTopics.map((topic, index) => (

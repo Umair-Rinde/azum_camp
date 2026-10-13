@@ -263,7 +263,7 @@ export const SITE_IMAGES = {
   HANDSHAKE: {
     id: "img-31",
     src: "/conference-assets/events/img-31-handshake.webp",
-    alt: "Partnership handshake",
+    alt: "Partnership",
   },
   MOU_SIGNING: {
     id: "img-32",
@@ -325,7 +325,7 @@ export const PUNE_LANDMARKS: ImageAsset[] = [
 ];
 
 export const PARTNERSHIP_IMAGES: ImageAsset[] = [
-  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership handshake"),
+  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership"),
   toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
 ];
 
@@ -344,7 +344,7 @@ export const HERO_IMAGE_STRIP: ImageAsset[] = [
   toAsset(SITE_IMAGES.MEMBERS, "Conference delegates"),
   toAsset(SITE_IMAGES.MEMBERS_2, "Scientific committee"),
   toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
-  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership handshake"),
+  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership"),
 ];
 
 /**

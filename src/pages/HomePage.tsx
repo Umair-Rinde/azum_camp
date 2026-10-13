@@ -355,7 +355,7 @@ export function HomePage() {
             // description="Fees from earlier pamphlets are not current. Prices appear here only after organizers release them."
           />
         </motion.div>
-        <motion.div variants={stagger} className="mt-10 grid gap-5 md:grid-cols-3">
+        <motion.div variants={stagger} className="mx-auto mt-10 grid max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {registrationPlans.map((plan) => (
             <motion.div key={plan.category} variants={fadeUp}>
               <RegistrationCard {...plan} />

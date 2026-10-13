@@ -4,6 +4,7 @@ import { HomePage } from "@/pages/HomePage";
 import { AboutPage } from "@/pages/AboutPage";
 import { ConferencePage } from "@/pages/ConferencePage";
 import { SpeakersPage } from "@/pages/SpeakersPage";
+import { CommitteePage } from "@/pages/CommitteePage";
 import { ProgramPage } from "@/pages/ProgramPage";
 import { AbstractsPage } from "@/pages/AbstractsPage";
 import { RegistrationPage } from "@/pages/RegistrationPage";
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="conference" element={<ConferencePage />} />
           <Route path="speakers" element={<SpeakersPage />} />
+          <Route path="committee" element={<CommitteePage />} />
           <Route path="program" element={<ProgramPage />} />
           <Route path="abstracts" element={<AbstractsPage />} />
           <Route path="register" element={<RegistrationPage />} />

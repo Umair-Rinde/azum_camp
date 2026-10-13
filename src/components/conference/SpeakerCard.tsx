@@ -4,6 +4,7 @@ import type { Speaker } from "@/data/types";
 
 type SpeakerCardProps = Partial<Speaker> & {
   placeholder?: boolean;
+  featured?: boolean;
 };
 
 export function SpeakerCard({
@@ -14,6 +15,7 @@ export function SpeakerCard({
   photo,
   shortBio,
   placeholder = false,
+  featured = false,
 }: SpeakerCardProps) {
   return (
     <Card className="flex h-full flex-col overflow-hidden border-border shadow-sm transition hover:shadow-md">
@@ -23,14 +25,38 @@ export function SpeakerCard({
         className="aspect-[3/4] shrink-0 bg-cream"
         imgClassName="object-cover"
       />
-      <CardContent className="flex min-h-[7.5rem] flex-1 flex-col gap-1 px-3.5 pt-3.5 pb-4 text-center">
-        <p className="min-h-[2.5rem] font-heading text-[0.95rem] leading-snug line-clamp-2">
+      <CardContent
+        className={
+          featured
+            ? "flex flex-1 flex-col px-5 pt-5 pb-6 text-center"
+            : "flex flex-1 flex-col px-3.5 pt-3.5 pb-4 text-center"
+        }
+      >
+        <p
+          className={
+            featured
+              ? "font-heading text-xl leading-tight line-clamp-2"
+              : "font-heading text-[0.95rem] leading-tight line-clamp-2"
+          }
+        >
           {name}
         </p>
-        <p className="min-h-[2rem] text-xs leading-snug text-gold line-clamp-2">
+        <p
+          className={
+            featured
+              ? "mt-2 text-sm leading-snug text-gold line-clamp-2"
+              : "mt-1 text-xs leading-snug text-gold line-clamp-2"
+          }
+        >
           {designation}
         </p>
-        <p className="min-h-[2.75rem] text-xs leading-snug text-muted line-clamp-3">
+        <p
+          className={
+            featured
+              ? "mt-2 text-sm leading-snug text-muted line-clamp-4"
+              : "mt-1 text-xs leading-snug text-muted line-clamp-3"
+          }
+        >
           {institution}
           {country ? (
             <>

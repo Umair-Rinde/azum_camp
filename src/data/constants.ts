@@ -45,7 +45,7 @@ export const navigationMenu: NavNode[] = [
     label: "Overview",
     children: [
       { label: "About Conference", href: "/about" },
-      { label: "Committee", href: "/speakers#committee" },
+      { label: "Committee", href: "/committee" },
       { label: "Speakers", href: "/speakers" },
       { label: "Important Dates", href: "/important-dates" },
       {
@@ -425,7 +425,7 @@ export const conveners = [
 export const committee: CommitteeMember[] = [
   {
     name: "Dr. P. A. Inamdar",
-    role: " Past President (1982-2025)",
+    role: "Past President (1982-2025)",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.DR_PA_INAMDAR_PORTRAIT.src,
     bio: "",
@@ -442,6 +442,13 @@ export const committee: CommitteeMember[] = [
     role: "Principal",
     institution: "Abeda Inamdar Senior College, Pune",
     photo: SITE_IMAGES.PROF_SHAILA_BOOTWALA.src,
+    bio: "",
+  },
+  {
+    name: "Dr. Khursheed Ahmed",
+    role: "H.O.D. Convener",
+    institution: "Abeda Inamdar Senior College, Pune",
+    photo: SITE_IMAGES.DR_KHURSHEED_AHMED.src,
     bio: "",
   },
 ];
@@ -465,34 +472,19 @@ export const registrationPlans: RegistrationPlan[] = [
     category: "Academician/Professional",
     price: "2000",
     currency: "INR",
-    includes: [
-      "Access to scientific sessions, once published",
-      "Conference materials, as confirmed",
-      "Certificate of participation, subject to confirmation",
-      "Refreshments during scheduled breaks, if included",
-    ],
+    includes: [],
   },
   {
     category: "Ph.D. Research Scholars",
     price: "750",
     currency: "INR",
-    includes: [
-      "Access to scientific sessions, once published",
-      "Conference materials, as confirmed",
-      "Certificate of participation, subject to confirmation",
-      "Refreshments during scheduled breaks, if included",
-    ],
+    includes: [],
   },
   {
     category: "Post Graduate Students",
     price: "400",
     currency: "INR",
-    includes: [
-      "Access to scientific sessions, once published",
-      "Conference materials, as confirmed",
-      "Certificate of participation, subject to confirmation",
-      "Refreshments during scheduled breaks, if included",
-    ],
+    includes: [],
   },
 ];
 
@@ -700,8 +692,8 @@ export const pastConferences: PastConference[] = [
     website: "www.abedainamdarseniorcollege.org.in",
     contact: {
       convener: "Dr. Khursheed Ahmed, Convener, HSDS-2010",
-      emails: ["chemistry@aisc.org.in", "khursheed92@rediffmail.com"],
-      phones: ["020-26446970", "26457577", "9922073720"],
+      emails: ["chemistry@aisc.org.in"],
+      phones: ["020-26446970", "26457577"],
       address: "Abeda Inamdar Senior College of Arts, Science & Commerce, Azam Campus, Camp, Pune – 411001",
     },
   },
@@ -832,12 +824,11 @@ export const pastConferences: PastConference[] = [
     contact: {
       convener: "Dr. Khursheed Ahmed, Convener, HSDS-2014, ISTRA, Pune",
       emails: [
-        "khursheedahmed@azamcampus.org",
         "inamdarshaukatali@azamcampus.org",
         "hsds2014@azamcampus.org",
         "aiscchemistry@azamcampus.org",
       ],
-      phones: ["+91 99220 73720", "+91 80074 46050", "020-26446970", "26457577"],
+      phones: ["+91 80074 46050", "020-26446970", "26457577"],
       address: "Interdisciplinary Science and Technology Research Academy (ISTRA), Azam Campus, Camp, Pune – 411001",
     },
   },
@@ -951,8 +942,8 @@ export const pastConferences: PastConference[] = [
     website: "www.hsds2016.com",
     contact: {
       convener: "Dr. Khursheed Ahmed, Convener, HSDS-2016",
-      emails: ["khursheedahmed@azamcampus.org", "chemistryaisc@hsds2016.com", "hsds2016@azamcampus.org"],
-      phones: ["+91 99220 73720", "020-26446970", "09922073720"],
+      emails: ["chemistryaisc@hsds2016.com", "hsds2016@azamcampus.org"],
+      phones: ["020-26446970"],
       address:
         "Interdisciplinary Science and Technology Research Academy (ISTRA), 2390-B, K.B. Hidayatulla Road, New Modikhana, Azam Campus, Camp, Pune – 411001",
     },
@@ -962,7 +953,7 @@ export const pastConferences: PastConference[] = [
 
 export const footerLinks: NavItem[] = [
   { label: "About Conference", href: "/about" },
-  { label: "Committee", href: "/speakers#committee" },
+  { label: "Committee", href: "/committee" },
   { label: "Venue", href: "/venue" },
   { label: "Call for Abstracts", href: "/abstracts" },
   { label: "Register Now", href: "/register" },

@@ -6,7 +6,6 @@ import { ConferenceTimeline } from "@/components/conference/ConferenceTimeline";
 import { PastConferenceCard } from "@/components/conference/PastConferenceCard";
 import { PersonList } from "@/components/conference/PersonList";
 import { SectionHeading } from "@/components/conference/SectionHeading";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 function EditionRecord({ conference }: { conference: PastConference }) {
   return (
@@ -105,64 +104,9 @@ function EditionRecord({ conference }: { conference: PastConference }) {
       </div>
 
       <div>
-        <h3 className="mb-3 text-xl">Historical dates</h3>
-        <p className="mb-3 text-sm text-muted">From that edition’s circular. These are not deadlines for the next meeting.</p>
-        <div className="rounded-lg border border-border bg-warm-white">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Milestone</TableHead>
-                <TableHead>Date</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {conference.historicalDates.map((item) => (
-                <TableRow key={item.label}>
-                  <TableCell>{item.label}</TableCell>
-                  <TableCell>{item.date}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      </div>
-
-      <div>
-        <h3 className="mb-3 text-xl">Historical registration fees</h3>
-        <p className="mb-3 text-sm text-muted">Printed on the {conference.year} brochure. Do not use these amounts for the current edition.</p>
-        <div className="rounded-lg border border-border bg-warm-white">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Category</TableHead>
-                <TableHead>Amount</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {conference.historicalFees.map((item) => (
-                <TableRow key={item.category}>
-                  <TableCell>
-                    {item.category}
-                    {item.note ? <p className="text-xs text-muted">{item.note}</p> : null}
-                  </TableCell>
-                  <TableCell>{item.amount}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      </div>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        <div>
-          <h3 className="mb-2 text-xl">Abstracts and posters</h3>
-          <p className="text-sm leading-7 text-muted">{conference.abstractNote}</p>
-          <p className="mt-2 text-sm leading-7 text-muted">{conference.posterNote}</p>
-        </div>
-        <div>
-          <h3 className="mb-2 text-xl">Accommodation</h3>
-          <p className="text-sm leading-7 text-muted">{conference.accommodationNote}</p>
-        </div>
+        <h3 className="mb-2 text-xl">Abstracts and posters</h3>
+        <p className="max-w-3xl text-sm leading-7 text-muted">{conference.abstractNote}</p>
+        <p className="mt-2 max-w-3xl text-sm leading-7 text-muted">{conference.posterNote}</p>
       </div>
 
       <div>
