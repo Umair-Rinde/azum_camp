@@ -207,7 +207,7 @@ export const SITE_IMAGES = {
   },
   SPEAKER_ISHTIAQ_JEELANI: {
     id: "spk-02",
-    src: "/Speaker/IJ2.svg",
+    src: "/Speaker/Ishtiaque.webp",
     alt: "Ishtiaq Jeelani",
   },
   SPEAKER_LUBNA: {
@@ -237,12 +237,12 @@ export const SITE_IMAGES = {
   },
   SPEAKER_SAIDUR: {
     id: "spk-08",
-    src: "/Speaker/saidur1.svg",
+    src: "/Speaker/Saidur.webp",
     alt: "Saidur",
   },
   SPEAKER_SUHEL: {
     id: "spk-09",
-    src: "/Speaker/suhel1.svg",
+    src: "/Speaker/Suhel.webp",
     alt: "Suhel",
   },
   DR_KHURSHEED: {

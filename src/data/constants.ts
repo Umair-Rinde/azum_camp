@@ -371,7 +371,7 @@ export const speakers: Speaker[] = [
   {
     name: "Dr. Saidur Rahman",
     designation: "Head, Research Professor",
-    institution: "Research Centre for Nano-Materials and Energy Technology Faculty of Engineering and Technology University of Malaya Kuala Lumpur, Malaysia",
+    institution: "University of Malaya Kuala Lumpur, Malaysia",
     country: "",
     photo: SITE_IMAGES.SPEAKER_SAIDUR.src,
     shortBio: "",
