@@ -90,6 +90,16 @@ export const SITE_IMAGES = {
     src: "/conference-assets/venue/campus/img-12-building12.webp",
     alt: "Azam Campus building",
   },
+  ZVM_MEDICAL_COLLEGE: {
+    id: "img-49",
+    src: "/conference-assets/venue/campus/img-49-zvm-medical-college.webp",
+    alt: "Zulekhabai V. Munan Medical College building, Azam Campus",
+  },
+  CAMPUS_WALKWAY: {
+    id: "img-50",
+    src: "/conference-assets/venue/campus/img-50-campus-walkway.webp",
+    alt: "Campus walkway with arched building facade, Azam Campus",
+  },
   PATHWAY: {
     id: "img-13",
     src: "/conference-assets/venue/campus/img-13-pathway.webp",
@@ -200,6 +210,21 @@ export const SITE_IMAGES = {
     src: "/conference-assets/people/img-44-dr-khursheed-ahmed-face.webp",
     alt: "Dr. Khursheed Ahmed",
   },
+  IRFAN_SHAIKH: {
+    id: "img-46",
+    src: "/conference-assets/people/img-46-irfan-shaikh-face.webp",
+    alt: "Mr. Irfan J. Shaikh",
+  },
+  SHAIKH_MUZAFFAR: {
+    id: "img-47",
+    src: "/conference-assets/people/img-47-shaikh-muzaffar-face.webp",
+    alt: "Prof. Shaikh Muzaffar",
+  },
+  ASIF: {
+    id: "img-48",
+    src: "/conference-assets/people/img-48-asif-face.webp",
+    alt: "Asif",
+  },
   SPEAKER_DASTAGER: {
     id: "spk-01",
     src: "/Speaker/Dastagir.webp",
@@ -303,7 +328,8 @@ export const CAMPUS_GALLERY: ImageAsset[] = [
   toAsset(SITE_IMAGES.BUILDING_6, "Campus building"),
   toAsset(SITE_IMAGES.BUILDING_12, "Campus building"),
   toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
-  toAsset(SITE_IMAGES.HERO_MAIN_3, "Campus sports field"),
+  // toAsset(SITE_IMAGES.HERO_MAIN_3, "Campus sports field"),
+  toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
 ];
 
 export const LAB_GALLERY: ImageAsset[] = [
@@ -319,7 +345,7 @@ export const LAB_GALLERY: ImageAsset[] = [
 
 export const PUNE_LANDMARKS: ImageAsset[] = [
   toAsset(SITE_IMAGES.AGA_KHAN_PALACE, "Aga Khan Palace"),
-  toAsset(SITE_IMAGES.AGA_KHAN_PALACE_2, "Aga Khan Palace"),
+  // toAsset(SITE_IMAGES.AGA_KHAN_PALACE_2, "Aga Khan Palace"),
   toAsset(SITE_IMAGES.SHANIWAR_WADA, "Shaniwar Wada"),
   toAsset(SITE_IMAGES.SHIVNERI_FORT, "Shivneri Fort"),
 ];
@@ -355,7 +381,7 @@ export const PAST_HIGHLIGHTS: ImageAsset[] = [
   toAsset(SITE_IMAGES.MEMBERS, "Committee and delegates"),
   toAsset(SITE_IMAGES.AGA_KHAN_PALACE, "Pune landmark"),
   toAsset(SITE_IMAGES.CERTIFICATE_1, "Certificates"),
-  toAsset(SITE_IMAGES.HANDSHAKE, "Partnerships"),
+  toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
   toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
   toAsset(SITE_IMAGES.MEMBERS_2, "Scientific sessions"),
   toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
@@ -363,5 +389,5 @@ export const PAST_HIGHLIGHTS: ImageAsset[] = [
   toAsset(SITE_IMAGES.LAB_4, "Research facilities"),
   toAsset(SITE_IMAGES.BUILDING_5, "Azam Campus"),
   toAsset(SITE_IMAGES.CERTIFICATE_2, "Recognition"),
-  toAsset(SITE_IMAGES.HERO_MAIN_2, "Pune landmark"),
+  toAsset(SITE_IMAGES.ZVM_MEDICAL_COLLEGE, "Z.V.M. Medical College"),
 ];

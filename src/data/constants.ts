@@ -24,7 +24,7 @@ export const siteMeta: SiteMeta = {
   siteName: "Herbal & Synthetic Drug Studies Conference",
   titleTemplate: "[Conference Name] | [Edition] | [City]",
   description:
-    "Official conference website with program, speakers, abstract submission, registration, venue and previous conference editions.",
+    "Department of Chemistry, M.C.E. Society's Abeda Inamdar Senior College, Azam Campus, Pune",
   canonicalBase: "",
 };
 
@@ -406,8 +406,20 @@ export const patrons = [
   },
 ];
 
-/** Shown on the home page directly under Patrons. */
-export const conveners = [
+/** Shown in the Patrons section, on the row under Dr. P. A. Inamdar and Mrs. Abeda Inamdar. */
+export const patronAssociates = [
+  {
+    name: "Prof. Irfan Shaikh",
+    role: "Secretary",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.IRFAN_SHAIKH.src,
+  },
+  {
+    name: "Prof. Muzaffar Shaikh",
+    role: "Vice President",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.SHAIKH_MUZAFFAR.src,
+  },
   {
     name: "Prof. Shaila Bootwala",
     role: "Principal",
@@ -415,10 +427,10 @@ export const conveners = [
     photo: SITE_IMAGES.PROF_SHAILA_BOOTWALA.src,
   },
   {
-    name: "Dr. Khursheed Ahmed",
-    role: "H.O.D. Convener",
-    institution: "Abeda Inamdar Senior College, Pune",
-    photo: SITE_IMAGES.DR_KHURSHEED_AHMED.src,
+    name: "Prof. Asif Ansari",
+    role: "Principal",
+    institution: "Z.V.M. Unani Medical College",
+    photo: SITE_IMAGES.ASIF.src,
   },
 ];
 

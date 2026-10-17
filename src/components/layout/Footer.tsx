@@ -22,9 +22,10 @@ export function Footer() {
             />
             <p className="font-heading text-2xl">{currentConference.shortName}</p>
           </div>
-          <p className="mt-4 text-sm font-medium text-gold-soft">Organized with</p>
+          <p className="mt-4 text-sm font-medium text-gold-soft">Convener</p>
           <p className="mt-1 text-sm leading-6 text-warm-white/80">
-            M.C.E. Society&apos;s Abeda Inamdar Senior College and partner institutions named on earlier editions.
+          Prof. Khursheed Ahmed
+            {/* M.C.E. Society&apos;s Abeda Inamdar Senior College and partner institutions named on earlier editions. */}
           </p>
           <p className="mt-4 text-sm leading-6 text-warm-white/65">{siteMeta.description}</p>
         </div>

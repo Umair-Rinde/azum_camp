@@ -12,7 +12,7 @@ export function ContactPage() {
       <PageBanner
         eyebrow="Contact"
         title="Conference secretariat"
-        description="Replace bracketed fields in the constants file with organizer-provided details before publication."
+        // description="Replace bracketed fields in the constants file with organizer-provided details before publication."
       />
 
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2">

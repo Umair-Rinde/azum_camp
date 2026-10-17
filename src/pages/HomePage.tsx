@@ -7,8 +7,8 @@ import {
   highlights,
   historicalVenue,
   homeOrganizers,
-  conveners,
   hostInstitution,
+  patronAssociates,
   patrons,
   primaryCta,
   registrationPlans,
@@ -200,44 +200,29 @@ export function HomePage() {
                   imgClassName="object-cover object-center"
                 />
                 <p className="mt-5 font-heading text-xl leading-tight text-deep-forest">{patron.name}</p>
-                <p className="mt-1 text-sm text-gold">{patron.role}</p>
+                {patron.role ? <p className="mt-1 text-sm text-gold">{patron.role}</p> : null}
                 <p className="mt-1 text-sm text-muted">{patron.institution}</p>
               </motion.li>
             ))}
           </motion.ul>
-        </div>
-      </motion.section>
-
-      <motion.section
-        aria-label="Convener"
-        className="border-b border-border bg-warm-white"
-        initial="hidden"
-        whileInView="show"
-        viewport={viewport}
-        variants={stagger}
-      >
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <motion.div variants={fadeUp}>
-            <SectionHeading align="center" title="Convener" />
-          </motion.div>
           <motion.ul
             variants={stagger}
-            className="mt-12 flex flex-wrap items-start justify-center gap-14 sm:gap-24"
+            className="mt-14 flex flex-wrap items-start justify-center gap-14 sm:gap-20"
           >
-            {conveners.map((person) => (
-              <motion.li key={person.name} variants={fadeUp} className="w-52 text-center">
+            {patronAssociates.map((patron) => (
+              <motion.li key={patron.name} variants={fadeUp} className="w-52 text-center">
                 <PlaceholderImage
-                  src={person.photo}
-                  alt={person.name}
+                  src={patron.photo}
+                  alt={patron.name}
                   width={192}
                   height={192}
                   sizes="192px"
                   className="mx-auto size-40 rounded-full shadow-[0_8px_24px_rgba(20,83,45,0.12)] ring-4 ring-gold/35 md:size-48"
                   imgClassName="object-cover object-center"
                 />
-                <p className="mt-5 font-heading text-xl leading-tight text-deep-forest">{person.name}</p>
-                <p className="mt-1 text-sm text-gold">{person.role}</p>
-                <p className="mt-1 text-sm text-muted">{person.institution}</p>
+                <p className="mt-5 font-heading text-xl leading-tight text-deep-forest">{patron.name}</p>
+                {patron.role ? <p className="mt-1 text-sm text-gold">{patron.role}</p> : null}
+                <p className="mt-1 text-sm text-muted">{patron.institution}</p>
               </motion.li>
             ))}
           </motion.ul>
