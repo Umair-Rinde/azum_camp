@@ -1,4 +1,4 @@
-import { currentConference, historicalVenue } from "@/data/constants";
+import { currentConference } from "@/data/constants";
 import { SITE_IMAGES } from "@/data/images";
 import { displayValue, isPlaceholder } from "@/lib/utils";
 import { PlaceholderImage } from "@/components/media/PlaceholderImage";

@@ -59,7 +59,7 @@ export function ConferencePage() {
           <SectionHeading title="Conference Format" />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {conferenceFormat.map((item) => (
-              <ThemeCard key={item.title} title={item.title} description={item.description} />
+              <ThemeCard key={item.title} title={item.title} />
             ))}
           </div>
         </div>

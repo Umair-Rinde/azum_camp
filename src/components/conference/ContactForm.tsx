@@ -26,7 +26,7 @@ export function ContactForm() {
 
   const onSubmit = form.handleSubmit((values) => {
     window.location.href = buildContactMailto(values);
-    // setStatus("Opening your email client…");
+    setStatus("Opening your email client…");
     form.reset();
   });
 
