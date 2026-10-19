@@ -65,6 +65,16 @@ export const SITE_IMAGES = {
     src: "/conference-assets/venue/campus/img-36-assembly-hall.webp",
     alt: "Dr. A. R. Shaikh Assembly Hall, Azam Campus",
   },
+  ASSEMBLY_HALL_WIDE: {
+    id: "img-55",
+    src: "/conference-assets/venue/campus/img-55-assembly-hall-wide.webp",
+    alt: "Dr. A.B. Shaikh Assembly Hall, Azam Campus",
+  },
+  ASSEMBLY_HALL_CLOSE: {
+    id: "img-56",
+    src: "/conference-assets/venue/campus/img-56-assembly-hall-close.webp",
+    alt: "Dr. A.B. Shaikh Assembly Hall entrance, Azam Campus",
+  },
   BUILDING_3: {
     id: "img-08",
     src: "/conference-assets/venue/campus/img-08-building3.webp",
@@ -150,6 +160,11 @@ export const SITE_IMAGES = {
     src: "/conference-assets/venue/labs/img-21-lab8.webp",
     alt: "Laboratory facility 8",
   },
+  ASR_LAB: {
+    id: "img-54",
+    src: "/conference-assets/venue/labs/img-54-asr-lab.webp",
+    alt: "Advanced Scientific Research Laboratory, Abeda Inamdar Senior College",
+  },
   AGA_KHAN_PALACE: {
     id: "img-22",
     src: "/conference-assets/venue/landmarks/img-22-aga-khan-palace.webp",
@@ -174,6 +189,11 @@ export const SITE_IMAGES = {
     id: "img-52",
     src: "/conference-assets/venue/landmarks/img-52-sppu-main.webp",
     alt: "Savitribai Phule Pune University main building",
+  },
+  SPPU_AERIAL: {
+    id: "img-53",
+    src: "/conference-assets/venue/landmarks/img-53-sppu-aerial.webp",
+    alt: "Aerial view of Savitribai Phule Pune University campus",
   },
   LOGO_SITE: {
     id: "img-26",
@@ -331,46 +351,53 @@ export const COVER_GALLERY: ImageAsset[] = [
 ];
 
 export const CAMPUS_GALLERY: ImageAsset[] = [
-  toAsset(SITE_IMAGES.BUILDING_1, "Campus building"),
-  toAsset(SITE_IMAGES.BUILDING_3, "Campus building"),
-  toAsset(SITE_IMAGES.BUILDING_4, "Campus building"),
-  toAsset(SITE_IMAGES.BUILDING_5, "Campus building"),
-  toAsset(SITE_IMAGES.BUILDING_6, "Campus building"),
-  toAsset(SITE_IMAGES.BUILDING_12, "Campus building"),
-  toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
+  toAsset(SITE_IMAGES.CAMPUS_WALKWAY),
+  toAsset(SITE_IMAGES.BUILDING_12),
+  toAsset(SITE_IMAGES.BUILDING_6),
+  // toAsset(SITE_IMAGES.BUILDING_1),
+  toAsset(SITE_IMAGES.BUILDING_3),
+  toAsset(SITE_IMAGES.BUILDING_4),
+  toAsset(SITE_IMAGES.BUILDING_5),
+  toAsset(SITE_IMAGES.PATHWAY),
+  toAsset(SITE_IMAGES.INAMDAR_EDUCATIONAL_COMPLEX),
+  toAsset(SITE_IMAGES.ASSEMBLY_HALL_WIDE),
   // toAsset(SITE_IMAGES.HERO_MAIN_3, "Campus sports field"),
-  toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
 ];
 
 export const LAB_GALLERY: ImageAsset[] = [
-  toAsset(SITE_IMAGES.LAB_1, "Laboratory 1"),
-  toAsset(SITE_IMAGES.LAB_2, "Laboratory 2"),
-  toAsset(SITE_IMAGES.LAB_3, "Laboratory 3"),
-  toAsset(SITE_IMAGES.LAB_4, "Laboratory 4"),
-  toAsset(SITE_IMAGES.LAB_5, "Laboratory 5"),
-  toAsset(SITE_IMAGES.LAB_8, "Laboratory 8"),
+  toAsset(SITE_IMAGES.ASR_LAB),
+  toAsset(SITE_IMAGES.LAB_2),
+  toAsset(SITE_IMAGES.LAB_3),
+  toAsset(SITE_IMAGES.LAB_1),
+  // toAsset(SITE_IMAGES.LAB_4),
+  // toAsset(SITE_IMAGES.LAB_5),
+  toAsset(SITE_IMAGES.LAB_8),
+  toAsset(SITE_IMAGES.ASSEMBLY_HALL),
 ];
 
 export const PUNE_LANDMARKS: ImageAsset[] = [
-  toAsset(SITE_IMAGES.AGA_KHAN_PALACE, "Aga Khan Palace"),
+  toAsset(SITE_IMAGES.AGA_KHAN_PALACE),
   // toAsset(SITE_IMAGES.AGA_KHAN_PALACE_2, "Aga Khan Palace"),
-  toAsset(SITE_IMAGES.SHANIWAR_WADA, "Shaniwar Wada"),
-  toAsset(SITE_IMAGES.SHIVNERI_FORT, "Shivneri Fort"),
+  toAsset(SITE_IMAGES.SHANIWAR_WADA),
+  toAsset(SITE_IMAGES.SPPU_AERIAL),
+  toAsset(SITE_IMAGES.SPPU_MAIN),
+  toAsset(SITE_IMAGES.SHIVNERI_FORT),
+  toAsset(SITE_IMAGES.ASSEMBLY_HALL_CLOSE),
 ];
 
 export const PARTNERSHIP_IMAGES: ImageAsset[] = [
-  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership"),
-  toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
+  toAsset(SITE_IMAGES.HANDSHAKE),
+  toAsset(SITE_IMAGES.MOU_SIGNING),
 ];
 
 export const CERTIFICATE_IMAGES: ImageAsset[] = [
-  toAsset(SITE_IMAGES.CERTIFICATE_1, "Certificate"),
-  toAsset(SITE_IMAGES.CERTIFICATE_2, "Certificate"),
+  toAsset(SITE_IMAGES.CERTIFICATE_1),
+  toAsset(SITE_IMAGES.CERTIFICATE_2),
 ];
 
 export const COMMITTEE_GROUP_IMAGES: ImageAsset[] = [
-  toAsset(SITE_IMAGES.MEMBERS, "Committee members"),
-  toAsset(SITE_IMAGES.MEMBERS_2, "Committee members"),
+  toAsset(SITE_IMAGES.MEMBERS),
+  toAsset(SITE_IMAGES.MEMBERS_2),
 ];
 
 /** Four-up strip under the hero (PhytoTMed-style conference image row). */

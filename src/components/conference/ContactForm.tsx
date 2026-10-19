@@ -2,7 +2,7 @@ import { useState, type ReactNode } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { submitToApi } from "@/lib/submissions";
+import { buildContactMailto } from "@/lib/contact";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,9 +24,9 @@ export function ContactForm() {
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
 
-  const onSubmit = form.handleSubmit(async (values) => {
-    await submitToApi("/api/contact", values);
-    setStatus("Message captured locally. Connect this form to a backend when ready.");
+  const onSubmit = form.handleSubmit((values) => {
+    window.location.href = buildContactMailto(values);
+    // setStatus("Opening your email client…");
     form.reset();
   });
 

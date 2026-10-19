@@ -17,21 +17,21 @@ export function ConferencePage() {
       <PageBanner
         eyebrow="Conference"
         title="Scientific meeting overview"
-        description="Scope, audience, and format for the series. Current dates remain unpublished until they are entered in the constants file."
+        // description="Scope, audience, and format for the series. Current dates remain unpublished until they are entered in the constants file."
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
         <div>
           <SectionHeading title="Overview" />
           <p className="mt-6 max-w-3xl leading-7 text-muted">
-            HSDS is an academic conference series concerned with herbal medicines, synthetic and metal-based drugs, formulation science, and translational approaches. The next edition will reuse this page structure once organizers confirm title, dates, and venue.
+          HSDS is an established academic conference series dedicated to advancing research and innovation in herbal medicines, synthetic and metal-based drugs, pharmaceutical formulation science, and translational research. The conference brings together researchers, academicians, healthcare professionals, and industry experts to exchange knowledge, share scientific advancements, and foster interdisciplinary collaboration.
           </p>
         </div>
 
         <div>
           <SectionHeading title="Scientific Scope" />
           <p className="mt-6 max-w-3xl leading-7 text-muted">
-            Earlier meetings examined preparation and characterization of drugs, analytical and biochemical methods, complementary and Unani medicines, and molecular targets. Those themes remain useful context; they are not automatically the current call.
+          HSDS focuses on advancing research and innovation across pharmaceutical sciences, drug discovery, and biomedical research. Its scientific scope encompasses herbal medicines, synthetic and metal-based drugs, drug synthesis and characterization, analytical and biochemical methodologies, complementary and Unani systems of medicine, molecular targets, and formulation science. The conference promotes interdisciplinary collaboration and the integration of traditional medicinal knowledge with modern scientific approaches to drug development, therapeutic innovation, and translational research.
           </p>
         </div>
 

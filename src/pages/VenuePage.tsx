@@ -35,20 +35,20 @@ export function VenuePage() {
         <div>
           <SectionHeading
             title="Campus"
-            description="Photographs of Azam Campus buildings and pathways from earlier editions."
+            description="A Glimpse of Azam Campus"
           />
           <div className="mt-6">
             <ImageGallery images={CAMPUS_GALLERY} />
           </div>
-          <p className="mt-4 text-sm leading-7 text-muted">
+          {/* <p className="mt-4 text-sm leading-7 text-muted">
             Earlier editions used the Assembly Hall (2010) and Dr. A. R. Shaikh Assembly Hall (2014, 2016) at Azam Campus, Camp, Pune – 411001. Access notes for the next edition should be updated only after confirmation.
-          </p>
+          </p> */}
         </div>
 
         <div>
           <SectionHeading
             title="Laboratories and facilities"
-            description="Campus laboratory spaces associated with the host institutions."
+            description="Exploring the Campus Laboratories"
           />
           <div className="mt-6">
             <ImageGallery images={LAB_GALLERY} />

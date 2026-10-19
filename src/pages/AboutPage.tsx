@@ -109,7 +109,7 @@ export function AboutPage() {
         <div>
           <SectionHeading
             title="Certificates"
-            description="Sample certificates from earlier editions."
+            description="Certificates from earlier editions."
           />
           <div className="mt-6">
             <ImageGallery images={CERTIFICATE_IMAGES} />

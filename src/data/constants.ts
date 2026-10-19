@@ -16,6 +16,7 @@ import type {
   Theme,
 } from "./types";
 import { SITE_IMAGES } from "./images";
+import { getContactEmail } from "@/lib/contact";
 
 /** Single reusable image until organizers supply edition-specific assets. */
 export const PLACEHOLDER_IMAGE = "/conference-assets/placeholder.svg";
@@ -76,12 +77,12 @@ export const navigationMenu: NavNode[] = [
 export const announcementLinks = [
   {
     label: "Abstract Submission Closes on:",
-    date: "NOVEMBER 30, 2026",
+    date: "DECEMBER 31, 2026",
     href: "/abstracts",
   },
   {
     label: "Early Bird Registration Closes on:",
-    date: "OCTOBER 31, 2026",
+    date: "NOVEMBER 30, 2026",
     href: "/register",
   },
 ];
@@ -107,8 +108,8 @@ export const currentConference: CurrentConference = {
   announcement: "Details for the next edition will be announced soon.",
   themes: [],
   importantDates: [
-    { label: "Early Bird Registration Closes on", date: "OCTOBER 31, 2026" },
-    { label: "Abstract Submission Closes on", date: "NOVEMBER 30, 2026" },
+    { label: "Early Bird Registration Closes on", date: "NOVEMBER 30, 2026" },
+    { label: "Abstract Submission Closes on", date: "DECEMBER 31, 2026" },
     { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
   ],
 };
@@ -128,8 +129,8 @@ export const majorThemes = [
 ];
 
 export const currentImportantDates: ImportantDate[] = [
-  { label: "Early Bird Registration Closes on", date: "OCTOBER 31, 2026" },
-  { label: "Abstract Submission Closes on", date: "NOVEMBER 30, 2026" },
+  { label: "Early Bird Registration Closes on", date: "NOVEMBER 30, 2026" },
+  { label: "Abstract Submission Closes on", date: "DECEMBER 31, 2026" },
   { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
 ];
 
@@ -210,20 +211,20 @@ export const whoShouldAttend = [
 
 export const conferenceFormat = [
   {
-    title: "Registration and inauguration",
-    description: "Earlier editions opened with registration followed by an inauguration function.",
+    title: "Registration and Inauguration",
+    // description: "Earlier editions opened with registration followed by an inauguration function.",
   },
   {
-    title: "Keynote and plenary sessions",
-    description: "Brochures listed a keynote address and invited talks on sub-themes before technical sessions.",
+    title: "Keynote and Plenary Sessions",
+    // description: "Brochures listed a keynote address and invited talks on sub-themes before technical sessions.",
   },
   {
-    title: "Oral and poster presentations",
-    description: "Contributed papers were presented orally and as posters. Historical poster boards were 1 × 1 m.",
+    title: "Oral and Poster Presentations",
+    // description: "Contributed papers were presented orally and as posters. Historical poster boards were 1 × 1 m.",
   },
   {
-    title: "Interactive and cultural programme",
-    description: "Earlier meetings included an interactive session, cultural programme, valedictory function, and a sightseeing programme.",
+    title: "Interactive and Cultural Programme",
+    // description: "Earlier meetings included an interactive session, cultural programme, valedictory function, and a sightseeing programme.",
   },
 ];
 
@@ -450,6 +451,20 @@ export const committee: CommitteeMember[] = [
     bio: "",
   },
   {
+    name: "Prof. Muzaffar Shaikh",
+    role: "Vice President",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.SHAIKH_MUZAFFAR.src,
+    bio: "",
+  },
+  {
+    name: "Prof. Irfan Shaikh",
+    role: "Secretary",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.IRFAN_SHAIKH.src,
+    bio: "",
+  },
+  {
     name: "Prof. Shaila Bootwala",
     role: "Principal",
     institution: "Abeda Inamdar Senior College, Pune",
@@ -457,10 +472,10 @@ export const committee: CommitteeMember[] = [
     bio: "",
   },
   {
-    name: "Dr. Khursheed Ahmed",
-    role: "H.O.D. Convener",
-    institution: "Abeda Inamdar Senior College, Pune",
-    photo: SITE_IMAGES.DR_KHURSHEED_AHMED.src,
+    name: "Prof. Asif Ansari",
+    role: "Principal",
+    institution: "Z.V.M. Unani Medical College",
+    photo: SITE_IMAGES.ASIF.src,
     bio: "",
   },
 ];
@@ -568,14 +583,16 @@ export const howToReach = [
   },
 ];
 
+const contactEmail = getContactEmail();
+
 export const contact: ContactDetails = {
   secretariat: "[Conference Secretariat]",
-  email: "[conference@email]",
+  email: contactEmail,
   phone: "[Phone]",
   address: "[Address]",
   social: [
     { label: "Website", href: "#" },
-    { label: "Email", href: "mailto:[conference@email]" },
+    { label: "Email", href: `mailto:${contactEmail}` },
   ],
 };
 

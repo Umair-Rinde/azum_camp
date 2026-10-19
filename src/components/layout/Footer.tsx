@@ -20,7 +20,9 @@ export function Footer() {
               className="size-12 shrink-0 rounded-full border border-white/15 bg-warm-white"
               imgClassName="object-contain p-0.5"
             />
-            <p className="font-heading text-2xl">{currentConference.shortName}</p>
+            <p className="font-sans text-2xl font-medium leading-none tracking-wide uppercase">
+              {currentConference.shortName}
+            </p>
           </div>
           <p className="mt-4 text-base font-semibold text-gold-soft">Convener: Prof. KHURSHEED AHMED</p>
           <p className="mt-4 text-sm leading-6 text-warm-white/65">{siteMeta.description}</p>

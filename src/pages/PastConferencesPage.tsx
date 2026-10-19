@@ -128,7 +128,7 @@ export function PastConferencesPage() {
       <PageBanner
         eyebrow="Archive"
         title="Past conferences"
-        description="Names, committees, themes, and other facts transcribed from the 2010, 2014, and 2016 brochures. They describe those editions only."
+        description="Conference Archives: Names, Committees, Themes, and Key Highlights from the 2010, 2014, and 2016 Editions"
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">

@@ -17,9 +17,9 @@ export function VenueMap() {
         <p className="font-heading text-xl">
           {currentUnknown ? "Current venue to be confirmed" : displayValue(currentConference.venue)}
         </p>
-        <p className="text-sm text-muted">
+        {/* <p className="text-sm text-muted">
           Historical reference only: {historicalVenue.name}, {historicalVenue.address}.
-        </p>
+        </p> */}
       </div>
     </div>
   );
