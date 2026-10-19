@@ -32,7 +32,6 @@ export function AbstractsPage() {
               <dd className="mt-1">{abstractGuidelines.fileTypes}</dd>
             </div>
           </dl>
-          <p className="mt-4 text-sm text-muted">{abstractGuidelines.note}</p>
         </div>
 
         <div>
