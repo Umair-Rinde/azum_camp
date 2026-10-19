@@ -10,16 +10,16 @@ export function PresentersPage() {
       <PageBanner
         eyebrow="Program"
         title="Presenters instructions"
-        description="Oral, poster, and session-chair instructions will be published with the current program."
+        // description="Oral, poster, and session-chair instructions will be published with the current program."
       />
       <section className="mx-auto max-w-6xl space-y-10 px-4 py-16">
-        <p className="max-w-3xl text-sm leading-7 text-muted">
+        {/* <p className="max-w-3xl text-sm leading-7 text-muted">
           Slide formats, poster sizes, and presentation timings remain placeholders until the scientific committee confirms them.
-        </p>
+        </p> */}
         <div>
           <SectionHeading
-            title="Poster size on earlier editions"
-            description="Taken from HSDS brochures. Not a rule for the next meeting."
+            title="Poster Size"
+            // description="Taken from HSDS brochures. Not a rule for the next meeting."
           />
           <p className="mt-4 max-w-3xl text-sm leading-7 text-muted">{historicalPosterNote}</p>
         </div>

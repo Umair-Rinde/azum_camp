@@ -561,7 +561,7 @@ export const historicalVenue = {
 };
 
 export const historicalPosterNote =
-  "The 2010, 2014, and 2016 brochures provided 1 × 1 m poster space at the venue. Selected papers were reviewed before presentation. Three best posters were awarded in 2010 and 2014; five in 2016. Current poster size is not confirmed.";
+  "The 2010, 2014, and 2016 brochures provided 1 × 1 m poster space at the venue. Selected papers were reviewed before presentation. Three best posters were awarded in 2010 and 2014; five in 2016.";
 
 export const aboutPune =
   "Known as the “Oxford of the East” and the cultural capital of Maharashtra, Pune is a vibrant city where rich history meets modern innovation. Renowned for its prestigious educational institutions, thriving research community, and growing industrial and technological sectors, the city offers an inspiring setting for academic exchange and international collaboration. Nestled in the Deccan region of India, Pune is celebrated for its cultural heritage, pleasant climate during the winter months, and dynamic intellectual environment. With its blend of tradition, knowledge, and progress, Pune provides a welcoming destination for delegates from around the world to connect, share ideas, and experience the spirit of India’s academic and cultural landscape.";

@@ -8,7 +8,7 @@ export function ReviewProcessPage() {
       <PageBanner
         eyebrow="Program"
         title="Review process"
-        description="The current review policy has not been issued. This page will hold screening, chair review, and decision steps once organizers confirm them."
+        // description="The current review policy has not been issued. This page will hold screening, chair review, and decision steps once organizers confirm them."
       />
       <section className="mx-auto max-w-6xl px-4 py-16">
         <p className="max-w-3xl text-sm leading-7 text-muted">
