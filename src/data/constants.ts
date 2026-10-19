@@ -475,7 +475,7 @@ export const abstractGuidelines = {
   language: "English",
   wordLimit: "[Word limit to be confirmed]",
   fileTypes: "PDF or DOCX, once the template is released",
-  note: "HSDS-2010, 2014, and 2016 brochures asked for abstracts of not more than 300 words. The 2010 circular specified MS Word, Times New Roman, 12 pt, 1.5 line spacing. That format is archival and is not the current limit unless organizers confirm it.",
+  // note: "HSDS-2010, 2014, and 2016 brochures asked for abstracts of not more than 300 words. The 2010 circular specified MS Word, Times New Roman, 12 pt, 1.5 line spacing. That format is archival and is not the current limit unless organizers confirm it.",
   templateHref: "",
 };
 
@@ -549,7 +549,7 @@ export const historicalPosterNote =
   "The 2010, 2014, and 2016 brochures provided 1 × 1 m poster space at the venue. Selected papers were reviewed before presentation. Three best posters were awarded in 2010 and 2014; five in 2016. Current poster size is not confirmed.";
 
 export const aboutPune =
-  "Earlier HSDS brochures described Pune as the Queen of the Deccan, cultural capital of Maharashtra, and Oxford of the East: a historical city with a growing scientific and industrial base, pleasant winter weather, and a dense academic campus network. Travel notes for the next meeting will follow venue confirmation.";
+  "Known as the “Oxford of the East” and the cultural capital of Maharashtra, Pune is a vibrant city where rich history meets modern innovation. Renowned for its prestigious educational institutions, thriving research community, and growing industrial and technological sectors, the city offers an inspiring setting for academic exchange and international collaboration. Nestled in the Deccan region of India, Pune is celebrated for its cultural heritage, pleasant climate during the winter months, and dynamic intellectual environment. With its blend of tradition, knowledge, and progress, Pune provides a welcoming destination for delegates from around the world to connect, share ideas, and experience the spirit of India’s academic and cultural landscape.";
 
 export const howToReach = [
   {
@@ -969,5 +969,4 @@ export const footerLinks: NavItem[] = [
   { label: "Venue", href: "/venue" },
   { label: "Call for Abstracts", href: "/abstracts" },
   { label: "Register Now", href: "/register" },
-  { label: "Sponsor", href: "/sponsors" },
 ];

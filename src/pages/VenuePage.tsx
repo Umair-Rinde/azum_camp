@@ -1,11 +1,10 @@
-import { aboutPune, accommodationNote, currentConference, historicalVenue, howToReach } from "@/data/constants";
+import { aboutPune, currentConference, historicalVenue} from "@/data/constants";
 import { CAMPUS_GALLERY, LAB_GALLERY, PUNE_LANDMARKS } from "@/data/images";
 import { displayValue } from "@/lib/utils";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
 import { VenueMap } from "@/components/conference/VenueMap";
-import { ThemeCard } from "@/components/conference/ThemeCard";
 import { ImageGallery } from "@/components/conference/ImageGallery";
 
 export function VenuePage() {
@@ -15,7 +14,7 @@ export function VenuePage() {
       <PageBanner
         eyebrow="Venue"
         title="Meeting place"
-        description="The current venue stays a placeholder until organizers confirm it. Azam Campus is documented only for earlier editions."
+        // description="The current venue stays a placeholder until organizers confirm it. Azam Campus is documented only for earlier editions."
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
@@ -55,25 +54,10 @@ export function VenuePage() {
             <ImageGallery images={LAB_GALLERY} />
           </div>
         </div>
-
-        <div>
-          <SectionHeading title="How to Reach" />
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {howToReach.map((item) => (
-              <ThemeCard key={item.title} title={item.title} description={item.description} />
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <SectionHeading title="Accommodation" />
-          <p className="mt-4 max-w-3xl text-sm text-muted">{accommodationNote}</p>
-        </div>
-
         <div>
           <SectionHeading
             title="About Pune"
-            description="Landmarks often noted in earlier HSDS sightseeing notes."
+            // description="Landmarks often noted in earlier HSDS sightseeing notes."
           />
           <p className="mt-4 max-w-3xl leading-7 text-muted">{aboutPune}</p>
           <div className="mt-8">

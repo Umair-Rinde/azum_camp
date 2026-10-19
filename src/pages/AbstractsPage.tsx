@@ -12,7 +12,7 @@ export function AbstractsPage() {
       <PageBanner
         eyebrow="Call for Abstracts"
         title="Submit your work"
-        description="Guidelines below stay conservative. Historical 300-word limits are noted as archival, not current policy."
+        // description="Guidelines below stay conservative. Historical 300-word limits are noted as archival, not current policy."
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
@@ -53,7 +53,7 @@ export function AbstractsPage() {
         <div>
           <SectionHeading
             title="Research Areas"
-            description="Areas recorded from earlier editions. Replace or edit these in constants.ts if a new track list is issued."
+            // description="Areas recorded from earlier editions. Replace or edit these in constants.ts if a new track list is issued."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {historicalTopics.map((topic, index) => (

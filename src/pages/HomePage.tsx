@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import {
   currentConference,
   currentImportantDates,
@@ -458,8 +459,16 @@ export function HomePage() {
               Got a question? Fill in your details with your enquiry and we will be in touch. Registration
               and abstract portals open with the current circular.
             </p>
-            <Button variant="gold" size="lg" className="mt-8 rounded-full uppercase" asChild>
-              <Link to={primaryCta.href}>{primaryCta.label}</Link>
+            <Button
+              variant="gold"
+              size="lg"
+              className="mt-8 rounded-[10px] px-6 text-[13px] font-bold tracking-[0.14em] uppercase [&_svg]:size-2.5"
+              asChild
+            >
+              <Link to={primaryCta.href}>
+                {primaryCta.label}
+                <ArrowUpRight className="size-2.5" strokeWidth={2.5} />
+              </Link>
             </Button>
           </motion.div>
           <motion.div variants={fadeUp} className="rounded-xl bg-warm-white p-6 text-charcoal shadow-lg">

@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { RegistrationPlan } from "@/data/types";
+
+const REGISTRATION_FORM_URL = "https://forms.gle/4KN1cg5WPp4b2V4m8";
 
 export function RegistrationCard({ category, price, currency }: RegistrationPlan) {
   return (
@@ -21,7 +22,9 @@ export function RegistrationCard({ category, price, currency }: RegistrationPlan
       </CardHeader>
       <CardContent className="px-6 pt-4 pb-7">
         <Button className="h-11 w-full rounded-full text-sm tracking-[0.12em] uppercase" asChild>
-          <Link to="/register">Register Now</Link>
+          <a href={REGISTRATION_FORM_URL} target="_blank" rel="noopener noreferrer">
+            Register Now
+          </a>
         </Button>
       </CardContent>
     </Card>

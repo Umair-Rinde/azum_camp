@@ -100,6 +100,11 @@ export const SITE_IMAGES = {
     src: "/conference-assets/venue/campus/img-50-campus-walkway.webp",
     alt: "Campus walkway with arched building facade, Azam Campus",
   },
+  INAMDAR_EDUCATIONAL_COMPLEX: {
+    id: "img-51",
+    src: "/conference-assets/venue/campus/img-51-inamdar-educational-complex.webp",
+    alt: "Dr. P.A. Inamdar Educational Complex, Azam Campus",
+  },
   PATHWAY: {
     id: "img-13",
     src: "/conference-assets/venue/campus/img-13-pathway.webp",
@@ -164,6 +169,11 @@ export const SITE_IMAGES = {
     id: "img-25",
     src: "/conference-assets/venue/landmarks/img-25-shivneri-fort.webp",
     alt: "Shivneri Fort",
+  },
+  SPPU_MAIN: {
+    id: "img-52",
+    src: "/conference-assets/venue/landmarks/img-52-sppu-main.webp",
+    alt: "Savitribai Phule Pune University main building",
   },
   LOGO_SITE: {
     id: "img-26",
@@ -338,8 +348,6 @@ export const LAB_GALLERY: ImageAsset[] = [
   toAsset(SITE_IMAGES.LAB_3, "Laboratory 3"),
   toAsset(SITE_IMAGES.LAB_4, "Laboratory 4"),
   toAsset(SITE_IMAGES.LAB_5, "Laboratory 5"),
-  toAsset(SITE_IMAGES.LAB_6, "Laboratory 6"),
-  toAsset(SITE_IMAGES.LAB_7, "Laboratory 7"),
   toAsset(SITE_IMAGES.LAB_8, "Laboratory 8"),
 ];
 
@@ -381,13 +389,13 @@ export const PAST_HIGHLIGHTS: ImageAsset[] = [
   toAsset(SITE_IMAGES.MEMBERS, "Committee and delegates"),
   toAsset(SITE_IMAGES.AGA_KHAN_PALACE, "Pune landmark"),
   toAsset(SITE_IMAGES.CERTIFICATE_1, "Certificates"),
-  toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
-  toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
-  toAsset(SITE_IMAGES.MEMBERS_2, "Scientific sessions"),
-  toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
-  toAsset(SITE_IMAGES.LAB_1, "Laboratories"),
-  toAsset(SITE_IMAGES.LAB_4, "Research facilities"),
   toAsset(SITE_IMAGES.BUILDING_5, "Azam Campus"),
+  toAsset(SITE_IMAGES.INAMDAR_EDUCATIONAL_COMPLEX, "Inamdar Educational Complex"),
+  toAsset(SITE_IMAGES.SPPU_MAIN, "Savitribai Phule Pune University"),
+  toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
+  toAsset(SITE_IMAGES.LAB_1, "Laboratories"),
+  toAsset(SITE_IMAGES.LAB_3, "Laboratory 3"),
+  toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
   toAsset(SITE_IMAGES.CERTIFICATE_2, "Recognition"),
   toAsset(SITE_IMAGES.ZVM_MEDICAL_COLLEGE, "Z.V.M. Medical College"),
 ];

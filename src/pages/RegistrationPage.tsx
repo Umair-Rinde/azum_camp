@@ -20,7 +20,7 @@ export function RegistrationPage() {
       <PageBanner
         eyebrow="Registration"
         title="Register for the conference"
-        description="Categories are listed. Fees from 2010, 2014, and 2016 pamphlets are not shown and must not be treated as current."
+        // description="Categories are listed. Fees from 2010, 2014, and 2016 pamphlets are not shown and must not be treated as current."
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
