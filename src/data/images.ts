@@ -410,19 +410,19 @@ export const HERO_IMAGE_STRIP: ImageAsset[] = [
 
 /**
  * Past-edition highlight mosaic for the homepage.
- * Order matches bento slots: landscapes, tall landmark, paired tiles, tall campus, denser band.
+ * Order matches bento slots: landscapes, tall landmark, matching landscape, tall campus, denser band.
  */
 export const PAST_HIGHLIGHTS: ImageAsset[] = [
-  toAsset(SITE_IMAGES.MEMBERS, "Committee and delegates"),
-  toAsset(SITE_IMAGES.AGA_KHAN_PALACE, "Pune landmark"),
-  toAsset(SITE_IMAGES.CERTIFICATE_1, "Certificates"),
-  toAsset(SITE_IMAGES.BUILDING_5, "Azam Campus"),
+  // toAsset(SITE_IMAGES.MEMBERS, "Committee and delegates"),
   toAsset(SITE_IMAGES.INAMDAR_EDUCATIONAL_COMPLEX, "Inamdar Educational Complex"),
-  toAsset(SITE_IMAGES.SPPU_MAIN, "Savitribai Phule Pune University"),
+  toAsset(SITE_IMAGES.ASSEMBLY_HALL_WIDE, "Assembly Hall"),
+  toAsset(SITE_IMAGES.BUILDING_4, "Azam Campus"),
+  toAsset(SITE_IMAGES.COVER_3, "Campus pathway"),
+  toAsset(SITE_IMAGES.HERO_MAIN, "Azam Campus"),
   toAsset(SITE_IMAGES.CAMPUS_WALKWAY, "Campus walkway"),
   toAsset(SITE_IMAGES.LAB_1, "Laboratories"),
-  toAsset(SITE_IMAGES.LAB_3, "Laboratory 3"),
-  toAsset(SITE_IMAGES.PATHWAY, "Campus pathway"),
+  toAsset(SITE_IMAGES.LAB_2, "Laboratory 3"),
+  toAsset(SITE_IMAGES.BUILDING_12, "Azam Campus"),
   toAsset(SITE_IMAGES.CERTIFICATE_2, "Recognition"),
   toAsset(SITE_IMAGES.ZVM_MEDICAL_COLLEGE, "Z.V.M. Medical College"),
 ];

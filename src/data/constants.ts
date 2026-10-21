@@ -410,16 +410,16 @@ export const patrons = [
 /** Shown in the Patrons section, on the row under Dr. P. A. Inamdar and Mrs. Abeda Inamdar. */
 export const patronAssociates = [
   {
-    name: "Prof. Irfan Shaikh",
-    role: "Secretary",
-    institution: "M.C.E. Society",
-    photo: SITE_IMAGES.IRFAN_SHAIKH.src,
-  },
-  {
     name: "Prof. Muzaffar Shaikh",
     role: "Vice President",
     institution: "M.C.E. Society",
     photo: SITE_IMAGES.SHAIKH_MUZAFFAR.src,
+  },
+  {
+    name: "Prof. Irfan Shaikh",
+    role: "Secretary",
+    institution: "M.C.E. Society",
+    photo: SITE_IMAGES.IRFAN_SHAIKH.src,
   },
   {
     name: "Prof. Shaila Bootwala",

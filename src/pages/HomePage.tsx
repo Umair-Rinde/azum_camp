@@ -394,8 +394,8 @@ export function HomePage() {
           <motion.div variants={fadeUp}>
             <SectionHeading
               align="center"
-              eyebrow="Past Edition Highlights"
-              title="Moments from the series"
+              eyebrow="Campus Highlights"
+              title="Glimpse of the Campus"
               className="[&_h2]:text-warm-white"
             />
           </motion.div>

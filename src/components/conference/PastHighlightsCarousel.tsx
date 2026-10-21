@@ -6,14 +6,13 @@ import { cn } from "@/lib/utils";
 
 /**
  * Bento mosaic spans — mirrors a PhytoTMed-style collage:
- * tall center feature, paired small tiles, tall bottom-left, then a denser bottom band.
+ * tall center feature, matching landscape tiles, tall bottom-left, then a denser bottom band.
  */
 const MOSAIC_SPANS = [
   "col-span-2 row-span-1 md:col-span-2", // top-left landscape
   "col-span-2 row-span-2 md:col-span-2", // tall center feature
   "col-span-2 row-span-1 md:col-span-2", // top-right landscape
-  "col-span-1 row-span-1 md:col-span-1", // mid-left small
-  "col-span-1 row-span-1 md:col-span-1", // mid-left small
+  "col-span-2 row-span-1 md:col-span-2", // mid-left landscape (same size as top-left)
   "col-span-2 row-span-1 md:col-span-2", // mid-right
   "col-span-2 row-span-2 md:col-span-2", // tall bottom-left
   "col-span-1 row-span-1 md:col-span-1", // bottom band
