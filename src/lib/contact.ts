@@ -1,4 +1,4 @@
-const DEFAULT_CONTACT_EMAIL = "chemistry@aiscpune.org";
+const DEFAULT_CONTACT_EMAIL = "hsds2027@aiscpune.org";
 
 /** Conference contact email from env, with a hard-coded fallback. */
 export function getContactEmail(): string {
