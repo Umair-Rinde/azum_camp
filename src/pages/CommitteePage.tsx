@@ -10,7 +10,7 @@ export function CommitteePage() {
   return (
     <>
       <PageMeta title="Committee | Herbal & Synthetic Drug Studies" />
-      <PageBanner eyebrow="People" title="Committee" />
+      <PageBanner eyebrow="People" title="Reception Committee" />
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="mx-auto grid max-w-4xl grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
           {committee.map((member) => (

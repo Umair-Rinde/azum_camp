@@ -104,13 +104,7 @@ function EditionRecord({ conference }: { conference: PastConference }) {
       </div>
 
       <div>
-        <h3 className="mb-2 text-xl">Abstracts and posters</h3>
-        <p className="max-w-3xl text-sm leading-7 text-muted">{conference.abstractNote}</p>
-        <p className="mt-2 max-w-3xl text-sm leading-7 text-muted">{conference.posterNote}</p>
-      </div>
-
-      <div>
-        <h3 className="mb-2 text-xl">Secretariat (that edition)</h3>
+        <h3 className="mb-2 text-xl">Secretariat</h3>
         <p className="text-sm">{conference.contact.convener}</p>
         <p className="mt-1 text-sm text-muted">{conference.contact.address}</p>
         <p className="mt-1 text-sm text-muted">{conference.contact.phones.join(" · ")}</p>
@@ -127,7 +121,7 @@ export function PastConferencesPage() {
       <PageMeta title="Past Conferences | Herbal & Synthetic Drug Studies" />
       <PageBanner
         eyebrow="Archive"
-        title="Past conferences"
+        title="Past Conferences"
         description="Conference Archives: Names, Committees, Themes, and Key Highlights from the 2010, 2014, and 2016 Editions"
       />
 
