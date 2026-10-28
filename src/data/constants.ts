@@ -244,7 +244,7 @@ export const hostInstitution = {
     ],
   },
   unaniCollege: {
-    label: "M. M. E. R. C.'s Z. V. M. Unani Medical College and Hospital",
+    label: "Z. V. M. Unani Medical College and Hospital",
     body: [
       "The Maharashtra Medical Education & Research Center, Pune, established Z.V.M. Unani Medical College & Hospital in 1984 to impart professional education to the Muslim minority community to upgrade the status of education of the community which will improve their standard of life.",
       "The Z.V.M. Unani Medical College & Hospital, Pune, is approved by the National Commission for Indian System of Medicine, New Delhi, and recognized by the Government of Maharashtra. It is affiliated with the Maharashtra University of Health Sciences (Nashik). It is a grant-in-aid college for U.G. with an intake capacity of 60 B.U.M.S. students. The College is also conducting postgraduate courses in three subjects i.e. Moalajat (General Medicine), Ilmul Qabalat wa Amraz-e-Niswan (Gynaecology), and Ilmul Jarahat (Surgery).",
