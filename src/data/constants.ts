@@ -315,7 +315,7 @@ export const organizers: Organizer[] = [
  */
 export const speakers: Speaker[] = [
   {
-    name: "Prof. Niyaz Ahmed",
+    name: "Prof. Niyaz Ahmed (Chief Guest)",
     designation: "Senior Professor",
     institution: "Dept. of  Biotechnology & Bioinformatics (DoBB), University of Hyderabad, India",
     country: "",
@@ -430,6 +430,12 @@ export const patronAssociates = [
     photo: SITE_IMAGES.IRFAN_SHAIKH.src,
   },
   {
+    name: "Dr. Nazim Rafi Shaikh",
+    role: "Secretary",
+    institution: "M.M.E.& R.C.",
+    photo: SITE_IMAGES.DR_NAZIM_RAFI_SHAIKH.src,
+  },
+  {
     name: "Prof. Shaila Bootwala",
     role: "Principal",
     institution: "Abeda Inamdar Senior College, Pune",
@@ -440,12 +446,6 @@ export const patronAssociates = [
     role: "Principal",
     institution: "Z.V.M. Unani Medical College",
     photo: SITE_IMAGES.ASIF.src,
-  },
-  {
-    name: "Dr. Nazim Rafi Shaikh",
-    role: "Secretary",
-    institution: "M.M.E.& R.C.",
-    photo: SITE_IMAGES.DR_NAZIM_RAFI_SHAIKH.src,
   },
 ];
 
@@ -479,6 +479,13 @@ export const committee: CommitteeMember[] = [
     bio: "",
   },
   {
+    name: "Dr. Nazim Rafi Shaikh",
+    role: "Secretary",
+    institution: "M.M.E.& R.C.",
+    photo: SITE_IMAGES.DR_NAZIM_RAFI_SHAIKH.src,
+    bio: "",
+  },
+  {
     name: "Prof. Shaila Bootwala",
     role: "Principal",
     institution: "Abeda Inamdar Senior College, Pune",
@@ -490,13 +497,6 @@ export const committee: CommitteeMember[] = [
     role: "Principal",
     institution: "Z.V.M. Unani Medical College",
     photo: SITE_IMAGES.ASIF.src,
-    bio: "",
-  },
-  {
-    name: "Dr. Nazim Rafi Shaikh",
-    role: "Secretary",
-    institution: "M.M.E.& R.C.",
-    photo: SITE_IMAGES.DR_NAZIM_RAFI_SHAIKH.src,
     bio: "",
   },
 ];

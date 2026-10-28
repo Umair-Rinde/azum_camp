@@ -31,7 +31,11 @@ function SpeakerGroup({
         {people.length > 0
           ? people.map((speaker) => (
               <div key={speaker.name} className={shell}>
-                <SpeakerCard {...speaker} featured={featured} />
+                <SpeakerCard
+                  {...speaker}
+                  name={speaker.name.replace(/\s*\(Chief Guest\)\s*$/, "")}
+                  featured={featured}
+                />
               </div>
             ))
           : Array.from({ length: centered ? 1 : 3 }).map((_, index) => (
