@@ -93,15 +93,19 @@ function EditionRecord({ conference }: { conference: PastConference }) {
         </div>
       ) : null}
 
-      <div>
-        <h3 className="mb-4 text-xl">Organizing committee</h3>
-        <PersonList people={conference.organizingCommittee} />
-      </div>
+      {conference.organizingCommittee.length > 0 ? (
+        <div>
+          <h3 className="mb-4 text-xl">Organizing committee</h3>
+          <PersonList people={conference.organizingCommittee} />
+        </div>
+      ) : null}
 
-      <div>
-        <h3 className="mb-4 text-xl">Members</h3>
-        <PersonList people={conference.members} />
-      </div>
+      {conference.members.length > 0 ? (
+        <div>
+          <h3 className="mb-4 text-xl">Members</h3>
+          <PersonList people={conference.members} />
+        </div>
+      ) : null}
 
       <div>
         <h3 className="mb-2 text-xl">Secretariat</h3>

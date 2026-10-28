@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { speakers } from "@/data/constants";
 import { PageMeta } from "@/components/seo/PageMeta";
@@ -17,7 +17,7 @@ function SpeakerGroup({
   centered = false,
   featured = false,
 }: {
-  title: string;
+  title: ReactNode;
   people: Speaker[];
   centered?: boolean;
   featured?: boolean;
@@ -62,7 +62,12 @@ export function SpeakersPage() {
       />
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
         <SpeakerGroup
-          title="Keynote Speaker (Chief Guest)"
+          title={
+            <>
+              Keynote Speaker{" "}
+              <span className="block md:inline">(Chief Guest)</span>
+            </>
+          }
           people={speakers.filter((s) => s.role === "keynote")}
           centered
           featured

@@ -208,10 +208,10 @@ export function HomePage() {
           </motion.ul>
           <motion.ul
             variants={stagger}
-            className="mt-14 flex flex-wrap items-start justify-center gap-14 sm:gap-20"
+            className="mt-14 flex flex-wrap items-start justify-center gap-10"
           >
             {patronAssociates.map((patron) => (
-              <motion.li key={patron.name} variants={fadeUp} className="w-52 text-center">
+              <motion.li key={patron.name} variants={fadeUp} className="w-44 text-center sm:w-48">
                 <PlaceholderImage
                   src={patron.photo}
                   alt={patron.name}
@@ -281,6 +281,17 @@ export function HomePage() {
               <div className="academic-divider mt-3 max-w-[5rem]" />
               <div className="mt-5 space-y-4 text-base leading-8 text-muted md:text-[17px]">
                 {hostInstitution.department.body.map((paragraph) => (
+                  <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div variants={fadeUp}>
+              <p className="text-xs tracking-[0.22em] text-gold uppercase">
+                {hostInstitution.unaniCollege.label}
+              </p>
+              <div className="academic-divider mt-3 max-w-[5rem]" />
+              <div className="mt-5 space-y-4 text-base leading-8 text-muted md:text-[17px]">
+                {hostInstitution.unaniCollege.body.map((paragraph) => (
                   <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                 ))}
               </div>

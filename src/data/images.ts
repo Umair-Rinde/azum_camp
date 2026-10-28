@@ -255,6 +255,11 @@ export const SITE_IMAGES = {
     src: "/conference-assets/people/img-48-asif-face.webp",
     alt: "Asif",
   },
+  DR_NAZIM_RAFI_SHAIKH: {
+    id: "img-57",
+    src: "/conference-assets/people/img-57-dr-nazim-rafi-shaikh-face.webp",
+    alt: "Dr. Nazim Rafi Shaikh",
+  },
   SPEAKER_DASTAGER: {
     id: "spk-01",
     src: "/Speaker/Dastagir.webp",
