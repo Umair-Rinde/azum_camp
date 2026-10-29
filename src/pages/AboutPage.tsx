@@ -72,7 +72,7 @@ export function AboutPage() {
         <div>
           <SectionHeading
             title="Organizing Institutions"
-            description="Bodies named on the 2010, 2014, and 2016 brochures. They are the documented hosts of those editions, not a confirmed list for the next meeting."
+            description="Bodies named on the 2010, 2014, and 2016 editions."
           />
           <div className="mt-8">
             <TrustLogoStrip />
@@ -108,8 +108,8 @@ export function AboutPage() {
 
         <div>
           <SectionHeading
-            title="Certificates"
-            description="Certificates from earlier editions."
+            title="Recognition & Awards"
+            description="Recognition & Awards from earlier editions."
           />
           <div className="mt-6">
             <ImageGallery images={CERTIFICATE_IMAGES} />

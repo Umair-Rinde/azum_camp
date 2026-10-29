@@ -65,7 +65,7 @@ export const navigationMenu: NavNode[] = [
       { label: "Tentative Program Schedule", href: "/program" },
       { label: "Topics", href: "/conference#topics" },
       { label: "Call for Abstracts", href: "/abstracts" },
-      { label: "Review Process", href: "/review-process" },
+      // { label: "Review Process", href: "/review-process" },
       { label: "Presenters Instructions", href: "/presenters" },
     ],
   },
@@ -508,11 +508,45 @@ export const presentationTypes = ["Oral Presentation", "Poster Presentation"] as
 export const researchTracks = [...historicalTopics];
 
 export const abstractGuidelines = {
-  language: "English",
-  wordLimit: "[Word limit to be confirmed]",
-  fileTypes: "PDF or DOCX, once the template is released",
-  // note: "HSDS-2010, 2014, and 2016 brochures asked for abstracts of not more than 300 words. The 2010 circular specified MS Word, Times New Roman, 12 pt, 1.5 line spacing. That format is archival and is not the current limit unless organizers confirm it.",
-  templateHref: "",
+  items: [
+    {
+      label: "Language",
+      detail: "Abstracts must be written in English.",
+    },
+    {
+      label: "Template",
+      detail: "Use the prescribed Word template for all submissions.",
+    },
+    {
+      label: "Title",
+      detail: "Center-align the title in Calibri Bold, 14 pt, followed by one blank line.",
+    },
+    {
+      label: "Author Details",
+      detail:
+        "List author names centered in Calibri Italic, 12 pt, using the format First Initial. Middle Initial. Last Name (e.g., A. B. Smith).",
+    },
+    {
+      label: "Presenting Author",
+      detail: "Mark the presenting author's name with an asterisk (*).",
+    },
+    {
+      label: "Affiliations",
+      detail:
+        "Number affiliations only when authors represent different institutions. No numbering is required if all authors share the same affiliation.",
+    },
+    {
+      label: "Word Limit and Formatting",
+      detail: "Maximum 250 words, single-spaced, in Calibri 12 pt.",
+    },
+    {
+      label: "Figures and Captions",
+      detail:
+        "Figures are permitted and must be placed inside a text box. Include figure caption within the same text box, formatted in Calibri 10 pt.",
+    },
+  ],
+  templateHref: "/Abstract%20Template/HSDS-2027_Abstract_Template.docx",
+  templateFilename: "HSDS-2027_Abstract_Template.docx",
 };
 
 export const registrationPlans: RegistrationPlan[] = [
@@ -582,7 +616,7 @@ export const historicalVenue = {
 };
 
 export const historicalPosterNote =
-  "The 2010, 2014, and 2016 brochures provided 1 × 1 m poster space at the venue. Selected papers were reviewed before presentation. Three best posters were awarded in 2010 and 2014; five in 2016.";
+  "For Poster Presentation: 1 × 1 m. space will be provided at the conference venue. All the abstract of papers are subject to reviewing and the selected papers will be allowed for presentations during the technical sessions as per the time schedule.For Oral Presentation: 10 minutes presentation through PPT. Best posters will be selected for Poster Awards. Abstracts of not more than 300 words in given templates may be submitted latest by 31st December, 2026. Use templates from https://www.hsds2027.aiscpune.org/";
 
 export const aboutPune =
   "Known as the “Oxford of the East” and the cultural capital of Maharashtra, Pune is a vibrant city where rich history meets modern innovation. Renowned for its prestigious educational institutions, thriving research community, and growing industrial and technological sectors, the city offers an inspiring setting for academic exchange and international collaboration. Nestled in the Deccan region of India, Pune is celebrated for its cultural heritage, pleasant climate during the winter months, and dynamic intellectual environment. With its blend of tradition, knowledge, and progress, Pune provides a welcoming destination for delegates from around the world to connect, share ideas, and experience the spirit of India’s academic and cultural landscape.";
@@ -608,11 +642,12 @@ const contactEmail = getContactEmail();
 
 export const contact: ContactDetails = {
   secretariat: "[Conference Secretariat]",
-  email: contactEmail,
-  phone: "[Phone]",
-  address: "[Address]",
+  email: "hsds2027@aiscpune.org / chemistry@aiscpune.org",
+  phone: "+91 - 9890140669 / +91 - 9922570014 / +91 - 9960545416",
+  address:
+    "Abeda Inamdar Senior College of Arts Science & Commerce (Autonomous)\n2390-B, K.B. Hidayatulla Road, Azam Campus, Camp, Pune - 411001 (India)",
   social: [
-    { label: "Website", href: "#" },
+    { label: "Website", href: "https://www.hsds2027.aiscpune.org/" },
     { label: "Email", href: `mailto:${contactEmail}` },
   ],
 };

@@ -12,7 +12,7 @@ import { PastConferencesPage } from "@/pages/PastConferencesPage";
 import { VenuePage } from "@/pages/VenuePage";
 import { ContactPage } from "@/pages/ContactPage";
 import { ImportantDatesPage } from "@/pages/ImportantDatesPage";
-import { ReviewProcessPage } from "@/pages/ReviewProcessPage";
+// import { ReviewProcessPage } from "@/pages/ReviewProcessPage";
 import { PresentersPage } from "@/pages/PresentersPage";
 import { SponsorsPage } from "@/pages/SponsorsPage";
 
@@ -33,7 +33,7 @@ export default function App() {
           <Route path="venue" element={<VenuePage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="important-dates" element={<ImportantDatesPage />} />
-          <Route path="review-process" element={<ReviewProcessPage />} />
+          {/* <Route path="review-process" element={<ReviewProcessPage />} /> */}
           <Route path="presenters" element={<PresentersPage />} />
           <Route path="sponsors" element={<SponsorsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { abstractGuidelines, currentImportantDates, historicalTopics } from "@/data/constants";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
@@ -19,18 +20,12 @@ export function AbstractsPage() {
         <div>
           <SectionHeading title="Submission Guidelines" />
           <dl className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="rounded-lg border border-border bg-warm-white p-4">
-              <dt className="text-xs tracking-widest text-muted uppercase">Language</dt>
-              <dd className="mt-1">{abstractGuidelines.language}</dd>
-            </div>
-            <div className="rounded-lg border border-border bg-warm-white p-4">
-              <dt className="text-xs tracking-widest text-muted uppercase">Length</dt>
-              <dd className="mt-1">{abstractGuidelines.wordLimit}</dd>
-            </div>
-            <div className="rounded-lg border border-border bg-warm-white p-4 md:col-span-2">
-              <dt className="text-xs tracking-widest text-muted uppercase">Files</dt>
-              <dd className="mt-1">{abstractGuidelines.fileTypes}</dd>
-            </div>
+            {abstractGuidelines.items.map((item) => (
+              <div key={item.label} className="rounded-lg border border-border bg-warm-white p-4">
+                <dt className="text-xs tracking-widest text-muted uppercase">{item.label}</dt>
+                <dd className="mt-1">{item.detail}</dd>
+              </div>
+            ))}
           </dl>
         </div>
 
@@ -39,7 +34,7 @@ export function AbstractsPage() {
           {currentImportantDates.length === 0 ? (
             <p className="mt-4 text-sm text-muted">Submission and notification dates will be listed here when confirmed.</p>
           ) : (
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-6 space-y-5 text-sm">
               {currentImportantDates.map((item) => (
                 <li key={item.label}>
                   {item.label}: {item.date}
@@ -64,10 +59,16 @@ export function AbstractsPage() {
         <div>
           <SectionHeading title="Abstract Template" />
           <p className="mt-4 text-sm text-muted">
-            A downloadable template will be linked here once organizers provide the file.
+            Download the official Word template and use it when preparing your abstract for HSDS-2027.
           </p>
-          <Button className="mt-4" variant="outline" disabled>
-            Template not yet available
+          <Button className="mt-4" asChild>
+            <a
+              href={abstractGuidelines.templateHref}
+              download={abstractGuidelines.templateFilename}
+            >
+              <Download />
+              Download Template
+            </a>
           </Button>
         </div>
 
