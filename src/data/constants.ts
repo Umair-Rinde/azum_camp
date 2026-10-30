@@ -558,13 +558,13 @@ export const registrationPlans: RegistrationPlan[] = [
   },
   {
     category: "Ph.D. Research Scholars",
-    price: "750",
+    price: "1000",
     currency: "INR",
     includes: [],
   },
   {
     category: "Post Graduate Students",
-    price: "400",
+    price: "600",
     currency: "INR",
     includes: [],
   },
