@@ -27,7 +27,7 @@ export function AboutPage() {
       <PageBanner
         eyebrow="About"
         title="About the conference"
-        description="HSDS is a documented academic series on herbal and synthetic drug studies."
+        description=""
       />
 
       <section className="mx-auto max-w-6xl space-y-16 px-4 py-16">
@@ -35,11 +35,11 @@ export function AboutPage() {
           <SectionHeading title="About the Conference" />
           <div className="mt-6 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
             <p className="max-w-3xl leading-7 text-muted">
-              The series has hosted a national conference in 2010 and international conferences in 2014 and 2016 at Azam Campus, Pune, organized by M.C.E. Society colleges and, from 2014, ISTRA, with UGC support and later association with The University of Kansas Cancer Center. This website is the public record for those editions and the working site for the next meeting.
+            Building on the legacy of its previous editions held in 2010, 2014, and 2016, the Fourth International Conference on Herbal and Synthetic Drug Studies (HSDS-2027) aims to bring together researchers, academicians, scientists, healthcare professionals, and industry experts on a common platform for scientific exchange and collaboration. The conference will focus on emerging advancements in herbal medicines, synthetic and metal-based drugs, drug synthesis and characterization, pharmaceutical formulation science, analytical techniques, and translational research. It will also explore the integration of traditional medicinal knowledge with modern scientific approaches to drug discovery and therapeutic development. Through keynote lectures, invited talks, oral and poster presentations, HSDS-2027 seeks to encourage interdisciplinary dialogue, promote research innovation, and foster meaningful collaborations towards the development of safe, effective, and scientifically validated therapeutics.
             </p>
             <PlaceholderImage
-              src={SITE_IMAGES.GEMINI_GENERATED.src}
-              alt={SITE_IMAGES.GEMINI_GENERATED.alt}
+              src={SITE_IMAGES.BUILDING_12.src}
+              alt={SITE_IMAGES.BUILDING_12.alt}
               className="aspect-[4/3] rounded-lg border border-border"
             />
           </div>

@@ -81,8 +81,8 @@ export const announcementLinks = [
     href: "/abstracts",
   },
   {
-    label: "Early Bird Registration Closes on:",
-    date: "NOVEMBER 30, 2026",
+    label: "Registration Closes on:",
+    date: "JANUARY 10, 2027",
     href: "/register",
   },
 ];
@@ -108,7 +108,7 @@ export const currentConference: CurrentConference = {
   announcement: "Details for the next edition will be announced soon.",
   themes: [],
   importantDates: [
-    { label: "Early Bird Registration Closes on", date: "NOVEMBER 30, 2026" },
+    { label: "Registration Closes on", date: "JANUARY 10, 2027" },
     { label: "Abstract Submission Closes on", date: "DECEMBER 31, 2026" },
     { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
   ],
@@ -129,7 +129,7 @@ export const majorThemes = [
 ];
 
 export const currentImportantDates: ImportantDate[] = [
-  { label: "Early Bird Registration Closes on", date: "NOVEMBER 30, 2026" },
+  { label: "Registration Closes on", date: "JANUARY 10, 2027" },
   { label: "Abstract Submission Closes on", date: "DECEMBER 31, 2026" },
   { label: "Conference Dates", date: "JANUARY 28-30, 2027" },
 ];

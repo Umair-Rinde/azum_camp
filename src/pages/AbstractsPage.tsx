@@ -1,5 +1,6 @@
 import { Download } from "lucide-react";
-import { abstractGuidelines, currentImportantDates, historicalTopics } from "@/data/constants";
+import { Link } from "react-router-dom";
+import { abstractGuidelines, currentImportantDates, historicalTopics, primaryCta } from "@/data/constants";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { SectionHeading } from "@/components/conference/SectionHeading";
@@ -61,15 +62,20 @@ export function AbstractsPage() {
           <p className="mt-4 text-sm text-muted">
             Download the official Word template and use it when preparing your abstract for HSDS-2027.
           </p>
-          <Button className="mt-4" asChild>
-            <a
-              href={abstractGuidelines.templateHref}
-              download={abstractGuidelines.templateFilename}
-            >
-              <Download />
-              Download Template
-            </a>
-          </Button>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <Button asChild>
+              <a
+                href={abstractGuidelines.templateHref}
+                download={abstractGuidelines.templateFilename}
+              >
+                <Download />
+                Download Template
+              </a>
+            </Button>
+            <Button asChild>
+              <Link to={primaryCta.href}>Register & Submit Abstract</Link>
+            </Button>
+          </div>
         </div>
 
         {/* <div className="rounded-lg border border-border bg-warm-white p-6">
