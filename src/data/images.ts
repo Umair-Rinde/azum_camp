@@ -313,32 +313,32 @@ export const SITE_IMAGES = {
   MEMBERS: {
     id: "img-29",
     src: "/conference-assets/people/img-29-members.webp",
-    alt: "Conference committee members",
+    alt: "Past editions highlights",
   },
   MEMBERS_2: {
     id: "img-30",
     src: "/conference-assets/people/img-30-members2.webp",
-    alt: "Conference committee members",
+    alt: "Past editions highlights",
   },
   HANDSHAKE: {
     id: "img-31",
     src: "/conference-assets/events/img-31-handshake.webp",
-    alt: "Partnership",
+    alt: "Partnerships",
   },
   MOU_SIGNING: {
     id: "img-32",
     src: "/conference-assets/events/img-32-mou-signing.webp",
-    alt: "MoU signing ceremony",
+    alt: "MoU signings",
   },
   CERTIFICATE_1: {
     id: "img-33",
     src: "/conference-assets/events/img-33-certificate1.webp",
-    alt: "Conference certificate",
+    alt: "Recognition & Awards",
   },
   CERTIFICATE_2: {
     id: "img-34",
     src: "/conference-assets/events/img-34-certificate2.webp",
-    alt: "Conference certificate",
+    alt: "Recognition & Awards",
   },
 } as const;
 
@@ -410,7 +410,7 @@ export const HERO_IMAGE_STRIP: ImageAsset[] = [
   toAsset(SITE_IMAGES.MEMBERS, "Conference delegates"),
   toAsset(SITE_IMAGES.MEMBERS_2, "Scientific committee"),
   toAsset(SITE_IMAGES.MOU_SIGNING, "MoU signing"),
-  toAsset(SITE_IMAGES.HANDSHAKE, "Partnership"),
+  toAsset(SITE_IMAGES.HANDSHAKE, "Partnerships"),
 ];
 
 /**
