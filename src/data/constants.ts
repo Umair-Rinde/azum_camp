@@ -381,7 +381,7 @@ export const speakers: Speaker[] = [
   {
     name: "Dr. Saidur Rahman",
     designation: "Head, Research Professor",
-    institution: "University of Malaya Kuala Lumpur, Malaysia",
+    institution: "Nanomaterials & Energy Research Centre, Sunway University, Malaysia",
     country: "",
     photo: SITE_IMAGES.SPEAKER_SAIDUR.src,
     shortBio: "",
@@ -389,7 +389,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: "Prof. Suhel Parvez",
-    designation: "Professor & Dean School of Interdisciplinary Sciences and Technology",
+    designation: "Prof. & Dean, School of Interdisciplinary Sci. & Tech.",
     institution: "Jamia Hamdard, New Delhi, India",
     country: "",
     photo: SITE_IMAGES.SPEAKER_SUHEL.src,
