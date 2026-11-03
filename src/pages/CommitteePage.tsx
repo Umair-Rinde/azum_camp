@@ -1,6 +1,8 @@
-import { committee } from "@/data/constants";
+import { committee, organizingCommittee } from "@/data/constants";
 import { PageMeta } from "@/components/seo/PageMeta";
 import { PageBanner } from "@/components/layout/PageBanner";
+import { PersonList } from "@/components/conference/PersonList";
+import { SectionHeading } from "@/components/conference/SectionHeading";
 import { SpeakerCard } from "@/components/conference/SpeakerCard";
 import type { CommitteeMember } from "@/data/types";
 
@@ -40,6 +42,14 @@ export function CommitteePage() {
           {otherMembers.map((member) => (
             <MemberCard key={member.name} member={member} />
           ))}
+        </div>
+      </section>
+      <section id="organizing-committee" className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-4 py-16">
+          <SectionHeading title="Organizing Committee" />
+          <div className="mt-10">
+            <PersonList people={organizingCommittee} />
+          </div>
         </div>
       </section>
     </>

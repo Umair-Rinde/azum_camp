@@ -7,6 +7,7 @@ import type {
   ImportantDate,
   NavItem,
   NavNode,
+  NamedPerson,
   Organizer,
   PastConference,
   ProgramDay,
@@ -499,6 +500,32 @@ export const committee: CommitteeMember[] = [
     photo: SITE_IMAGES.ASIF.src,
     bio: "",
   },
+];
+
+/** Names only — organizing committee members are listed without photos. */
+export const organizingCommittee: NamedPerson[] = [
+  { name: "Dr. Shaila Bootwala", role: "Principal, A.I.S.C" },
+  { name: "Dr. Khursheed Ahmed", role: "Convener, HSDS-2027" },
+  { name: "Dr. Snehal Kulkarni", role: "HOD, Microbiology" },
+  { name: "Dr. Asif Ansari", role: "Principal, Z.V.M.U.M.C.&H." },
+  { name: "Prof. Avinash Kumbhar", role: "CEO - PKC" },
+  { name: "Dr. Manas K. Santra", role: "NCCS" },
+  { name: "Dr. Syed G. Dastager", role: "CSIR - NCL" },
+  { name: "Dr. Doke Kailas" },
+  { name: "Dr. Yusufi Mujahid" },
+  { name: "Dr. Nazia Sayyed" },
+  { name: "Dr. Siraj Shaikh" },
+  { name: "Dr. Anees Pangal" },
+  { name: "Dr. Javed Shaikh" },
+  { name: "Dr. Pranav Tambe" },
+  { name: "Dr. Javed Mulla" },
+  { name: "Dr. Imtiyaz H. Zahid" },
+  { name: "Mr. Amin Shaikh" },
+  { name: "Mr. Ata-Ur-Rahman Shaikh" },
+  { name: "Mr. Zaheed" },
+  { name: "Dr. Jaleel Ahmed" },
+  { name: "Dr. Gazala Mulla" },
+  { name: "Dr. Zakir Khan" },
 ];
 
 export const programDays: ProgramDay[] = [];
